@@ -1,0 +1,2 @@
+/// @desc
+stare=true;

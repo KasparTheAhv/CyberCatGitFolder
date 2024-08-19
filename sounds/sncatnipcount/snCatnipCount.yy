@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snCatnipCount",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":0,
+  "bitRate":320,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.888163,
+  "name":"snCatnipCount",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"sncatnipcount",
+  "type":1,
+  "volume":0.01,
+}

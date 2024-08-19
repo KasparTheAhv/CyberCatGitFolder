@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"FindComments",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FindComments",
+  "parent":{
+    "name":"Objects",
+    "path":"folders/Objects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

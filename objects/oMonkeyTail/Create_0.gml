@@ -1,0 +1,10 @@
+owner=noone;
+xx=x;
+yy=y;
+dist=0;
+dir=0;
+spd=7;
+maxDist=70;
+tonqScale=2;
+spscale=1;
+self.depth=depth+10;

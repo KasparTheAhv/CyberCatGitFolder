@@ -1,0 +1,1 @@
+if (rectscaler==1) {vanish=true;instance_destroy(oConfigureJS);}

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Mu9",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":0,
+  "bitRate":96,
+  "compression":3,
+  "conversionMode":0,
+  "duration":52.272,
+  "name":"Mu9",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"Mu9.mp3",
+  "type":0,
+  "volume":0.06,
+}

@@ -1,0 +1,1 @@
+other.hsp=other.hsp*-1;

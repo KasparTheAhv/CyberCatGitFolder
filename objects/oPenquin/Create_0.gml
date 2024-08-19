@@ -1,0 +1,23 @@
+image_xscale=0.75;
+image_yscale=0.75;
+image_speed=1;
+if (room==Room12) {superplatform=true;} else {superplatform=false;}
+tar=noone;
+tilemap = layer_tilemap_get_id("Collision");
+tilemap2 = layer_tilemap_get_id("Platform");
+grv=0.3;
+hsp=0;
+vsp=0;
+jump=false;
+jumping=false;
+jumper=false;
+attack=false;
+rot=315;
+ind=1;
+side=sign(hsp);
+prevind=1;
+alarm[9]=1;
+whatbase=noone;
+randomdist=irandom_range(0,150);
+myspawnx=self.x;
+myspawny=self.y;

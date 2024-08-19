@@ -1,0 +1,1 @@
+sprite_index=sThurR;image_speed=1;hsp=choose(2.5,-2.5);image_xscale=2*sign(hsp); alarm[0]=irandom_range(70,110);

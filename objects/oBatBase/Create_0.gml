@@ -1,0 +1,10 @@
+image_speed=0;
+image_index=0;
+activated=false;
+alarm[1]=100;
+maxbirds=3;
+mybirds=0;
+elud=5;
+depth=self.depth+10;
+timermod=1;
+image_blend=c_red;

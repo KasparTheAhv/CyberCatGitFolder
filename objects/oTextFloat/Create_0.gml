@@ -1,0 +1,22 @@
+spd=2;
+times=1;
+fade=false;
+letters = 0;
+text = "This is a text\nSecond line";
+length = string_length(text);
+text_current = "";
+w = 0;
+h = 0;
+timer=120;
+extraheight=50;
+border = 10;
+onetimer=true;
+oki=0;
+target=noone;
+who=noone;
+scaler=global.scaler;
+whasound=irandom_range(0,500);
+alarm[0]=1;
+rW=room_width;
+rH=room_height;
+

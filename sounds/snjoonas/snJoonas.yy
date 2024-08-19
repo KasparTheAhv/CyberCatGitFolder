@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snJoonas",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":3,
+  "conversionMode":0,
+  "duration":7.675589,
+  "name":"snJoonas",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"snjoonas",
+  "type":1,
+  "volume":0.1,
+}

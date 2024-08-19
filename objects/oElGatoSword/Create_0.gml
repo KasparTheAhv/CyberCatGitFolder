@@ -1,0 +1,11 @@
+owner=noone;
+xx=x;
+yy=y;
+dist=0;
+side=true;
+dir=0;
+spd=4;
+tonqScale=2;
+spscale=1;
+image_index=1;
+image_speed=0;

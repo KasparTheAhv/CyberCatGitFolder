@@ -1,0 +1,59 @@
+1.2.5/6
+* New: Winter music
+* New: Flowers
+* New: Butterflies
+* Fix: Ads not working
+
+1.2.4
+* New: Bug reporting
+* New: Watch AD for revive with 9 lives 
+* New: Watch AD for +2 skin tokens ( once per day )
+* New: Patch notes window within game
+* New: Promo codes for skin tokens
+* New: Transition effect
+* New: See Discovery % colors before opening room info
+* New: Support for 120hz displays - Currently automatic
+
+1.2.3
+* New: More music
+* Fix: Google scores not uploading
+* Fix: Cloud save not happening
+* Fix: Camera changes after pause/tutorial book
+* Fix: Minor fixes in few rooms
+
+1.2.2
+* New: Theme based music to levels
+* New: Volume slider for music
+* New: Disable auto-jump setting
+* Fix: Room24 boss fight made easier
+* Fix: Bug that made the player teleport on top of map
+
+1.2.1
+* New: Music player
+* New: a skin
+* Fix: Minor bugs
+
+1.2.0
+* New: 4 new skins - Viewer made
+* New: Player Stats
+* New: Promo codes
+* New: Google Play Leaderboards
+* New: Achievements
+* New: Menu music
+* Fix: Best times save correctly on Google Play Cloud
+
+1.1.9
+* Fix: Room23 now passable
+* Fix: Transition text crashing game
+* Fix: Room12 arcade game breaking UI
+* Fix: Room9 note now hints on teleporting
+* Fix: Entering god state while on 0.5/0.7 zoom level
+
+1.1.8
+* New: Added display settings
+* New: Added JUMP key capability
+* New: FPS counter in display settings
+* New: Skin system added
+* New: Leaderboards added
+* Fix: For 30hz displays
+* Fix: Performance boost for older devices

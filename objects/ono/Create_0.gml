@@ -1,0 +1,12 @@
+self.x=global.gameWidth*0.6;
+self.y=global.gameHeight*0.57;
+text="No";
+rectscaler=0;
+scaler=global.scaler;
+//SCRIBBLE
+color="[#FFFFFF]";
+scale=scaler*2.5;
+//textalpha="[alpha,"+string(insert_amount)+"]";
+textscale=string(rectscaler);
+textscale="[scale,"+string(textscale)+"]";
+draw_self();

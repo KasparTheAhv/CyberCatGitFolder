@@ -1,0 +1,1 @@
+sprite_index=sSealR;image_speed=1;hsp=choose(1,-1);image_xscale=2*sign(hsp); alarm[0]=irandom_range(70,110);

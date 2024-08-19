@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DateConversion",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DateConversion",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

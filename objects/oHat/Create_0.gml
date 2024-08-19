@@ -1,0 +1,15 @@
+picked=false;
+image_xscale=1.1;
+image_yscale=1.1;
+visible=false;
+alarm[0]=1;
+xmod=17*0.75;
+ymod=6*0.75;
+image_speed=0;
+mytarget=oPlayer;
+angright=true;
+tilemap = layer_tilemap_get_id("Collision");
+tilemap2 = layer_tilemap_get_id("Platform");
+clicked=false;
+moder=0;xmoder=0;
+startDepth=depth;

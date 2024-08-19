@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"BGMuJungle3",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":112,
+  "compression":3,
+  "conversionMode":0,
+  "duration":148.45387,
+  "name":"BGMuJungle3",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":32000,
+  "soundFile":"BGMuJungle3.ogg",
+  "type":0,
+  "volume":0.15,
+}

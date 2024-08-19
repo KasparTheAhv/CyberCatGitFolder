@@ -1,0 +1,1 @@
+draw_sprite_stretched_ext(sWhite,0,-1,-1,guWid,guHei,c_black,alpha);

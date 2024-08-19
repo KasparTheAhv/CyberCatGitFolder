@@ -1,0 +1,9 @@
+{
+  "resourceType": "GMExtensionConfigSet",
+  "configurables": null,
+  "extensionId": {
+    "name": "YYFirebaseCrashlytics",
+    "path": "extensions/YYFirebaseCrashlytics/YYFirebaseCrashlytics.yy"
+  },
+  "resourceVersion": "1.0"
+}

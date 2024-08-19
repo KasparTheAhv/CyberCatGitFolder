@@ -1,0 +1,9 @@
+depth=depth-20;
+image_xscale=1.5;
+image_yscale=1.5;
+algneuksekaug=sprite_get_width(sprite_index)*image_xscale;
+uksekaug=0;
+palju=1.9;
+unlocked=true;
+drawcat=false;
+xscale=0;

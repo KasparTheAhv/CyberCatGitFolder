@@ -1,0 +1,20 @@
+/// @desc
+start=0;
+scale= display_get_gui_height() / sprite_get_height(sprite_index);
+scale= scale*0.5;
+scale=floor(scale);
+image_yscale=scale;
+image_xscale=scale;
+xscale=scale;
+yscale=scale;
+view_width= display_get_gui_width()*0.5;
+quarter_wid=display_get_gui_width()*0.21;
+view_height=display_get_gui_height();
+maxY=29*scale;
+curY=0;
+x=0+view_width;
+yy=0;
+y=yy+view_height+2-curY;
+image_alpha=0;
+heartx=0;
+hearty=0;

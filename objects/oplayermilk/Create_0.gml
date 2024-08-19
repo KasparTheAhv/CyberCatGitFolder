@@ -1,0 +1,13 @@
+dir=360;
+animate=false;
+firingdelay=0;
+recoil=0;
+alarm[0]=1;
+sprite_index=global.sPlayerM;
+spr_index=global.sPlayerMM;
+catskinscale=global.catskinscale;
+image_xscale=0.75;
+image_yscale=0.75;
+image_speed=0;
+with(oFollowPlayer) {target=self;}
+if (room=Room0) {instance_destroy(oClickHere);}
