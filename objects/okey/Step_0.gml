@@ -23,7 +23,7 @@ if (held)
 	if (inde>=8) {howmuch=8;}
 			}
 	
-	self.x=oPlayer.x+(22*oPlayer.image_xscale);
+	self.x=oPlayer.x+(23*oPlayer.image_xscale);
 	
 	self.y=oPlayer.y+howmuch;
 	

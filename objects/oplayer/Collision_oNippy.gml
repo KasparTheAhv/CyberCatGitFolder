@@ -24,10 +24,10 @@ var off_y_percent = off_y / camera_get_view_height(view_camera[0])
 xx = off_x_percent * display_get_gui_width();
 yy = off_y_percent * display_get_gui_height();
 
-with(instance_create_layer(xx,yy,"Particles",oUnlockBook))
-{
-whatbook=6;
-}
+	with(instance_create_layer(xx,yy,"Particles",oUnlockBook))
+	{
+	whatbook=6;
+	}
 }	
 
 

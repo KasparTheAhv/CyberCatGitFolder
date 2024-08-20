@@ -11,7 +11,8 @@ if (event_id==0) && !(blocker)
 		oGUIBAR.task1="+ Task done!";oGUIBAR.task1col="[#4CFF4C]";
 		}
 	blocker=true;
-	text="Watch out! watch out!\nThat's John Cena's pet rat.\nStrike first and PRECISELY or\nthat thing will run you down!";
+	alarm[2]=1;
+	text="Watch out! watch out! That's John Cena's pet rat.\n Read the new book unless you\nwant to get beaten down by it.";
 	follow = instance_nearest(x,y,oRatEvent);
 		with (oPlayer)
 			{
@@ -42,7 +43,7 @@ if (event_id==1) && !(blocker)
 	if !(instance_exists(oRatEvent))
 	{
 	blocker=true;
-	text="This edge seems to be INSANELY\nhigher than your jump reach.\nYou'll need to find another way up.";
+	text="This edge seems to be INSANELY\nhigher than your jump reach.\nYou'll need to find another way up.\nMaybe climb the tree next to the table?";
 	follow = instance_nearest(x,y,oLocIndi);
 		with (instance_create_layer(follow.x,follow.y-80,"Particles",oText))
 			{
@@ -74,8 +75,8 @@ if (event_id==2) && !(blocker)
 		if !(instance_exists(oRatEvent))
 		{		
 		blocker=true;
-		alarm[2]=1;
-		text="Okay, that was awful to look at.\nShould have taught you a move or two\nbefore you get yourself killed.\nSO LISTEN UP...";
+		
+		text="Okay, that was awful to look at.\nPlease read the book a few more\ntimes so you'd fully understand\nhow to fight better.";
 		follow = oPlayer;
 			with (instance_create_layer(follow.x,follow.y-80,"Particles",oText))
 				{
@@ -99,7 +100,7 @@ if (event_id==2) && !(blocker)
 	if (sequence==2)
 	{
 				blocker=true;
-		text="Press and HOLD DOWN your\n(paw key) to enter and STAY\nin your scratch attack mode.\nLetting go will make you vulnerable.";
+		text="TL;DR, Holding down paw key = attack mode\nLetting go = normal mode aka vulnerable.";
 		follow = oPlayer;
 			with (instance_create_layer(follow.x,follow.y-80,"Particles",oText))
 				{
@@ -122,7 +123,7 @@ if (event_id==2) && !(blocker)
 	if (sequence==3)
 	{
 				blocker=true;
-		text="Don't SPAM IT! It has a COOLDOWN.\nWhile used ON GROUND, you will leap attack.\nWhile in air, you maintain your direction\n and velocity.";
+		text="Don't SPAM IT! It has a COOLDOWN.\nGood luck soldier!";
 		follow = oPlayer;
 			with (instance_create_layer(follow.x,follow.y-80,"Particles",oText))
 				{
@@ -158,7 +159,7 @@ if (event_id==3) && !(blocker)
 		
 		blocker=true;
 	
-		text="Now this is where things get wild.\nThese nests pack more birds than\nyou could imagine.";
+		text="Now this is where things get wild.\nThese nests pack more birds than\nyou could ever imagine.";
 		follow = instance_nearest(x,y,oBirdBase);
 			with (instance_create_layer(follow.x,follow.y-40,"Particles",oText))
 				{
@@ -212,8 +213,8 @@ if (event_id==3) && !(blocker)
 	if (sequence==3)
 	{
 				blocker=true;
-				alarm[2]=1;
-		text="Take them pigeons out\nand fill your catnip bar\nOnce full, you can shoot down the base.";
+				
+		text="Take them pigeons out with your leap attack\nand fill your catnip bar.\nOnce full, you can shoot down the base.";
 			follow = instance_nearest(x,y,oBirdBase);
 			with (instance_create_layer(follow.x,follow.y-80,"Particles",oText))
 				{
@@ -242,7 +243,7 @@ if (event_id==3) && !(blocker)
 	{
 				blocker=true;
 				
-			text="Read the catnip and god state manuals you just received!";
+			text="For you own sake, I suggest you read the\n'Catnip' and 'God state' books before going crazy!";
 			follow = instance_nearest(x,y,oBirdBase);
 			with (instance_create_layer(follow.x,follow.y-80,"Particles",oText))
 				{
@@ -354,7 +355,7 @@ if (event_id==4) && !(blocker)
 	if (sequence==4)
 	{
 				blocker=true;
-		text="I suggest getting above them before\nattacking them since they\ntend to escape if you get too near.";
+		text="I suggest attacking the from above\nsince the tend to escape if you get too near.";
 			follow = instance_nearest(x,y,oSquir);
 			with (instance_create_layer(follow.x,follow.y-80,"Particles",oText))
 				{
@@ -414,7 +415,7 @@ if (event_id==5) && !(blocker)
 	if (sequence==2)
 	{
 				blocker=true;
-		text="No worries tho cause I think\nyou can collapse their nests in\nif you shoot at it enough times.";
+		text="No worries tho, cause I think\nyou can collapse their nest in\nif you shoot at it enough times.";
 			follow = instance_nearest(x,y,oSquirrBase);
 			with (instance_create_layer(follow.x,follow.y-80,"Particles",oText))
 				{
@@ -441,7 +442,7 @@ if (event_id==5) && !(blocker)
 	if (sequence==3)
 	{
 				blocker=true;
-		text="Ok who am I lying to\nI know that for a fact.";
+		text="Ok who am I kidding,\nI know that for a fact.";
 			follow = instance_nearest(x,y,oSquirrBase);
 			with (instance_create_layer(follow.x,follow.y-80,"Particles",oText))
 				{
@@ -2450,7 +2451,7 @@ if (event_id==40) && !(blocker)
 	if (sequence==1) // x300 ja y700
 	{
 		blocker=true;
-		text="Last time I saw a turd talking, \n I was watching South Park.";
+		text="Last time I saw a turd talking, \n I was watching North Park.";
 		follow = instance_nearest(x,y,oPlayer);
 			with (instance_create_layer(follow.x,follow.y-40,"Particles",oText))
 				{

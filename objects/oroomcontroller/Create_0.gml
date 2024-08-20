@@ -24,7 +24,8 @@ view_visible[1]=false;
 
 
 alarm[11]=600;
-
+room2bookgiven=false;
+room9bookgiven=false;
 room16eggTriggered=false;
 room16egg2Triggered=false;
 firstnippy=0;
