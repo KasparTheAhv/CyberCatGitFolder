@@ -1,4 +1,4 @@
-scale=1;
+scale=2;
 gW=global.gameWidth;
 gH=global.gameHeight;
 gWh=gW*0.5;
@@ -6,11 +6,12 @@ gHh=gH*0.5;
 pageswitching=false;
 gHmodded=gH*0.7;
 
-myscale=gHmodded/256*10;
+myscale=gHmodded/512*10;
 myscale=floor(myscale);
 myscale=myscale*0.1;
 
-
+image_yscale=2;
+image_xscale=2;
 
 halfbooksize=sprite_get_width(sBookPages)*myscale*0.5;
 

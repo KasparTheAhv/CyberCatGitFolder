@@ -23,6 +23,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"Notch","order":2,"path":"extensions/Notch/Notch.yy",},
+    {"name":"fOrbitron","order":3,"path":"fonts/fOrbitron/fOrbitron.yy",},
     {"name":"fOrbitronBig","order":1,"path":"fonts/fOrbitronBig/fOrbitronBig.yy",},
     {"name":"fOrbitronNote","order":2,"path":"fonts/fOrbitronNote/fOrbitronNote.yy",},
     {"name":"scribble_fallback_font","order":12,"path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},
