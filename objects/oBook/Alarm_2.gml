@@ -41,7 +41,11 @@ if (global.ongui==true)
 	self.alarm[2]=5;
 	}
 } else {
-if (room==Room0){
+if (room==Room0) {
+	
+with(oClickHere){allowed=true;}
+
+if (global.booktutsequence==3) { with(oVStick) {toimi=false;} }
 with(instance_create_layer(x,y,"Characters",oGUIBAR))
 	{
 	self.follow=other.prevfollow;

@@ -1,6 +1,7 @@
 	self.depth=depth+10;
 	image_alpha=0;
 	fadein=false;
+	arrowYmod=0;
 	alarm[1]=4;
 	play_sound(snWhoosh,false);
 	var map =ds_map_secure_load("settings.sav")

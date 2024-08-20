@@ -59,6 +59,7 @@ if (room!=Room0)
 }
 if (room==Room0) 
 {
+	global.booktutsequence=1;
 	instance_create_layer(x,y,"Particles",oPause);
 	instance_create_layer(x,y,"Particles",oBook);
 	instance_create_layer(x,y,"Particles",oMagnify);
@@ -69,6 +70,9 @@ if (room==Room0)
 		joonista=false;	
 		}
 	}
+	with(oPause) {joonista=false;}
+	with(oMagnify) {joonista=false;}
+	with(oBook) {joonista=false;}
 }
 instance_create_layer(self.x,self.y,"Characters",oFollowPlayer);
 // show jump key

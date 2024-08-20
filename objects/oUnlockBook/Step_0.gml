@@ -23,7 +23,7 @@ part_particles_create(oRoomController.part_sys3, partxx, partyy,oRoomController.
 		ds_map_secure_save(settingsmap,"settings.sav");
 		}
 	
-	offline=true; alarm[2]=120;
+	offline=true; alarm[2]=60;
 	
 	
 	}

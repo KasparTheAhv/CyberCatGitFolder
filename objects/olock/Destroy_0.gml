@@ -1,8 +1,4 @@
 /// @desc
-
-
-
-
 if (room==Room23)
 {
 	if (instance_number(oLock)==1)

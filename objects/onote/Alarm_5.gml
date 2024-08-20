@@ -32,18 +32,13 @@ var off_y_percent = off_y / camera_get_view_height(view_camera[0])
 
 xx = off_x_percent * display_get_gui_width();
 yy = off_y_percent * display_get_gui_height();
-		if (follow!=oClickedEvent)
-		{
-				with(instance_create_layer(xx,yy,"Particles",oUnlockBook))
-				{
-				whatbook=1;
-				}	
-		}
+
 	}
 }	
 if (room==Room4){
 oGUIBAR.task1="+ Task done!";	
 oGUIBAR.task1col="[#4CFF4C]";
+oGUIBAR.alarm[1]=1;
 }	
 if (room==Room5) 
 {

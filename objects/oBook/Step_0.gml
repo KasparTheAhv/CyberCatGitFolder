@@ -8,3 +8,4 @@ if (image_index==2)
 	 if (extrasca>0.85) {extrasca-=0.01;} else {extraUp=true;}		
 	}
 }
+

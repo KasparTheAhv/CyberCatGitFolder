@@ -71,7 +71,7 @@ joonistatasks=true; if (room=Room0) {joonistatasks=false;}
 // Room Task List
 task1="";task2="";task3="";
 if (room==Room1Tester){tasks=1;task1="- Test room"; }
-if (room==Room0){tasks=2;task1="- Escape this room";task2="- Drink milk";}
+if (room==Room0){tasks=3;task1="- Pick up key";task2="";task3="";}
 if (room==Room1){tasks=2;task1="- Cross the bridge";task2="- Defeat tutorial rat";}
 if (room==Room2){tasks=2;task1="- Collect 6 catnip";task2="- Destroy bird base";}
 if (room==Room3){tasks=2;task1="- Get electrocuted";task2="- Destroy squirrel base";}

@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 vsp+=grv;
 vsp=clamp(vsp,-10,8);
 if (lubaliikumine)
@@ -11,10 +9,10 @@ if (lubaalpha)
 	
 if (alpha<1) 
 {
-alpha+=0.01;
-alpha2+=0.01;
-oVStick.alpha=oPlayerFake.alpha;
-alarm[2]=1;
+	alpha+=0.01;
+	alpha2+=0.01;
+	oVStick.alpha=oPlayerFake.alpha;
+	alarm[2]=1;
 } else {
 	lubaalpha=false;
 	alarm[3]=120;

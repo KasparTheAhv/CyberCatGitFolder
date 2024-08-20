@@ -4,13 +4,13 @@ if (joonista) {draw_sprite_ext(sBook,image_index,x,y,image_xscale*extrasca,image
 
 if (state)
 {
-if !(instance_exists(oSkillBook))
-{
-scribble(string(textscale)+"[fOrbitronBigOut][fa_center][fa_middle]"+string(color)+"PURR BOOKS").draw(textX,textY);
-}
-muutuja=global.GUI*70;
-self.y=round(testGuiH*0.07)+muutuja;
-scale=(0.5+2*global.GUI)*scaler;
-image_xscale=scale;
-image_yscale=scale;
+	if !(instance_exists(oSkillBook))
+	{
+		scribble(string(textscale)+"[fOrbitronBigOut][fa_center][fa_middle]"+string(color)+"PURR BOOKS").draw(textX,textY);
+	}
+	muutuja=global.GUI*70;
+	self.y=round(testGuiH*0.07)+muutuja;
+	scale=(0.5+2*global.GUI)*scaler;
+	image_xscale=scale;
+	image_yscale=scale;
 }

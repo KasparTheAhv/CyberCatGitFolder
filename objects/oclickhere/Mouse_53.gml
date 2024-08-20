@@ -1,9 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-if instance_exists(oPlayer)
+if !(allowed) {exit;}
+
+
+if (guiclick) // kui gui, ss destroy hiireclicki l2heduse j2rgselt
 {
-	if (distance_to_object(oPlayer)<250)	
+	if (point_distance(mouse_x,mouse_y,x,y)<60) {instance_destroy();}
+} else {
+	if (point_distance(mouse_x,mouse_y,oPlayer.x,oPlayer.y)<120)
 	{
-		self.alarm[2]=1;
+		if (point_distance(mouse_x,mouse_y,x,y)<50) {instance_destroy();}
 	}
 }

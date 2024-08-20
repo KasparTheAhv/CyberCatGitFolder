@@ -10,11 +10,14 @@ previndex=image_index;
 joonista=true;
 testGuiW=display_get_gui_width();
 testGuiH=display_get_gui_height();
+muutuja=global.GUI*70;
+self.x=round(testGuiW*0.85);
+self.y=round(testGuiH*0.07)+muutuja;
 gH=global.gameHeight;
 gW=global.gameWidth;
 textX=round(gW*0.5);
 textY=round(gH*0.1);
-muutuja=global.GUI*70;
+arrowYmod=0;
 extrasca=1;
 extraUp=true;
 
@@ -23,8 +26,7 @@ lel=0;
 image_blend=c_white;
 image_speed=0;
 state=false;
-self.x=round(testGuiW*0.85);
-self.y=round(testGuiH*0.07)+muutuja;
+
 algnex=self.x;
 algney=self.y;
 scaler=global.scaler;

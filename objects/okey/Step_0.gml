@@ -43,4 +43,4 @@ if (held)
 	vsp=clamp(vsp,-8,8);
 	self.y+=vsp;
 	image_angle=0;
-	}
+}

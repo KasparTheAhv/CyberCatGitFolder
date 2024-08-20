@@ -8,3 +8,5 @@ image_xscale=scale;
 image_yscale=scale;
 suurendaja=2*scale;
 maxsuurus=12*scale;
+guiclick=false;
+invis=false;

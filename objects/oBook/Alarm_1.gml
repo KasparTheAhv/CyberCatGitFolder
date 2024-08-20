@@ -72,15 +72,18 @@ exit;
 	
 if instance_exists(oSkillBook)
 {
-instance_destroy(oSkillBook);
-with (instance_create_layer(x,y,"Characters",oBookController))
-{
-	image_alpha=0;
-}
-exit;
+	instance_destroy(oSkillBook);
+	with (instance_create_layer(x,y,"Characters",oBookController))
+	{
+		image_alpha=0;
+	}
+	exit;
 }	
 
-	
+
+if (global.booktutsequence==2) {exit;}
+if (global.booktutsequence==1) {exit;}
+
 	
 state=false;
 self.x=round(testGuiW*0.85);

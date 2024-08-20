@@ -1,8 +1,9 @@
 if instance_exists(oPlayerGod) {exit;}
+if instance_exists(oPlayerAttack) {exit;}
 if instance_exists(oText) {exit;}
 if instance_exists(oTextFloat) {exit;}
 
-if (distance_to_object(oPlayer)<100) 
+if (distance_to_object(oPlayer)<100) && (point_distance(x,y,mouse_x,mouse_y)<25)
 {
 alarm[5]=1;
 if (cid_event==0) {
