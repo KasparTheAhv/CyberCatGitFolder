@@ -27,6 +27,7 @@
   "height":34,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"6272b3bf-1ff8-4b53-a814-2f9fa93a4989","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"6272b3bf-1ff8-4b53-a814-2f9fa93a4989","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"3bb548df-7413-479a-9148-893f4e110e51","blendMode":0,"displayName":"default","isLocked":false,"name":"3bb548df-7413-479a-9148-893f4e110e51","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s11PlayerR",
