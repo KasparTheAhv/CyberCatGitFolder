@@ -1,14 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 if instance_exists(whatbase) {whatbase.mybirds-=1;}
-
 play_sound(snShot,false);
 
 if (visible) 
 {
 	if (global.GFX1==1)
 	{
-		part_particles_create(oRoomController.part_sys, x, y,oRoomController.part14,irandom_range(14,20));
+		part_particles_create(oRoomController.part_sys, x, y,oRoomController.part14,irandom_range(10,15));
 	}
 }
 
@@ -20,7 +19,7 @@ if (room==Room14)
 		{
 			with(oFriendBird)
 			{
-			bosskilled=true;
+				bosskilled=true;
 			}
 		}	
 	}

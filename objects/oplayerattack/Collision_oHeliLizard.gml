@@ -15,6 +15,6 @@ else
 	instance_create_layer(other.x,other.y,"Characters",oHeliLizardD);
 	instance_destroy(other);
 	var settingsmap = ds_map_secure_load("settings.sav")
-var plax= sign(image_xscale)*0.75*16;
+var plax= side*12;
 instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 }

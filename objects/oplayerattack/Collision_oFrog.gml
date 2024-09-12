@@ -9,5 +9,5 @@ with (other)
 }
 
 
-var plax= sign(image_xscale)*0.75*16;
+var plax= side*12;
 instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);

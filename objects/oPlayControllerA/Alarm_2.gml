@@ -72,9 +72,9 @@ if (cloudfirstloaded==0) {exit;} // DONT ALLOW DATA UPLOAD UNTIL FIRST CLOUDLOAD
 		if is_undefined(STATS_Leaps){data.STATS_Leaps=0;}
 		else {data.STATS_Leaps=STATS_Leaps;}
 		
-		var STATS_Leapshit=ds_map_find_value(map,"STATS_Leapshit");
-		if is_undefined(STATS_Leapshit){data.STATS_Leapshit=0;}
-		else {data.STATS_Leapshit=STATS_Leapshit;}
+		var STATS_Lphit=ds_map_find_value(map,"STATS_Lphit");
+		if is_undefined(STATS_Lphit){data.STATS_Lphit=0;}
+		else {data.STATS_Lphit=STATS_Lphit;}
 		
 		var STATS_Kills=ds_map_find_value(map,"STATS_Kills");
 		if is_undefined(STATS_Kills){data.STATS_Kills=0;}

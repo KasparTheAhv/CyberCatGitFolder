@@ -1,6 +1,6 @@
 /// @desc room controller for multiple instances at the same time
 // Create essential objects in room:
-
+global.leapsthissession=0;
 game_set_speed(global.GFX2, gamespeed_fps);
 if (os_type==os_windows)
 {

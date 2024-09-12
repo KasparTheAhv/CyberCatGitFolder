@@ -2,7 +2,7 @@
 // You can write your code in this editor
 with(other)
 {
-instance_destroy();
+	instance_destroy();
 }
 if instance_exists(oGUIBAR)&&(instance_exists(oPlayerGod)){oGUIBAR.cn+=1.75;}
 self.elud-=1;
@@ -17,5 +17,4 @@ if (elud<=0)
 	}
 	instance_destroy();
 }
-
 image_blend=c_red;

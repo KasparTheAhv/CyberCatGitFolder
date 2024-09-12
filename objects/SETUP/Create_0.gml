@@ -9,6 +9,7 @@ global.loafing=false;
 global.noBase=false;
 global.lightningMode=0;
 global.booktutsequence=0;
+global.leapsthissession=0;
 // testing GIT remove this line later
 if (os_type==os_android) {global.isAndroid=true;} else {global.isAndroid=false;}
 

@@ -101,7 +101,7 @@ var settingsmap=ds_map_secure_load("settings.sav");
  leaps=ds_map_find_value(settingsmap,"STATS_Leaps"); // done
  if is_undefined(leaps) {leaps=0;}
  
- leapshit=ds_map_find_value(settingsmap,"STATS_Leapshit"); // done
+ leapshit=ds_map_find_value(settingsmap,"STATS_Lphit"); // done
  if is_undefined(leapshit) {leapshit=0;}
  
  kills=ds_map_find_value(settingsmap,"STATS_Kills"); // done

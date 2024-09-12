@@ -1,6 +1,4 @@
 /// @desc
-
-
 if !(global.debugmenu) {exit;}
 draw_sprite_ext(sWhite,0,0,0,debugXscale,debugYscale,0,c_black,0.6);
 draw_set_color(c_white);

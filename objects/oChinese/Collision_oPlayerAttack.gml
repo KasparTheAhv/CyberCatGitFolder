@@ -1,7 +1,7 @@
 /// @desc
 if (self.immune==false)
 {
-var plax= sign(image_xscale)*0.75*16;
+var plax= side*12;
 instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 
 part_particles_create(oRoomController.part_sys, self.x, self.y,oRoomController.part17,irandom_range(50,60));

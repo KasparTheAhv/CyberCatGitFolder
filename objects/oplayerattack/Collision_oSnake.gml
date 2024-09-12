@@ -5,7 +5,7 @@ var temaside=sign(other.image_xscale);
 if (myside==temaside)
 {
 	other.alarm[10]=1;
-	var plax= sign(image_xscale)*0.75*16;
+	var plax= side*12;
 	instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 } else {
 	

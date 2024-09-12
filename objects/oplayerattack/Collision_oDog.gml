@@ -3,7 +3,7 @@ if !(doglock)
 doglock=true;
 instance_create_layer(x,y,"BefEdge",oNippy);
 instance_create_layer(x,y,"BefEdge",oNippy);
-var plax= sign(image_xscale)*0.75*16;
+var plax= side*12;
 instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 	with(other)
 	{

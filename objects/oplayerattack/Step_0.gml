@@ -1,6 +1,5 @@
 // movement and collision
 var bbox_side;
-
 // gravity
 vsp+=grv;
 vsp=clamp(vsp,-19,8);
@@ -9,7 +8,6 @@ if (superplatform)
 vspP=vsp;
 vspP=clamp(vspP,-19,8);
 }
-
 
 //horistontal collision
 if (hsp>0) bbox_side=bbox_right; else bbox_side=bbox_left;
@@ -69,7 +67,7 @@ y += floor(vsp);
 
 
 // image angle
-var side=(sign(image_xscale));
+side=(sign(image_xscale));
 
 if (side==1)
 {

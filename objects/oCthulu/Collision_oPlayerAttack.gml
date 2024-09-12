@@ -11,7 +11,7 @@ if !(shielded)
 			alarm[1]=1;
 			alarm[0]=-1;
 			alarm[2]=-1;
-			var plax= sign(image_xscale)*0.75*16;
+			var plax= side*12;
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 			} 
 			

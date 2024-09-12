@@ -1,6 +1,6 @@
 // +1 to leaps
 show_debug_message("attack object created");
-
+side=(sign(image_xscale));
 var settingsmap = ds_map_secure_load("settings.sav")
 var prevValue = ds_map_find_value(settingsmap,"STATS_Leaps");
 if is_undefined(prevValue){prevValue=0;}

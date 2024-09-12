@@ -8,5 +8,5 @@ with (instance_create_layer(temax,temay-3,"Characters",oRatFall))
 	if (sign(hsp) !=0) image_xscale = sign(hsp)*0.75;
 	}
 instance_destroy(other);
-var plax= sign(image_xscale)*0.75*16;
+var plax= side*12;
 instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
