@@ -96,9 +96,9 @@ if (cloudfirstloaded==0) {exit;} // DONT ALLOW DATA UPLOAD UNTIL FIRST CLOUDLOAD
 		if is_undefined(STATS_God){data.STATS_God=0;}
 		else {data.STATS_God=STATS_God;}
 		
-		var STATS_Cnmissed=ds_map_find_value(map,"STATS_Cnmissed");
-		if is_undefined(STATS_Cnmissed){data.STATS_Cnmissed=0;}
-		else {data.STATS_Cnmissed=STATS_Cnmissed;}
+		var STATS_Cnmiss=ds_map_find_value(map,"STATS_Cnmiss");
+		if is_undefined(STATS_Cnmiss){data.STATS_Cnmiss=0;}
+		else {data.STATS_Cnmiss=STATS_Cnmiss;}
 		
 		var STATS_Locks=ds_map_find_value(map,"STATS_Locks");
 		if is_undefined(STATS_Locks){data.STATS_Locks=0;}

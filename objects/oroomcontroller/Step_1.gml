@@ -220,22 +220,24 @@ with (oBulletSquir)
 }
 
 
-
-// with flower parent
-with (oFlowerParent)
+if (flowerlevel)
 {
-	var flowdistance = point_distance(x,y,oFollowPlayer.x,oFollowPlayer.y);
-	flowdistance=clamp(flowdistance,0,400);
-	if instance_exists(oPlayerGod) {var flowSpd=1;} else {var flowSpd=2;} // actually is duration in seconds
-	
-	if (flowdistance<400)
+	// with flower parent
+	with (oFlowerParent)
 	{
-	image_angle = Wave(-10,10,flowSpd,0,change);
-	visible=true;
-	alpha_level=(400-flowdistance)*0.006;
-	var flowglow=(((400-flowdistance)*0.0012)+0.52)*255;
-	color=make_color_rgb(flowglow,flowglow,flowglow);
-	} else {visible=false;}
+		var flowdistance = point_distance(x,y,oFollowPlayer.x,oFollowPlayer.y);
+		flowdistance=clamp(flowdistance,0,400);
+		if instance_exists(oPlayerGod) {var flowSpd=1;} else {var flowSpd=2;} // actually is duration in seconds
+		
+		if (flowdistance<400)
+		{
+			image_angle = Wave(-10,10,flowSpd,0,change);
+			visible=true;
+			alpha_level=(400-flowdistance)*0.006;
+			var flowglow=(((400-flowdistance)*0.0012)+0.52)*255;	
+			color=make_color_rgb(flowglow,flowglow,flowglow);
+		} else {visible=false;}
+	}
 }
 // birdbase
 with (oBirdBase)

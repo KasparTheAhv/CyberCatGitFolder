@@ -1,4 +1,6 @@
 // +1 to leaps
+colliArray= [oElectro,oWater,oBird,oBat,oButterfly,oBirdPathless,oDog,oFrog,oRat,oSquir,oSnake,oNippy,oHeliLizard,oMonke,oVineShield,oSeal,oWolfKid,oRatEvent];
+
 show_debug_message("attack object created");
 side=(sign(image_xscale));
 var settingsmap = ds_map_secure_load("settings.sav")
@@ -23,9 +25,10 @@ landed=noone;
 image_speed=1;
 jumping=noone;
 lastSide=image_xscale;
+whoIs=noone;
 if !(global.camLooking)
 {
-oFollowPlayer.target=oPlayerAttack;
+	oFollowPlayer.target=oPlayerAttack;
 }
 prevhsp=noone;
 self.depth=depth-12;

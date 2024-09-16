@@ -10,7 +10,8 @@ if (global.camSwap)
 		
 	
 		
-		if point_distance(whotoattack.x,whotoattack.y, xx,yy) < 48 {
+		if point_distance(whotoattack.x,whotoattack.y, xx,yy) < 48 
+		{
 		oFollowPlayer.target=whotoattack;		
 		global.camLooking=true;
 		global.camLookin=whotoattack;

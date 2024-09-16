@@ -34,9 +34,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
+    "name":"sInvis2",
+    "path":"sprites/sInvis2/sInvis2.yy",
+  },
+  "spriteMaskId":{
     "name":"sFlowers",
     "path":"sprites/sFlowers/sFlowers.yy",
   },
-  "spriteMaskId":null,
   "visible":true,
 }

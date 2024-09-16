@@ -38,7 +38,6 @@ if !instance_exists(oPlayerAttack) && (canatk)
 	bulletshield=other.bulletshield;
 	slow=other.slow;
 	image_xscale=other.image_xscale;
-	oFollowPlayer.target=oPlayerAttack;
 	if (sign(image_xscale)==1) {parter=oRoomController.part16;} else {parter=oRoomController.part166;} 
 	}
 	instance_destroy();

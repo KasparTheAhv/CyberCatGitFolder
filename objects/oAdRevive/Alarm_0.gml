@@ -1,5 +1,4 @@
 /// @desc
-
 if (cur_state==adReviveStates.appear)
 {
 	if (timerInd>1)

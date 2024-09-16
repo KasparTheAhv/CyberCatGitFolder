@@ -1,5 +1,6 @@
 /// @desc room controller for multiple instances at the same time
 // Create essential objects in room:
+
 global.leapsthissession=0;
 game_set_speed(global.GFX2, gamespeed_fps);
 if (os_type==os_windows)
@@ -42,8 +43,9 @@ alarm[4]=10;
 // Butterfly spawn trigger
 if instance_exists(oFlower)
 {
+	flowerlevel=true;
 	alarm[9]=irandom_range(200,500);
-}
+} else {flowerlevel=false;}
 
 if (room!=Room0) 
 {

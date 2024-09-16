@@ -41,6 +41,9 @@
     "name":"sElectri",
     "path":"sprites/sElectri/sElectri.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sElectri",
+    "path":"sprites/sElectri/sElectri.yy",
+  },
   "visible":true,
 }

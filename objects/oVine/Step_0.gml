@@ -1,5 +1,4 @@
 /// @desc 
-
 if (start==true)
 {
 	if (madeachild==false)

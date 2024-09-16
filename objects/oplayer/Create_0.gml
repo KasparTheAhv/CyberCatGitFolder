@@ -1,7 +1,6 @@
 grv=0.3;
 hsp = 0;
 HoldX=0;
-PCToimi=true;
 boatWho=noone;
 jumpamp=1;
 aJumpBlock=0;
@@ -33,11 +32,36 @@ landed=true;
 image_speed=walksp*0.1+0.7;
 jumping=false;
 lastSide=image_xscale;
-if instance_exists(oFollowPlayer) && !(global.camLooking)
-{oFollowPlayer.target=oPlayer;} 
+
+// return camera onto oPlayer
+if instance_exists(oFollowPlayer) && !(global.camLooking) {oFollowPlayer.target=oPlayer;} 
 blocker=false;
 canatk=false;
 
+//// Collision array for future
+//colliArray=[
+//oBat,
+//oBulletDart,oBulletMoney,oBulletMonke,oBulletSnow,oBulletSquir,oEgg,
+//oDog,
+//oEggplant,
+//oElectro,
+//oFrogTon,
+//oGarlicBread,
+//oGas,
+//oHeliLizard,
+//oKey,
+//oMushroom,
+//oNippy,
+//oRat,
+//oRatEvent,
+//oSeal,
+//oSnake,
+//oVine,
+//oVineShield,
+//oWater
+//];
+
+//  SKIN CONTROL
 if variable_global_exists("catskinscale")
 {
 catskinscale=global.catskinscale;
@@ -45,13 +69,12 @@ catskinscale=global.catskinscale;
 	
 var settingsmap = ds_map_secure_load("settings.sav");
 var curskin=ds_map_find_value(settingsmap,"skin");	
-// SKIN CONTROL
 if (curskin==1) // default
 {
 	 global.sPlayer=sPlayer; // ns         
 	global.sPlayerA=sPlayerA; // jump
 	global.sPlayerR=sPlayerR; // move
-  global.sPlayerAFK=sPlayerAFK; //afking  
+   global.sPlayerAFK=sPlayerAFK; //afking  
     global.sPlayerD=sPlayerD; // damage
     global.sPlayerF=sPlayerF; // fall  
   global.sPlayerGod=sPlayerGod; //god

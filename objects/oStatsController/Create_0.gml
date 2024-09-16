@@ -20,10 +20,10 @@ oncer2=true;
 
 // promo box
 pro_x1 = rW*0.15;
-	pro_xx = rW*0.5;	
+pro_xx = rW*0.5;	
 pro_x2 = rW*0.85;
 pro_y1 = rH*0.05;
-	pro_yy = rH*0.115;
+pro_yy = rH*0.115;
 pro_y2 = rH*0.18;
 
 // stats columns
@@ -119,15 +119,13 @@ var settingsmap=ds_map_secure_load("settings.sav");
  becomegod=ds_map_find_value(settingsmap,"STATS_God"); // done
  if is_undefined(becomegod) {becomegod=0;}
  
- cnmissed=ds_map_find_value(settingsmap,"STATS_Cnmissed"); // done
+ cnmissed=ds_map_find_value(settingsmap,"STATS_Cnmiss"); // done
  if is_undefined(cnmissed) {cnmissed=0;}
  
  locks=ds_map_find_value(settingsmap,"STATS_Locks"); // done
  if is_undefined(locks) {locks=0;}
 
  //statstext 
- 
- 
 				   statstext="Leaps: "+string(leaps);
 statstext=string(statstext)+"\nLeaps Hit: "+string(leapshit);
 statstext=string(statstext)+"\nKills: "+string(kills);

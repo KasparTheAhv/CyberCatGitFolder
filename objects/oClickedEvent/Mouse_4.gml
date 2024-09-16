@@ -1,6 +1,6 @@
 
 if !instance_exists(oPlayer) {exit;}
-if (point_distance(oPlayer.x,oPlayer.y,x,y)<100)
+if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 {
 	if !(pressed)
 	{

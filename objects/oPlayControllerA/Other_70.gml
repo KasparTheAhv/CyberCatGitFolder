@@ -288,8 +288,8 @@ if (async_load[? "type"] == "GooglePlayServices_SavedGames_Open") {
 		if variable_struct_exists(data,"STATS_God") 
 		{ds_map_set(map,"STATS_God",data.STATS_God);_STATS_God=data.STATS_God;}
 		// STATS_Cn missed
-		if variable_struct_exists(data,"STATS_Cnmissed") 
-		{ds_map_set(map,"STATS_Cnmissed",data.STATS_Cnmissed);_STATS_Cnmissed=data.STATS_Cnmissed;}
+		if variable_struct_exists(data,"STATS_Cnmiss") 
+		{ds_map_set(map,"STATS_Cnmiss",data.STATS_Cnmiss);_STATS_Cnmiss=data.STATS_Cnmiss;}
 		// STATS_Cn missed
 		if variable_struct_exists(data,"STATS_Locks") 
 		{ds_map_set(map,"STATS_Locks",data.STATS_Locks);_STATS_Locks=data.STATS_Locks;}

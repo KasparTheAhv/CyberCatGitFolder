@@ -9,6 +9,7 @@ image_index=0;
 self.x=global.gameWidth*0.5;
 self.y=global.gameHeight*0.5;
 luba=false;
+
 ////// Button location areas x+70 y +50 ,, but center radius 50
 butRadius=50*TargetScale;
 cancelRadius=18*TargetScale;
@@ -31,6 +32,8 @@ timX=x+(84*TargetScale);
 timY=y+(44*TargetScale);
 timerScale=2*TargetScale;
 alarm[0]=60;
+
+// State enums for ad states
 enum adReviveStates
 {
 	appear,
@@ -38,4 +41,5 @@ enum adReviveStates
 	waiting,
 }
 
+// declare current state
 cur_state=adReviveStates.appear;
