@@ -1,9 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
+
 if (joonista)
 {
-draw_cool_healthbar();
-draw_cool_cnbar();
+	draw_cool_healthbar();
+	draw_cool_cnbar();
 }
 
 if (joonistatasks)

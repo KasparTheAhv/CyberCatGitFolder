@@ -1,7 +1,7 @@
 /// @desc urn lid
 
-if (vsp<0) {vsp+=0.15;alarm[0]=1;
-	
+if (vsp<0) {
+	vsp+=0.15;alarm[0]=1;
 	image_angle+=2;
 	xx+=vsp*1.2;
 	yy+=vsp;

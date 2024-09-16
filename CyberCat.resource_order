@@ -517,6 +517,7 @@
     {"name":"string_height_scribble","order":2,"path":"scripts/string_height_scribble/string_height_scribble.yy",},
     {"name":"string_width_scribble_ext","order":5,"path":"scripts/string_width_scribble_ext/string_width_scribble_ext.yy",},
     {"name":"string_width_scribble","order":4,"path":"scripts/string_width_scribble/string_width_scribble.yy",},
+    {"name":"SummonTutBook","order":31,"path":"scripts/SummonTutBook/SummonTutBook.yy",},
     {"name":"TokenChecker","order":19,"path":"scripts/TokenChecker/TokenChecker.yy",},
     {"name":"TokenCheckerNoNoti","order":20,"path":"scripts/TokenCheckerNoNoti/TokenCheckerNoNoti.yy",},
     {"name":"vstick_check_pressed","order":1,"path":"scripts/vstick_check_pressed/vstick_check_pressed.yy",},

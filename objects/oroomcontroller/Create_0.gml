@@ -37,6 +37,7 @@ PrevDrawStateAK=noone;
 PrevDrawStatePA=noone;
 PrevDrawStateGU=noone;
 PrevDrawStateJMP=noone;
+PrevDrawStateGUtasks=noone;
 global.reading=false;
 global.ongui=false;
 alarm[4]=10;

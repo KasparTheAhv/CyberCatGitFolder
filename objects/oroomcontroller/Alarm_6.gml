@@ -1,4 +1,4 @@
-///@desc global.reading
+///@desc global.reading back to false
 global.reading=false;
 if (PrevDrawStateVS1!=noone) {with(oVStick){if (stick_id==1){joonista=oRoomController.PrevDrawStateVS1;}}}
 if (PrevDrawStateVS2!=noone) {with(oVStick){if (stick_id==2){joonista=oRoomController.PrevDrawStateVS2;}}}

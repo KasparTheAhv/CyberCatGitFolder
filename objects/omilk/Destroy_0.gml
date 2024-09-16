@@ -1,4 +1,4 @@
-/// @desc
+/// @desc Room23 task special
 if (room==Room23)
 {
 	if (instance_number(oMilk)==1)

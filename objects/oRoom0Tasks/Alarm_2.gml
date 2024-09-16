@@ -6,6 +6,4 @@ with(oFollowPlayer)
 	var lesgo=true;	
 	}
 }
-
-if (lesgo) && (notepressed) {alarm[1]=5;}
-else {alarm[2]=2;}
+if (lesgo) && (notepressed) {alarm[1]=5;} else {alarm[2]=2;}

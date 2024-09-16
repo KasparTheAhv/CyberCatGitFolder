@@ -580,6 +580,7 @@
     {"id":{"name":"string_height_scribble","path":"scripts/string_height_scribble/string_height_scribble.yy",},},
     {"id":{"name":"string_width_scribble_ext","path":"scripts/string_width_scribble_ext/string_width_scribble_ext.yy",},},
     {"id":{"name":"string_width_scribble","path":"scripts/string_width_scribble/string_width_scribble.yy",},},
+    {"id":{"name":"SummonTutBook","path":"scripts/SummonTutBook/SummonTutBook.yy",},},
     {"id":{"name":"TokenChecker","path":"scripts/TokenChecker/TokenChecker.yy",},},
     {"id":{"name":"TokenCheckerNoNoti","path":"scripts/TokenCheckerNoNoti/TokenCheckerNoNoti.yy",},},
     {"id":{"name":"vstick_check_pressed","path":"scripts/vstick_check_pressed/vstick_check_pressed.yy",},},

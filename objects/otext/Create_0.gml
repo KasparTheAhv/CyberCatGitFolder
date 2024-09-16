@@ -1,53 +1,4 @@
-draw_set_font(fOrbitronNote);
-with(oRoomController)
-{
-alarm[6]=-1;
-		if !(global.reading)
-		{
-			// set states to noone as in unknown
-			PrevDrawStateVS1=noone;
-			PrevDrawStateVS2=noone;
-			PrevDrawStateAK=noone;
-			PrevDrawStatePA=noone;
-			PrevDrawStateGU=noone;
-			// get the states
-			with(oVStick)
-			{
-				if (stick_id==1) {other.PrevDrawStateVS1=self.joonista;}
-				if (stick_id==2) {other.PrevDrawStateVS2=self.joonista;}
-				self.joonista=false;
-			}
-			with(oAttackKey)
-			{
-			other.PrevDrawStateAK=self.joonista;
-			self.joonista=false;
-			}
-			with(oJumpKey)
-			{
-			other.PrevDrawStateJMP=self.joonista;
-			self.joonista=false;
-			}
-			with(oPause)
-			{
-			instance_destroy(oPause);
-			}
-			with(oMagnify)
-			{
-			instance_destroy(oMagnify);
-			}
-			with(oBook)
-			{
-			if !instance_exists(oUnlockBook) {instance_destroy(oBook); }
-			}
-			with(oGUIBAR)
-			{
-			other.PrevDrawStateGU=self.joonista;
-			other.PrevDrawStateGUtasks=self.joonistatasks;
-			self.joonista=false;
-			self.joonistatasks=false;
-			}
-	}
-}
+// Set variables
 cancelendchanges=false;
 global.reading=true;
 spd=2;
@@ -72,3 +23,62 @@ alarm[0]=1;
 rW=room_width;
 rH=room_height;
 
+// Set proper font for note
+draw_set_font(fOrbitronNote);
+
+// Call this from oRoomController
+with(oRoomController)
+{
+alarm[6]=-1;
+	// If user isn't reading a note
+	if !(global.reading)
+	{
+		// Set initial drawing states to noone in gui drawing objects
+		PrevDrawStateVS1=noone;
+		PrevDrawStateVS2=noone;
+		PrevDrawStateAK=noone;
+		PrevDrawStatePA=noone;
+		PrevDrawStateGU=noone;
+		PrevDrawStateJMP=noone;
+		
+		// Cet the current states from them
+		with(oVStick)
+		{
+			if (stick_id==1) {other.PrevDrawStateVS1=self.joonista;}
+			if (stick_id==2) {other.PrevDrawStateVS2=self.joonista;}
+			self.joonista=false;
+		}
+		with(oAttackKey)
+		{
+			other.PrevDrawStateAK=self.joonista;
+			self.joonista=false;
+		}
+		with(oJumpKey)
+		{
+			other.PrevDrawStateJMP=self.joonista;
+			self.joonista=false;
+		}
+		with(oGUIBAR)
+		{
+			other.PrevDrawStateGU=self.joonista;
+			other.PrevDrawStateGUtasks=self.joonistatasks;
+			self.joonista=false;
+			self.joonistatasks=false;
+		}
+		
+		// Destroy these gui items entirely:
+		with(oPause)
+		{
+			instance_destroy(oPause);
+		}
+		with(oMagnify)
+		{
+			instance_destroy(oMagnify);
+		}
+		with(oBook)
+		{
+			if !instance_exists(oUnlockBook) {instance_destroy(oBook); }
+		}
+
+	}
+}

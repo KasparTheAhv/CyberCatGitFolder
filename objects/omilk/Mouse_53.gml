@@ -1,67 +1,42 @@
+// if no oplayer objext, exit early
 if !instance_exists(oPlayer) {exit;}
 
+// If close enough to drink and mouse click is near enough to milk
 if  (distance_to_object(oPlayer)<30) && (point_distance(mouse_x,mouse_y,x,y)<25)
-{
-	if !(clicked)
+{	
+	// depending on the milk sprite, choose which drinking sprite index
+	if (sprite_index==sMilkCup)	 {var ind=1;} else { var ind=0;}
+	
+	// Run withing cat
+	with(oPlayer)
 	{
-		if !(instance_exists(oPlayerGod))
-		{
-			if (instance_exists(oPlayer))
-			{
-				if (sprite_index==sMilkCup)	 {var ind=1;} else { var ind=0;}
-				clicked=true;
-				with(oPlayer)
-				{
-				var scale=global.catskinscale;	
-				with(instance_create_layer(x,y,"Characters",oPlayerMilk))	
-					{
-					milkind=ind;
-					image_xscale=scale;	
-					xx=x+(13*image_xscale);
-					yy=y-3;
-					algnexx=self.xx;
-					algneyy=self.yy;
-					}
-				instance_destroy();
-				}
-				instance_destroy();
-				
-			}
-		}
+		// get current skinscale
+		var scale=global.catskinscale;	
 		
-		if (room==Room0)
+		// Create milk drinking cat with the according image index and scale
+		with(instance_create_layer(x,y,"Characters",oPlayerMilk))	
 		{
-			if !(givenmilkbook)
-			{
-				givenmilkbook=true;
-				xx = self.x;
-				yy = self.y;
-				
-				var cl = camera_get_view_x(view_camera[0])
-				var ct = camera_get_view_y(view_camera[0])
-				 
-				var off_x = xx - cl // x is the normal x position
-				var off_y = yy - ct // y is the normal y position
-				
-				// convert to gui
-				var off_x_percent = off_x / camera_get_view_width(view_camera[0])
-				var off_y_percent = off_y / camera_get_view_height(view_camera[0])
-				
-				xx = off_x_percent * display_get_gui_width();
-				yy = off_y_percent * display_get_gui_height();
-				oGUIBAR.joonistatasks=true;
-				with(instance_create_layer(xx,yy,"Particles",oUnlockBook))
-				{
-				whatbook=4;
-				}
-			
-				if (room==Room0)
-				{
-				oGUIBAR.task3="+ Task done!";	
-				oGUIBAR.task3col="[#4CFF4C]";
-				}
-			
-			}	
-		}	
+			milkind=ind;
+			image_xscale=scale;	
+			xx=x+(13*image_xscale);
+			yy=y-3;
+			algnexx=self.xx;
+			algneyy=self.yy;
+		}
+		// destroy the player object
+		instance_destroy();
+	}
+	// destroy milk itself
+	instance_destroy();		
+	
+	// Give milk book if conditions are right
+	if (room==Room0) && !(givenmilkbook)
+	{
+		givenmilkbook=true;
+		SummonTutBook(oPlayerMilk,4);
+		oGUIBAR.joonistatasks=true;
+		// Change task box info
+		oGUIBAR.task3="+ Task done!";	
+		oGUIBAR.task3col="[#4CFF4C]";		
 	}	
 }

@@ -1,8 +1,9 @@
-/// @desc what sound for text
-if (whasound<418) {whatsound=choose(snSign2,snSign3,snSign5);} // tavalised
-if (whasound>=418)	 {whatsound=snSign4;} //lühike jones
+/// @desc what sound for text based on whasound nr
+if (whasound<418)  {whatsound=choose(snSign2,snSign3,snSign5);} // tavalised
+if (whasound>=418) {whatsound=snSign4;} //lühike jones
 if (whasound==420) {whatsound=snJoonas;} //full jones
-if (whasound>420) {whatsound=choose(snSign2,snSign3,snSign5);} // tavalised
+if (whasound>420)  {whatsound=choose(snSign2,snSign3,snSign5);} // tavalised
+
 // SPECIAL
 if (whasound==501) {whatsound=snBird;} 
 if (whasound==502) {whatsound=snBirdBoss;} 

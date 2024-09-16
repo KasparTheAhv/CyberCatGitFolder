@@ -3,6 +3,15 @@ if (instance_exists(oAdRevive)) {exit;}
 if (joonista==false) {exit;}
 if (image_index==3) {exit;}
 
+if (room==Room0)
+{
+	with(oClickHere)
+	{
+		if (guiclick) {instance_destroy(self);}
+	}
+	instance_destroy(oUnlockBook);
+}
+
 if instance_exists(oLvlEnd)
 {
 startingdate=oLvlEnd.startingdate;	
@@ -80,7 +89,7 @@ if instance_exists(oSkillBook)
 	exit;
 }	
 
-
+if (global.booktutsequence==3) {global.booktutsequence=4;}
 if (global.booktutsequence==2) {exit;}
 if (global.booktutsequence==1) {exit;}
 
@@ -90,15 +99,6 @@ self.x=round(testGuiW*0.85);
 instance_destroy(oBookController);
 instance_destroy(oBooks);
 instance_destroy(oSkillBook);
-instance_destroy(oGUSlider);
-instance_destroy(oMSSlider);
-instance_destroy(oAKSlider);
-instance_destroy(oSNSlider);
-instance_destroy(oConfigureJS);
-instance_destroy(oPlayerPauseAni);
-instance_destroy(oPaskinF);
-instance_destroy(oPaskinB);
-instance_destroy(oPamenu);
 instance_activate_all();
 
 alarm[3]=1;

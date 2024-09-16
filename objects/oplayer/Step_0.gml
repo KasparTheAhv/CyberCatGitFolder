@@ -5,35 +5,36 @@ var PCMove=false;
 // pcconversion for movement
 if (os_type!=os_android)
 {
-	if !(global.reading)
+	//if !(global.reading)
+	if instance_exists(oVStick) && (oVStick.toimi)
 	{
-	// Left and right
-	if (keyboard_check(ord("A"))) {var PCMove=true;var moveleft=true;} else {var moveleft=false;}
-	if (keyboard_check(ord("D"))) {var PCMove=true;var moveright=true;} else {var moveright=false;}
-	
-	if !(moveleft) && !(moveright) {PCxaxis=0;}
-	if (moveleft) && (moveright) {PCxaxis=0;} else 
-	{
-	if (moveleft) {if (PCxaxis>-1) {PCxaxis=-1;}}
-	if (moveright) {if (PCxaxis<1) {PCxaxis=1;}}
-	}
-
-	// up and down
-	if (keyboard_check(ord("W"))) or (keyboard_check(vk_space)) {var PCMove=true;var moveup=true;} else {var moveup=false;}
-	if (keyboard_check(ord("S"))) {var PCMove=true;var movedown=true;} else {var movedown=false;}
-	
-	if !(moveup) && !(movedown) {PCyaxis=0;} 	
-	if (moveup) && (movedown)	{PCyaxis=0;} else
-	{
-		if (moveup) {if (PCyaxis>-1) {PCyaxis=-1;}}
-		if (movedown){if (PCyaxis<1) {PCyaxis=1;}}	
-	}
-	
-	var xaxis=PCxaxis;
-	var yaxis=PCyaxis;
+		// Left and right
+		if (keyboard_check(ord("A"))) {var PCMove=true;var moveleft=true;} else {var moveleft=false;}
+		if (keyboard_check(ord("D"))) {var PCMove=true;var moveright=true;} else {var moveright=false;}
+		
+		if !(moveleft) && !(moveright) {PCxaxis=0;}
+		if (moveleft) && (moveright) {PCxaxis=0;} else 
+		{
+		if (moveleft) {if (PCxaxis>-1) {PCxaxis=-1;}}
+		if (moveright) {if (PCxaxis<1) {PCxaxis=1;}}
+		}
+		
+		// up and down
+		if (keyboard_check(ord("W"))) or (keyboard_check(vk_space)) {var PCMove=true;var moveup=true;} else {var moveup=false;}
+		if (keyboard_check(ord("S"))) {var PCMove=true;var movedown=true;} else {var movedown=false;}
+		
+		if !(moveup) && !(movedown) {PCyaxis=0;} 	
+		if (moveup) && (movedown)	{PCyaxis=0;} else
+		{
+			if (moveup) {if (PCyaxis>-1) {PCyaxis=-1;}}
+			if (movedown){if (PCyaxis<1) {PCyaxis=1;}}	
+		}
+		
+		var xaxis=PCxaxis;
+		var yaxis=PCyaxis;
 	} else {
-	var xaxis=0;
-	var yaxis=0;	
+		var xaxis=0;
+		var yaxis=0;	
 	}
 // Android axis
 } else {
