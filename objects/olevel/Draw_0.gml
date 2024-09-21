@@ -1,6 +1,4 @@
 // vajalik et tile ilusti joonistaks ( dunno why tbh )
-draw_set_alpha(1);
-draw_set_color(c_white);
 
 if (levelnr==999)
 {

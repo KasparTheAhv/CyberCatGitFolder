@@ -1,6 +1,6 @@
 /// @desc oLevel creation
 var settingsmap=ds_map_secure_load("settings.sav");
-var maxlvl=ds_map_find_value(settingsmap,"maxlvl");
+
 // allowdraw
 allowdraw=true;
 
@@ -80,6 +80,8 @@ for (var i=1; i<33;i++) // i<x x peab olema ruumide arv + 1 . Not to forget et e
 {
 	with(instance_create_layer(-100,-100,"Instances",oLevel))	
 	{
+		Themaxlvl=other.maxlvl;
+		maxlvl=other.maxlvl;
 		image_xscale=levelButtonScale;
 		image_yscale=levelButtonScale;
 		picscale=picScale;
@@ -88,12 +90,14 @@ for (var i=1; i<33;i++) // i<x x peab olema ruumide arv + 1 . Not to forget et e
 		slotX2=	(20*levelButtonScale)+self.x;
 		image_alpha=1;
 		levelnr=i+((other.chapter-1)*32);
-		alarm[0]=2;
+		alarm[0]=1;
 	}
 }
 
 with(instance_create_layer(-100,-100,"Instances",oLevel))
 {
+	Themaxlvl=other.maxlvl;
+	maxlvl=other.maxlvl;
 	image_xscale=levelButtonScale;
 	image_yscale=levelButtonScale;
 	picscale=picScale;
@@ -102,5 +106,5 @@ with(instance_create_layer(-100,-100,"Instances",oLevel))
 	slotX2=	(20*levelButtonScale)+self.x;
 	image_alpha=1;
 	levelnr=999;
-	alarm[0]=2;
+	alarm[0]=1;
 }

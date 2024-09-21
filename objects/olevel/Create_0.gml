@@ -2,8 +2,7 @@ image_speed=0;
 image_index=1;
 image_alpha=1;
 drawName=false;
-var settingsmap=ds_map_secure_load("settings.sav");
-Themaxlvl=ds_map_find_value(settingsmap,"maxlvl");
+
 unlocked=false;
 levelnr=noone;
 whatvar=noone;

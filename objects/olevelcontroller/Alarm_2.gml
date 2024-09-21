@@ -4,10 +4,10 @@ show_debug_message("Settings skins to 0 , and getting tokens according to 100% r
 // skin reset to 0
 for (var i = 0; i < 50; i++)
 {
-var settingsmap= ds_map_secure_load("settings.sav");
-var whatkey = "Skin"+string(i)+"Bought";
-ds_map_set(settingsmap,whatkey,0);
-ds_map_secure_save(settingsmap,"settings.sav")
+	var settingsmap= ds_map_secure_load("settings.sav");
+	var whatkey = "Skin"+string(i)+"Bought";
+	ds_map_set(settingsmap,whatkey,0);
+	ds_map_secure_save(settingsmap,"settings.sav")
 }
 
 // get tokens from 100% rooms

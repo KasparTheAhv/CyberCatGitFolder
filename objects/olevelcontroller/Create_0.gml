@@ -20,7 +20,7 @@ SkinReload(false);
 
 		
 // Token checker -  Do first and only token check
-var settingsmap=ds_map_secure_load("settings.sav");
+settingsmap=ds_map_secure_load("settings.sav");
 var tokenscannedVer6 = ds_map_find_value(settingsmap,"tokenscannedVer6");
 if (tokenscannedVer6==0)
 {
@@ -35,7 +35,7 @@ if (tokenscannedVer6==0)
 	{
 		var name = "Room"+string(i);	
 		var roomname=asset_get_index(name);
-		var settingsmap=ds_map_secure_load("settings.sav");
+		settingsmap=ds_map_secure_load("settings.sav");
 		ds_map_set(settingsmap,string(name)+"Token",0);
 		ds_map_secure_save(settingsmap,"settings.sav");
 		var newstatus= ds_map_find_value(settingsmap,string(roomname)+"Token");
@@ -47,7 +47,7 @@ curskin=ds_map_find_value(settingsmap,"skin");
 selectedskin=curskin;
 global.skin=selectedskin;
 
-
+maxlvl=ds_map_find_value(settingsmap,"maxlvl");
 //block cordinates
 lockw=gW*0.3+64;
 lockh=64;
@@ -81,4 +81,4 @@ block7y=gH*0.8-32;
 // Chapter selection
 chapter=1;
 // Generate level list:
-alarm[1]=2;
+alarm[1]=1;

@@ -1,7 +1,6 @@
 ///@desc LEVEL / DISCOVERY SETTING
 //calculate positioning
-var settingsmap=ds_map_secure_load("settings.sav");
-var maxlvl=ds_map_find_value(settingsmap,"maxlvl");
+
 
 
 
