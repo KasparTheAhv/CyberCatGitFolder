@@ -1,6 +1,5 @@
 // Set variables
 cancelendchanges=false;
-global.reading=true;
 spd=2;
 times=1;
 letters = 0;
@@ -10,7 +9,7 @@ text_current = "";
 w = 0;
 h = 0;
 extraheight=40;
-border = 10;
+border = 15;
 onetimer=true;
 oki=0;
 target=noone;
@@ -23,6 +22,10 @@ alarm[0]=1;
 rW=room_width;
 rH=room_height;
 
+//SCRIBBLE
+color="[#FFFFFF]";
+textscale="[scale,"+string(texterscale*0.65)+"]";
+
 // Set proper font for note
 draw_set_font(fOrbitronNote);
 
@@ -33,6 +36,7 @@ alarm[6]=-1;
 	// If user isn't reading a note
 	if !(global.reading)
 	{
+		global.reading=true;
 		// Set initial drawing states to noone in gui drawing objects
 		PrevDrawStateVS1=noone;
 		PrevDrawStateVS2=noone;

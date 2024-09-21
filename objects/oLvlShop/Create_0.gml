@@ -9,7 +9,6 @@ image_xscale=levelButtonScale;
 image_yscale=levelButtonScale
 leaderOpen=false;
 leaderTime=0;
-
 self.x=800*0.05;
-self.y=400*0.3;
+self.y=global.menuH*0.3;
 draw_self();

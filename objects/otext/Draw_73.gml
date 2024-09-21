@@ -12,7 +12,15 @@ draw_roundrect_ext(x-halfw-border,y-h-(border*2),x+halfw+border,y,20,20,true);
 
 /// DRAW TEXT
 DrawSetText(c_white,fOrbitronNote,fa_center,fa_top);
-draw_text_transformed(x,y-h-border,text_current,texterscale,texterscale,0);
+
+
+
+scribble(string(textscale)+"[fOrbitronOut][fa_center]"+string(text_current)).draw(x,y-h-border);
+//draw_text_transformed(x,y-h-border,text_current,texterscale,texterscale,0);
+
+
+
+
 draw_set_alpha(1);
 if (skiprdy)
 {

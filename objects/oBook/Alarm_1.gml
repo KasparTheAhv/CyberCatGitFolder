@@ -58,6 +58,8 @@ if !(state)
 {
 state=true;
 self.x=round(testGuiW*0.95);
+algnex=self.x;
+
 instance_destroy(oGUIBAR);
 instance_deactivate_all(true);
 instance_activate_object(oRoomController);
@@ -96,6 +98,7 @@ if (global.booktutsequence==1) {exit;}
 	
 state=false;
 self.x=round(testGuiW*0.85);
+algnex=self.x;
 instance_destroy(oBookController);
 instance_destroy(oBooks);
 instance_destroy(oSkillBook);

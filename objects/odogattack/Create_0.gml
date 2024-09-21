@@ -31,3 +31,4 @@ alarm[0]=80;
 alarm[1]=10;
 startx=noone;
 starty=noone;
+if instance_exists(oPlayerGod) {image_blend=c_aqua;} else {image_blend=c_purple;}

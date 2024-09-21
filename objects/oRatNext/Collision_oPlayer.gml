@@ -1,14 +1,14 @@
 if (blocker==false)
 {
-blocker=true;
-var who=instance_nearest(x,y,oRatBase);
-
-with (instance_create_layer(who.x,who.y,"Characters",oRat))
-{
-hsp=2;
-image_xscale=0.75;
-myside=1;
-}
+	blocker=true;
+	var who=instance_nearest(x,y,oRatBase);
+	
+	with (instance_create_layer(who.x,who.y,"Characters",oRat))
+	{
+	hsp=2;
+	image_xscale=0.75;
+	myside=1;
+	}
 	follow = instance_nearest(x,y,oRat);
 		with (oPlayer)
 			{

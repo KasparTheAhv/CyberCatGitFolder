@@ -11,11 +11,15 @@ with(oRoomController) {alarm[6]=5;}
 if instance_exists(oRoom0Tasks) {oRoom0Tasks.alarm[2]=1;}
 
 // Create a tutorial book at players position that flies towards book collection
-if (room==Room1) && instance_exists(oRatEvent)
+if (room==Room1) && instance_exists(oRatEvent) && (oRoomController.room1bookgiven==false)
 {	
+	if (self.x>400)
+	{
+	oRoomController.room1bookgiven=true;
 	// Summons tutorial book
 	SummonTutBook(oPlayer,5);
 	instance_destroy();			
+	}
 }
 
 // If note text is the below string, spawn a tutorial book if it hasnt already been give during this session

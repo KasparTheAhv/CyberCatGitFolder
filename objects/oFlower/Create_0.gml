@@ -1,7 +1,8 @@
 ///// Create Event /////
 
 // picks a random subimage
-flower_index=irandom_range(0,image_number-1); 
+sprite_get_number(sFlowers)
+flower_index=irandom_range(0,sprite_get_number(sFlowers)-1); 
 
 // Distance from player
 var distance = distance_to_object(oFollowPlayer); 

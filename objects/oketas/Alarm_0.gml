@@ -1,7 +1,15 @@
 /// @desc Kui jumalaks VISUAL UPDATE
 // You can write your code in this editor
 	if instance_exists(oGUIBAR){oGUIBAR.varvi=true;}
-	
+if layer_exists("Houses")
+{	
+	var lay_id = layer_get_id("Houses");
+	var tile_id = layer_tilemap_get_id(lay_id);
+	if (tilemap_get_tileset(tile_id) != TileHousesGod)
+	{
+	    tilemap_tileset(tile_id, TileHousesGod);
+	}
+}	
 if layer_exists("Science")
 {	
 	var lay_id = layer_get_id("Science");

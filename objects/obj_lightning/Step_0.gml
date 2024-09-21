@@ -1,4 +1,4 @@
-
+///@desc lightning effect itself
 // In the Step Event of obj_lightning
 if !(started) {exit;}
 alpha = 1 - (lightning_timer / lightning_duration); // Decrease alpha over time

@@ -69,7 +69,8 @@ temp_cam_h = cam_default_h;
 alcam=false;
 joonistatasks=true; if (room=Room0) {joonistatasks=false;}
 // Room Task List
-task1="";task2="";task3="";
+tasks=3;
+task1=" ";task2="";task3="   ";
 if (room==Room1Tester){tasks=1;task1="- Test room"; }
 if (room==Room0){tasks=3;task1="- Pick up key";task2="";task3="";}
 if (room==Room1){tasks=2;task1="- Cross the bridge";task2="- Defeat tutorial rat";}

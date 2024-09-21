@@ -168,52 +168,56 @@ if place_meeting(x,y,oPlayer)
 		if (t1) && (t2) && (t3)
 		{
 		// room specific endings for ads unlocked
-	
 	var settingsmap=ds_map_secure_load("settings.sav");
 	var curmaxlvl = ds_map_find_value(settingsmap,"maxlvl");
 	if (room==Room3)
 			{
 			if (curmaxlvl<4) {
 			ds_map_set(settingsmap,"maxlvl",4);
-				ds_map_secure_save(settingsmap,"settings.sav");}
+			ds_map_secure_save(settingsmap,"settings.sav");}
 			}
 	if (room==Room7)
 			{
 			if (curmaxlvl<8) {
 			ds_map_set(settingsmap,"maxlvl",8);
-				ds_map_secure_save(settingsmap,"settings.sav");}
+			ds_map_secure_save(settingsmap,"settings.sav");}
 			}		
 	if (room==Room11)
 			{
 			if (curmaxlvl<12) {
 			ds_map_set(settingsmap,"maxlvl",12);
-				ds_map_secure_save(settingsmap,"settings.sav");}
+			ds_map_secure_save(settingsmap,"settings.sav");}
 			}		
 	if (room==Room15)
 			{
 			if (curmaxlvl<16) {
 			ds_map_set(settingsmap,"maxlvl",16);
-				ds_map_secure_save(settingsmap,"settings.sav");}
+			ds_map_secure_save(settingsmap,"settings.sav");}
 			}		
 	if (room==Room19)
 			{
-				if (curmaxlvl<20) {
+			if (curmaxlvl<20) {
 			ds_map_set(settingsmap,"maxlvl",20);
-				ds_map_secure_save(settingsmap,"settings.sav");}
+			ds_map_secure_save(settingsmap,"settings.sav");}
 			}	
 if (room==Room23)
 		{
-				if (curmaxlvl<24) {
+			if (curmaxlvl<24) {
 			ds_map_set(settingsmap,"maxlvl",24);
-				ds_map_secure_save(settingsmap,"settings.sav");}
+			ds_map_secure_save(settingsmap,"settings.sav");}
 		}		
 if (room==Room27)
 		{
-					if (curmaxlvl<28) {
+			if (curmaxlvl<28) {
 			ds_map_set(settingsmap,"maxlvl",28);
-				ds_map_secure_save(settingsmap,"settings.sav");};
+			ds_map_secure_save(settingsmap,"settings.sav");};
 		}	
-
+if (room==Room31)
+		{
+			if (curmaxlvl<32) {
+			ds_map_set(settingsmap,"maxlvl",32);
+			ds_map_secure_save(settingsmap,"settings.sav");};
+		}	
 		// FASTEST TIME CALC 
 		show_debug_message("Hasexited: "+string(hasexited));
 		show_debug_message("score uploaded already: "+string(scoreuploaded));
@@ -223,17 +227,16 @@ if (room==Room27)
 		{
 			
 			scoreuploaded=true;
-				var startingdate=self.startingdate;
-				var enddate=date_current_datetime(); // first time
-				var paused=oPause.secondspaused;
-				var sectotal= date_second_span(startingdate,enddate);
-				var total=sectotal-paused;
-				
-				var settingsmap=ds_map_secure_load("settings.sav");
-				var whatroom=room_get_name(room);	
-				var key=string(whatroom)+"totaltime";
-				var lasttotal=ds_map_find_value(settingsmap,key);
-				if is_undefined(lasttotal) or (total<lasttotal) 
+			var startingdate=self.startingdate;
+			var enddate=date_current_datetime(); // first time
+			var paused=oPause.secondspaused;
+			var sectotal= date_second_span(startingdate,enddate);
+			var total=sectotal-paused;
+			var settingsmap=ds_map_secure_load("settings.sav");
+			var whatroom=room_get_name(room);	
+			var key=string(whatroom)+"totaltime";
+			var lasttotal=ds_map_find_value(settingsmap,key);
+			if is_undefined(lasttotal) or (total<lasttotal) 
 			// var minutes = floor(sectotal/60)
 			// var seconds = round(sectotal % 60);
 				{
@@ -249,9 +252,10 @@ if (room==Room27)
 		with (oMusicController) {audio_stop_sound(sound_id);}
 		with (oTransition) {SlideTransition(TRANS_MODE.GOTO,target);exit;}
 		} else {
-			// erandid. mis ruumi puhul ei tule ending texti
+			// erandid. mis ruumi puhul ei tule "you havent finished yet text
 			if (room==Room19) {exit;}
 			
+			// text et pole veel lõpetanud oma taske
 			if !(instance_exists(oText)) 
 			{
 				if (notice) 

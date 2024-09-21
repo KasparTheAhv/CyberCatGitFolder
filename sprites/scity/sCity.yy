@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sCity",
   "bboxMode":0,
-  "bbox_bottom":1372,
+  "bbox_bottom":1439,
   "bbox_left":0,
   "bbox_right":511,
   "bbox_top":16,

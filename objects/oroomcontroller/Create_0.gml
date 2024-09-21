@@ -1,30 +1,18 @@
 /// @desc room controller for multiple instances at the same time
-// Create essential objects in room:
 
-global.leapsthissession=0;
+// set game speed and collect it into a variable
 game_set_speed(global.GFX2, gamespeed_fps);
-if (os_type==os_windows)
-{
-	
-}
-canrevive=true;
 
-if (global.GFX3==0)
-{
-	layer_enable_fx("Leaves",false);
-}
-GFX1=global.GFX1;
 
-if !(instance_exists(oMusicController))
-{
-instance_create_layer(x,y,"BefEdge",oMusicController);
-}
+///// Variables
 room_speeder=game_get_speed(gamespeed_fps);
-
-view_visible[1]=false;
-
-
-alarm[11]=600;
+global.leapsthissession=0;
+GFX1=global.GFX1;
+swiper=0;
+swipdir=true;
+timermod=1;
+canrevive=true;
+room1bookgiven=false;
 room2bookgiven=false;
 room9bookgiven=false;
 room16eggTriggered=false;
@@ -38,9 +26,12 @@ PrevDrawStatePA=noone;
 PrevDrawStateGU=noone;
 PrevDrawStateJMP=noone;
 PrevDrawStateGUtasks=noone;
+tmap = layer_tilemap_get_id("Collision");
 global.reading=false;
 global.ongui=false;
-alarm[4]=10;
+view_visible[1]=false;
+
+
 // Butterfly spawn trigger
 if instance_exists(oFlower)
 {
@@ -48,25 +39,25 @@ if instance_exists(oFlower)
 	alarm[9]=irandom_range(200,500);
 } else {flowerlevel=false;}
 
+///// CREATE GUI ELEMENTS
 if (room!=Room0) 
 {
+	
 	if (room!=Room4) && (room!=Room6)
 	{
 	instance_create_layer(x,y,"Characters",oAttackKey);
 	}
-	
 	instance_create_layer(x,y,"Particles",oPause);
 	instance_create_layer(x,y,"Particles",oBook);
-	instance_create_layer(x,y,"Particles",oMagnify);
 	instance_create_layer(x,y,"Characters",oGUIBAR);
+	instance_create_layer(x,y,"Particles",oMagnify);
 	global.ongui=true;
-}
-if (room==Room0) 
-{
+	
+} else {
+	
 	global.booktutsequence=1;
 	instance_create_layer(x,y,"Particles",oPause);
 	instance_create_layer(x,y,"Particles",oBook);
-	instance_create_layer(x,y,"Particles",oMagnify);
 	if !instance_exists(oGUIBAR)
 	{
 		with(instance_create_layer(x,y,"Characters",oGUIBAR))
@@ -74,69 +65,93 @@ if (room==Room0)
 		joonista=false;	
 		}
 	}
+	instance_create_layer(x,y,"Particles",oMagnify);
 	with(oPause) {joonista=false;}
 	with(oMagnify) {joonista=false;}
 	with(oBook) {joonista=false;}
+	
 }
+
+// Create the player followin object
 instance_create_layer(self.x,self.y,"Characters",oFollowPlayer);
+
 // show jump key
+if (global.jumpkey==1) {instance_create_layer(x,y,"Particles",oJumpKey);	}
 
-if (global.jumpkey==1)
-{
-instance_create_layer(x,y,"Particles",oJumpKey);	
-}
+// allow leave layer effect
+if (global.GFX3==0){layer_enable_fx("Leaves",false);}
 
-//
+// make a music controller if one doesnt exist
+if !(instance_exists(oMusicController)){instance_create_layer(x,y,"BefEdge",oMusicController);}
+
+
+// Scale the cloud layer
 if layer_exists("Backgrounds")
 {
-var cloudlay = layer_background_get_id("Backgrounds");
-layer_background_xscale(cloudlay, 0.5);
-layer_background_yscale(cloudlay, 0.5);
+	var cloudlay = layer_background_get_id("Backgrounds");
+	layer_background_xscale(cloudlay, 0.5);
+	layer_background_yscale(cloudlay, 0.5);
 }
-tmap = layer_tilemap_get_id("Collision");
-// catnip movement
-swiper=0;
-swipdir=true;
-alarm[0]=1;
-// deadmouse fade
-alarm[1]=1;
-// bird fade
-alarm[2]=1;
-// squirrel timermod
-timermod=1;
-// Lvl unlocker
-if (room!=Room1Tester) 
-{
 
-var myroom=room_get_name(room);
-myroom = string_delete(myroom, 1, 4);
-myroom=real(myroom); // room nr
-if (room!=Room0) 
+// Create thunder layer
+if !layer_exists("CheckerBoard")
 {
-	
-	if instance_exists(oPlayControllerA) && (global.GoogleConnected)
-	{
-	oPlayControllerA.alarm[2]=5;
-	}
-	
-	var settingsmap=ds_map_secure_load("settings.sav");
-	maxlvl=ds_map_find_value(settingsmap,"maxlvl");
-	if is_undefined(maxlvl) {maxlvl=0;}
-	
-	
-	if (maxlvl<myroom) {
-	ds_map_set(settingsmap,"maxlvl",myroom);
-	ds_map_secure_save(settingsmap,"settings.sav");
-	}
+	show_debug_message("checker not existing, creating one")
+	var starDep = layer_get_depth("StarFader");
+	show_debug_message("starfaders depth: "+string(starDep));
+	var newDep = starDep - 50;
+	thunderlay_id = layer_create(newDep,"CheckerBoard");
+	thunderback_id = layer_background_create(thunderlay_id,sCheckerBoard);
+	layer_background_htiled(thunderback_id,true);
+	layer_background_vtiled(thunderback_id,true);
+	layer_background_alpha(thunderback_id, 0);
 }
-var settingsmap=ds_map_secure_load("settings.sav");
-ds_map_set(settingsmap,"lastlvl",myroom);
-ds_map_secure_save(settingsmap,"settings.sav");
+
+
+// dead objects  + nippy mover alarm
+alarm[0]=1; alarm[1]=1; alarm[2]=1; alarm[4]=10;
+
+// Reload skin alarm
+alarm[11]=600;
+
+
+// Lvl unlocker only if not testing room
+if (room!=Room1Tester) 
+{	
+	// get the rooms name, delete letters for room nr only
+	var myroom=room_get_name(room);
+	myroom = string_delete(myroom, 1, 4);
+	myroom=real(myroom); // room nr
+	// if room isnt tutorial lvl "room0"
+	if (room!=Room0) 
+	{
+		// Perform cloud save
+		if instance_exists(oPlayControllerA) && (global.GoogleConnected){oPlayControllerA.alarm[2]=5;}
+		
+		// get current maxlvl
+		var settingsmap=ds_map_secure_load("settings.sav");
+		maxlvl=ds_map_find_value(settingsmap,"maxlvl");
+		if is_undefined(maxlvl) {maxlvl=0;}
+		// if it's not define, define it as 0
+		
+		// if previously save maxlvl is smaller than current max level, set it to the new max lvl amount
+		if (maxlvl<myroom)
+		{
+		ds_map_set(settingsmap,"maxlvl",myroom);
+		ds_map_secure_save(settingsmap,"settings.sav");
+		}
+	}
+	// load ds map once again, set current room as last lvl played
+	var settingsmap=ds_map_secure_load("settings.sav");
+	ds_map_set(settingsmap,"lastlvl",myroom);
+	ds_map_secure_save(settingsmap,"settings.sav");
 }
 // 
 
 
 /////////// PARTICLES ONLY AFTER THIS
+
+
 //Particles gas
 suvakas=irandom_range(4,6);
 suurendaja=round(suvakas);

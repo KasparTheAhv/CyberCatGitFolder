@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if (allowdraw!=true) {exit;}
 if (block1==0){draw_sprite_stretched_ext(sLocked,0,block1x,block1y,lockw,lockh,c_white,1);}
 if (block2==0){draw_sprite_stretched_ext(sLocked,0,block2x,block2y,lockw,lockh,c_white,1);}
 if (block3==0){draw_sprite_stretched_ext(sLocked,0,block3x,block3y,lockw,lockh,c_white,1);}

@@ -12,6 +12,7 @@ first=true;
 // ESIMENE ASYNC ALGAB
 if GooglePlayServices_IsAvailable()
 {
+	show_debug_message("Startin GPS_");
 	GooglePlayServices_IsAuthenticated();
 }
 dater=0;

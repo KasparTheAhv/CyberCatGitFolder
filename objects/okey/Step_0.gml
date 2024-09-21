@@ -25,7 +25,14 @@ if (held)
 	
 	self.x=oPlayer.x+(23*oPlayer.image_xscale);
 	
+	if (floor(oPlayer.vsp)==0)
+	{
 	self.y=oPlayer.y+howmuch;
+	} else {
+	var jumpchange=oPlayer.vsp*3;
+	jumpchange=clamp(jumpchange,-10,6);
+	self.y=oPlayer.y+howmuch+jumpchange;
+	}
 	
 	image_xscale=sign(oPlayer.image_xscale);
 	if (image_xscale==1) {image_angle=300;} else {image_angle=60;}

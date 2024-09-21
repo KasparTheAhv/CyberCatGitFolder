@@ -1,5 +1,4 @@
-/// @desc
-
+/// @desc Skin reset to 0 and get tokens from 100% rooms
 show_debug_message("Settings skins to 0 , and getting tokens according to 100% rooms!");
 
 // skin reset to 0

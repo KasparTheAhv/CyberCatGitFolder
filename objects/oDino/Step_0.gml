@@ -25,7 +25,7 @@ if (current_state==dinostates.jump)
 	{	
 	sounded=false;
 	instance_create_layer(x,y,"Characters",oDinoSmoke);
-	vsp=0;sprite_index=sDinoIDLE;image_speed=1; current_state=dinostates.idle; alarm[0]=100; play_sound(snDinoLand,false);
+	vsp=0;sprite_index=sDinoIDLE;image_speed=1; current_state=dinostates.idle; alarm[0]=100; 
 		if (instance_exists(oPlayer))
 		{
 			with (oPlayer) 

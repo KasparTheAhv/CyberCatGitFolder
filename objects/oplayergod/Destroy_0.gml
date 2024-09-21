@@ -82,6 +82,12 @@ if tilemap_get_tileset(tile_id) != TileNature
 {
     tilemap_tileset(tile_id, TileNature);
 }
+var lay_id = layer_get_id("Houses");
+var tile_id = layer_tilemap_get_id(lay_id);
+if tilemap_get_tileset(tile_id) != TileHouses
+{
+    tilemap_tileset(tile_id, TileHouses);
+}
 var lay_id = layer_get_id("Furniture");
 var tile_id = layer_tilemap_get_id(lay_id);
 if tilemap_get_tileset(tile_id) != TileFurni

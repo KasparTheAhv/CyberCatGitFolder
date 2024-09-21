@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sInvis64",
-    "path":"sprites/sInvis64/sInvis64.yy",
+    "name":"sInvis2",
+    "path":"sprites/sInvis2/sInvis2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

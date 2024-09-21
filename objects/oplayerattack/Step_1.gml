@@ -6,11 +6,9 @@ var who = instance_place(x,y,colliArray);
 // Exit if no collision
 if (who==noone) {whoIs=noone; exit;}
 
-// Get object index
-whoIs=who.object_index;
-
-// 
-switch (whoIs) {
+// Checking object index
+switch (who.object_index) {
+	
 	 	// Electro case
 		case oElectro:   
 			if (who.soundon)
@@ -33,6 +31,7 @@ switch (whoIs) {
 			}
 			instance_destroy(oPlayerAttack);
 		break;
+		
 	// Water case
         case oWater:   
 			if !place_meeting(x,y,oBubbleShield)
@@ -59,6 +58,7 @@ switch (whoIs) {
 				instance_destroy(self);
 			}
 		break;
+		
 	// Bird case
         case oBird:   
 			with (instance_create_layer(who.x,who.y-3,"Characters",oBirdFall))
@@ -70,6 +70,7 @@ switch (whoIs) {
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 			instance_destroy(who);
 		break;
+		
 	// Bat case
         case oBat: 
 			with (instance_create_layer(who.x,who.y-3,"Characters",oBatD))
@@ -82,6 +83,7 @@ switch (whoIs) {
 			var plax= side*12;
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 		break;
+		
 	// Butterfly case
         case oButterfly:   
 			if (who.colorChange==2) 
@@ -98,6 +100,7 @@ switch (whoIs) {
 			var plax= side*12;
 			instance_create_layer(x+plax,y+10,"BefEdge",oSlash);
 		break;
+		
 	// Bird pathless case
         case oBirdPathless:
 			var myside = image_xscale;
@@ -110,6 +113,7 @@ switch (whoIs) {
 			var plax= side*12;
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);	
 		break;
+		
 	// Dog case
         case oDog:
 			if !(doglock)
@@ -133,6 +137,7 @@ switch (whoIs) {
 				}
 			}		
 		break;
+		
 	// Frog case
         case oFrog:   
 			with (who)
@@ -147,6 +152,7 @@ switch (whoIs) {
 			var plax= side*12;
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 		break;
+		
 	// Rat case
         case oRat:   
 			var myside = image_xscale;
@@ -160,6 +166,7 @@ switch (whoIs) {
 			var plax= side*12;
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 		break;
+		
 	// Squir case
         case oSquir:   
 			var who = instance_place(x,y,oSquir)	
@@ -174,6 +181,7 @@ switch (whoIs) {
 			var plax= side*12;
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 		break;
+		
 	// Snake case
         case oSnake:   
 			var myside = sign(image_xscale);
@@ -195,6 +203,7 @@ switch (whoIs) {
 				instance_destroy(self);
 			}
 		break;
+		
 	// Nippy case
         case oNippy:   
 			instance_destroy(who); play_sound(snCatnipCount,false);
@@ -220,6 +229,7 @@ switch (whoIs) {
 				}	
 			}
 		break;
+		
 	// Helilizard case
         case oHeliLizard:   
 			if (self.y<who.y)
@@ -242,6 +252,7 @@ switch (whoIs) {
 				instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 			}
 		break;
+		
 	// Monkey case
         case oMonke:   
 			with(who)
@@ -275,6 +286,7 @@ switch (whoIs) {
 					}
 				}
 		break;
+		
 	// Vineshield case
         case oVineShield:   
 			var dire=sign(image_xscale)*3*-1;
@@ -288,6 +300,7 @@ switch (whoIs) {
 			}
 			instance_destroy(self);
 		break;
+		
 	// Seal case
         case oSeal:   
 			with (who){var direct=point_direction(x,y,other.x,other.y);	}
@@ -299,6 +312,7 @@ switch (whoIs) {
 			}
 			instance_destroy(oPlayerAttack);
 		break;
+		
 	// Wolfkid case
         case oWolfKid:   
 			with (who)
@@ -324,6 +338,7 @@ switch (whoIs) {
 			var plax= side*12;
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 		break;
+		
 	// ratevent
 		case oRatEvent:
 			var myside = image_xscale;
@@ -338,7 +353,6 @@ switch (whoIs) {
 			var plax= side*12;
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 		break;
-
 }
 
 

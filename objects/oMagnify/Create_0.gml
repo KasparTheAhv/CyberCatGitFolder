@@ -41,7 +41,12 @@ draw_self();
 touchstarted=false;
 touchtime=0;
 
-//zoom toolbar 
-zoomInd=4;
+//zoom toolbar
+
+
+if (oGUIBAR.zoomLevel==0.5) {zoomInd=6;}
+else if (oGUIBAR.zoomLevel==0.75) {zoomInd=5;}
+else if (oGUIBAR.zoomLevel==1) {zoomInd=4;}
+
 
 

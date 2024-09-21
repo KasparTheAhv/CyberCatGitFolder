@@ -1,5 +1,4 @@
 /// @desc
-
 if !(global.debugmenu) {exit;}
 draw_sprite_ext(sWhite,0,0,0,debugXscale,debugYscale,0,c_black,0.6);
 draw_set_color(c_white);
@@ -13,6 +12,7 @@ draw_text_transformed(gW*0.1,gH*0.5,"ViewportW/H: "+string(view_get_wport(0))+"/
 draw_text_transformed(gW*0.1,gH*0.6,"TimingMethod: "+string(display_get_timing_method()),debugTextScale,debugTextScale,0);
 draw_text_transformed(gW*0.1,gH*0.7,"Sleep margin: "+string(display_get_sleep_margin()),debugTextScale,debugTextScale,0);
 draw_text_transformed(gW*0.1,gH*0.8,"os version: "+string(os_version),debugTextScale,debugTextScale,0);
+
 if (global.timeNTP!=0)
 {
 draw_text_transformed(gW*0.6,gH*0.15,dater,debugTextScale,debugTextScale,0);

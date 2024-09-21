@@ -6,7 +6,7 @@ var PCMove=false;
 if (os_type!=os_android)
 {
 	//if !(global.reading)
-	if instance_exists(oVStick) && (oVStick.toimi)
+	if instance_exists(oVStick) && (vstick_get_active(1)) && (oVStick.joonista)
 	{
 		// Left and right
 		if (keyboard_check(ord("A"))) {var PCMove=true;var moveleft=true;} else {var moveleft=false;}
@@ -256,9 +256,9 @@ y += floor(vsp);
 var side=(sign(image_xscale));
 if (side==1)
 {
-imangle=0-(floor(vsp)*3.5);
+	imangle=0-(floor(vsp)*3.5);
 } else {
-imangle=0+(floor(vsp)*3.5);
+	imangle=0+(floor(vsp)*3.5);
 }
 
 // Teleport attack
