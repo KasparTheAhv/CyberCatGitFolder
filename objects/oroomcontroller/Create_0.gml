@@ -105,7 +105,38 @@ if !layer_exists("CheckerBoard")
 	layer_background_htiled(thunderback_id,true);
 	layer_background_vtiled(thunderback_id,true);
 	layer_background_alpha(thunderback_id, 0);
+} else {
+	thunderlay_id = layer_get_id("CheckerBoard")
+	thunderback_id = layer_background_create(thunderlay_id,sCheckerBoard);
+	layer_background_htiled(thunderback_id,true);
+	layer_background_vtiled(thunderback_id,true);
+	layer_background_alpha(thunderback_id, 0);
 }
+
+
+// Create striking layer layer
+if !layer_exists("StrikingLayer")
+{
+	show_debug_message("checker not existing, creating one")
+	var starDep = layer_get_depth("Particles");
+	show_debug_message("starfaders depth: "+string(starDep));
+	var newDep = starDep - 100;
+	strikinglay_id = layer_create(newDep,"StrikingLayer");
+	strikingback_id =  layer_background_create(strikinglay_id,sWobble);
+	layer_background_htiled(strikingback_id,true);
+	layer_background_vtiled(strikingback_id,true);
+	 layer_background_alpha(strikingback_id, 0);
+	 layer_hspeed(strikinglay_id,9);
+} else {
+	strikinglay_id = layer_get_id("StrikingLayer")
+	strikingback_id = layer_background_create(strikinglay_id,sWobble);
+	layer_background_htiled(strikingback_id,true);
+	layer_background_vtiled(strikingback_id,true);
+	 layer_background_alpha(strikingback_id, 0);
+	 layer_hspeed(strikinglay_id,9);
+}
+lineAlpha=0;
+lineAlphaUp=true;
 
 
 // dead objects  + nippy mover alarm

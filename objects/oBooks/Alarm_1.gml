@@ -66,7 +66,12 @@ if (unlocked)
 	var minpage=18;
 	var maxpage=18;
 	}
-	
+	if (whatbook==9)
+	{
+	var page=20;
+	var minpage=20;
+	var maxpage=20;
+	}
 	instance_destroy(oBooks);
 	instance_destroy(oBookController);
 	

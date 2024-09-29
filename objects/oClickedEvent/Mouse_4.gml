@@ -11,36 +11,12 @@ if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 		if (cevent_id==1)
 		{
 			if !(audio_is_playing(snToilet)){play_sound(snToilet,false);}
-				var whatroom=room_get_name(room);
-				var settingsmap=ds_map_secure_load("settings.sav");
-				var key=string(whatroom)+"Egg1";
-						var prevvalue = ds_map_find_value(settingsmap,key);
-			if is_undefined(prevvalue) or (prevvalue==0)
-			{
-				with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-				{
-					isEgg=true;
-				}
-				ds_map_set(settingsmap,key,1);
-				ds_map_secure_save(settingsmap,"settings.sav");
-			}
+			UnlockNoteEgg("Egg",1);
 		}
 			
 		if (cevent_id==2)
 		{ 
-			var whatroom=room_get_name(room);
-			var settingsmap=ds_map_secure_load("settings.sav");
-			var key=string(whatroom)+"Egg2";
-					var prevvalue = ds_map_find_value(settingsmap,key);
-		if is_undefined(prevvalue) or (prevvalue==0)
-		{
-			with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-			{
-				isEgg=true;
-			}
-			ds_map_set(settingsmap,key,1);
-			ds_map_secure_save(settingsmap,"settings.sav");
-		}
+			UnlockNoteEgg("Egg",2);
 			text="when you brush your teeth, it's the\nonly time when you wash your skeleton"
 			with (instance_create_layer(self.x,self.y-50,"Particles",oText))
 				{
@@ -61,19 +37,7 @@ if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 		}
 			if (cevent_id==3)
 		{
-			var whatroom=room_get_name(room);
-			var settingsmap=ds_map_secure_load("settings.sav");
-			var key=string(whatroom)+"Egg2";
-					var prevvalue = ds_map_find_value(settingsmap,key);
-		if is_undefined(prevvalue) or (prevvalue==0)
-		{
-			with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-			{
-				isEgg=true;
-			}
-			ds_map_set(settingsmap,key,1);
-			ds_map_secure_save(settingsmap,"settings.sav");
-		}
+			UnlockNoteEgg("Egg",2);
 			text="I'm pretty sure this belongs to CS: GO.\nHow did it end up here?"
 			
 			with (instance_create_layer(self.x,self.y-50,"Particles",oText))
@@ -95,19 +59,7 @@ if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 		}
 		if (cevent_id==4)
 		{
-			var whatroom=room_get_name(room);
-			var settingsmap=ds_map_secure_load("settings.sav");
-			var key=string(whatroom)+"Egg2";
-					var prevvalue = ds_map_find_value(settingsmap,key);
-		if is_undefined(prevvalue) or (prevvalue==0)
-		{
-			with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-			{
-				isEgg=true;
-			}
-			ds_map_set(settingsmap,key,1);
-			ds_map_secure_save(settingsmap,"settings.sav");
-		}
+			UnlockNoteEgg("Egg",2);
 			
 		text="How did Kenny's corpse end up here?";
 		with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
@@ -121,19 +73,7 @@ if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 		}
 		if (cevent_id==5)
 		{
-			var whatroom=room_get_name(room);
-			var settingsmap=ds_map_secure_load("settings.sav");
-			var key=string(whatroom)+"Egg2";
-			var prevvalue = ds_map_find_value(settingsmap,key);
-		if is_undefined(prevvalue) or (prevvalue==0)
-		{
-			with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-			{
-				isEgg=true;
-			}
-			ds_map_set(settingsmap,key,1);
-			ds_map_secure_save(settingsmap,"settings.sav");
-		}
+			UnlockNoteEgg("Egg",2);
 			text="Wait a sec.\nI've played that game!";
 			
 		with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
@@ -148,19 +88,7 @@ if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 		
 		if (cevent_id==6)
 		{
-			var whatroom=room_get_name(room);
-			var settingsmap=ds_map_secure_load("settings.sav");
-			var key=string(whatroom)+"Egg2";
-					var prevvalue = ds_map_find_value(settingsmap,key);
-		if is_undefined(prevvalue) or (prevvalue==0)
-		{
-			with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-			{
-				isEgg=true;
-			}
-			ds_map_set(settingsmap,key,1);
-			ds_map_secure_save(settingsmap,"settings.sav");
-		}
+			UnlockNoteEgg("Egg",2);
 			text="Weird, why would someone leave\nsuch a big whooper burger uneaten!";
 			
 		with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
@@ -175,19 +103,7 @@ if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 		
 		if (cevent_id==7) && !(instance_exists(oTextFloat))
 		{
-			var whatroom=room_get_name(room);
-			var settingsmap=ds_map_secure_load("settings.sav");
-			var key=string(whatroom)+"Egg1";
-					var prevvalue = ds_map_find_value(settingsmap,key);
-		if is_undefined(prevvalue) or (prevvalue==0)
-		{
-			with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-			{
-				isEgg=true;
-			}
-			ds_map_set(settingsmap,key,1);
-			ds_map_secure_save(settingsmap,"settings.sav");
-		}
+			UnlockNoteEgg("Egg",1);
 			text="POLSKA GUROM!";
 			
 		with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
@@ -200,21 +116,9 @@ if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 	
 		}
 		
-			if (cevent_id==8) && !(instance_exists(oTextFloat))
+		if (cevent_id==8) && !(instance_exists(oTextFloat))
 		{
-			var whatroom=room_get_name(room);
-			var settingsmap=ds_map_secure_load("settings.sav");
-			var key=string(whatroom)+"Egg2";
-					var prevvalue = ds_map_find_value(settingsmap,key);
-		if is_undefined(prevvalue) or (prevvalue==0)
-		{
-			with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-			{
-				isEgg=true;
-			}
-			ds_map_set(settingsmap,key,1);
-			ds_map_secure_save(settingsmap,"settings.sav");
-		}
+			UnlockNoteEgg("Egg",2);
 			text="Developers favorite for sure.";
 			
 		with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
@@ -228,19 +132,7 @@ if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 		}
 		if (cevent_id==9) && !(instance_exists(oTextFloat))
 		{
-			var whatroom=room_get_name(room);
-			var settingsmap=ds_map_secure_load("settings.sav");
-			var key=string(whatroom)+"Egg1";
-					var prevvalue = ds_map_find_value(settingsmap,key);
-		if is_undefined(prevvalue) or (prevvalue==0)
-		{
-			with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-			{
-				isEgg=true;
-			}
-			ds_map_set(settingsmap,key,1);
-			ds_map_secure_save(settingsmap,"settings.sav");
-		}
+			UnlockNoteEgg("Egg",1);
 			text="Stray? What's that?\nanother cat simulator?";
 			
 		with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
@@ -255,19 +147,7 @@ if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 		//  league match history
 		if (cevent_id==10) && !(instance_exists(oTextFloat))
 		{
-			var whatroom=room_get_name(room);
-			var settingsmap=ds_map_secure_load("settings.sav");
-			var key=string(whatroom)+"Egg2";
-					var prevvalue = ds_map_find_value(settingsmap,key);
-		if is_undefined(prevvalue) or (prevvalue==0)
-		{
-			with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-			{
-				isEgg=true;
-			}
-			ds_map_set(settingsmap,key,1);
-			ds_map_secure_save(settingsmap,"settings.sav");
-		}
+		UnlockNoteEgg("Egg",2);
 			text="Big boy left his match history open\n 0/10/0 with Gragas. No wonder he\ncame outside for fresh air.";
 			
 		with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
@@ -282,19 +162,7 @@ if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 		// satans book
 		if (cevent_id==11) && !(instance_exists(oTextFloat))
 		{
-			var whatroom=room_get_name(room);
-			var settingsmap=ds_map_secure_load("settings.sav");
-			var key=string(whatroom)+"Egg1";
-			var prevvalue = ds_map_find_value(settingsmap,key);
-		if is_undefined(prevvalue) or (prevvalue==0)
-		{
-			with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-			{
-				isEgg=true;
-			}
-			ds_map_set(settingsmap,key,1);
-			ds_map_secure_save(settingsmap,"settings.sav");
-		}
+			UnlockNoteEgg("Egg",1);
 			text="Looks like Satan is a softie!";
 			
 		with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
@@ -311,19 +179,7 @@ if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 		{
 			if !(instance_exists(oBagu))
 			{
-			var whatroom=room_get_name(room);
-			var settingsmap=ds_map_secure_load("settings.sav");
-			var key=string(whatroom)+"Egg2";
-					var prevvalue = ds_map_find_value(settingsmap,key);
-			if is_undefined(prevvalue) or (prevvalue==0)
-			{
-				with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-				{
-					isEgg=true;
-				}
-				ds_map_set(settingsmap,key,1);
-				ds_map_secure_save(settingsmap,"settings.sav");
-			}
+			UnlockNoteEgg("Egg",2);
 				text="It's tha beatles!";
 				
 			with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
@@ -350,33 +206,33 @@ if (point_distance(oPlayer.x,oPlayer.y,x,y)<70)
 	
 	
 		}
-			// 
+		// 
 		if (cevent_id==14) && !(instance_exists(oTextFloat))
 		{
-			var whatroom=room_get_name(room);
-			var settingsmap=ds_map_secure_load("settings.sav");
-			var key=string(whatroom)+"Egg2";
-			var prevvalue = ds_map_find_value(settingsmap,key);
-		if is_undefined(prevvalue) or (prevvalue==0)
-		{
-			with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-			{
-				isEgg=true;
-			}
-			ds_map_set(settingsmap,key,1);
-			ds_map_secure_save(settingsmap,"settings.sav");
-		}
+			UnlockNoteEgg("Egg",2);
 			text="You can't turn these off!";
-			
-		with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
+			with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
+			{
+			target=oFollowPlayer;
+			text = other.text;
+			length = string_length(text);
+			timer=140;
+			}
+		}
+		// 
+		if (cevent_id==15) && !(instance_exists(oTextFloat))
 		{
-		target=oFollowPlayer;
-		text = other.text;
-		length = string_length(text);
-		timer=140;
+			UnlockNoteEgg("Egg",1);
+			text="Isn't that the ethernetaxe?\nfrom MeinCraft?";
+			with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
+			{
+			target=oFollowPlayer;
+			text = other.text;
+			length = string_length(text);
+			timer=140;
+			}
 		}
-	
-		}
+
 		// end
 	}
 }

@@ -6,3 +6,4 @@ with (instance_create_layer(self.x,self.y,"Characters",oSealD))
 	image_yscale=2;
 	}
 instance_destroy(self);
+instance_create_layer(x,y,"BefEdge",oSlash);

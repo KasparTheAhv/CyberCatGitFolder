@@ -1,4 +1,11 @@
 
+
+if (tilemap_get_at_pixel(tilemap,x+hsp,y+vsp)!=0) 
+{
+	hsp=hsp*-1;	
+}
+
+
 if (cur_state==turtlestates.attack)
 {
 	hammerTipX=x+lengthdir_x(80,hammerRot);

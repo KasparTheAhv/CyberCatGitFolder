@@ -5,6 +5,6 @@ if (elud!=1)
 {
 current_state=monoclestates.laser;
 } else {
-	laserstart=false;
+	laserStart=false;
 current_state=monoclestates.ending;	
 }

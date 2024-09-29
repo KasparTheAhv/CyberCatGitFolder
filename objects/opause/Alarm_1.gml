@@ -1,6 +1,6 @@
 /// @desc State changer
 if (instance_exists(oAdRevive)) {exit;}
-
+with (oNyanLightning) {instance_destroy();}
 
 if (joonista)
 {

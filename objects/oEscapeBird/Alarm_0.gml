@@ -42,29 +42,13 @@ if instance_exists(oPlayer)
 // move to destination	
 if (destX!=0) && (destY!=0)
 {
-	// egg
-			var whatroom=room_get_name(room);
-				var settingsmap=ds_map_secure_load("settings.sav");
-				var key=string(whatroom)+"Egg3";
-				var prevvalue = ds_map_find_value(settingsmap,key);
-				if is_undefined(prevvalue) or (prevvalue==0)
-				{
-					with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-					{
-						isEgg=true;
-					}
-					ds_map_set(settingsmap,key,1);
-					ds_map_secure_save(settingsmap,"settings.sav");
-				}	
-	
-	
-	
-if (startmoving) 
-{
-	if (state!=2)
+	UnlockNoteEgg("Egg",3);	
+	if (startmoving) 
 	{
-	state=2;
-	image_xscale=scale;
+		if (state!=2)
+		{
+		state=2;
+		image_xscale=scale;
+		}
 	}
-}
 } else {alarm[0]=5;}

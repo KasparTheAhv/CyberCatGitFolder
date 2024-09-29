@@ -10,3 +10,4 @@ if (os_type==os_android)
 	}
 }
 
+draw_text(100,100,y);

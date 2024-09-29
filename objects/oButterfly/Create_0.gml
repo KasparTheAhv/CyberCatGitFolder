@@ -6,7 +6,6 @@ if (sprite_index==sButterflyGrey)
 	image_blend=choose($ffff5e,$ffa87f,$9aff4c,$65faff,$b765ff,$ff8cb8,$6565ff,$dd16e5);
 }
 luba=false;
-shield=false;
 image_speed=2;
 // 
 speed=1;

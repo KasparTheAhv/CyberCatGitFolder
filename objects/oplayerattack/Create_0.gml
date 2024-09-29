@@ -1,6 +1,5 @@
 // +1 to leaps
 colliArray= [oElectro,oWater,oBird,oBat,oButterfly,oBirdPathless,oDog,oFrog,oRat,oSquir,oSnake,oNippy,oHeliLizard,oMonke,oVineShield,oSeal,oWolfKid,oRatEvent];
-
 show_debug_message("attack object created");
 side=(sign(image_xscale));
 var settingsmap = ds_map_secure_load("settings.sav")

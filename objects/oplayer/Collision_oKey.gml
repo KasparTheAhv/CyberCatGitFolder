@@ -14,14 +14,10 @@ if !(keyheld)
 
 if (room==Room0)
 {
-if !(givenkeybook) {
-	
-	givenkeybook=true;
-	
-		oGUIBAR.task1="+ Task done!";	
-		oGUIBAR.task1col="[#4CFF4C]";
-		oGUIBAR.task2="- Escape the room";
-		oGUIBAR.alarm[1]=1;
-	
+	if !(givenkeybook)
+	{
+		givenkeybook=true;
+		TaskDone(1);
+		TaskNew(2,"Escape the room");
 	}	
 }

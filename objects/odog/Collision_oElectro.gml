@@ -16,36 +16,13 @@ part_particles_create(oRoomController.part_sys,x,myy,oRoomController.part10,iran
 if (elud<=0) 
 {
 	if (room=Room4) {
-		var whatroom=room_get_name(room);
-	var settingsmap=ds_map_secure_load("settings.sav");
-	var key=string(whatroom)+"Egg1";
-	var prevvalue = ds_map_find_value(settingsmap,key);
-	if is_undefined(prevvalue) or (prevvalue==0)
-	{
-		with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-		{
-			isEgg=true;
-		}
-		ds_map_set(settingsmap,key,1);
-		ds_map_secure_save(settingsmap,"settings.sav");
+	UnlockNoteEgg("Egg",1);
 	}
-	}
+	
 	if (room=Room7) {
 		oGUIBAR.task3="+ Task done!"
 		oGUIBAR.task3col="[#4CFF4C]";
-		var whatroom=room_get_name(room);
-	var settingsmap=ds_map_secure_load("settings.sav");
-	var key=string(whatroom)+"Egg2";
-	var prevvalue = ds_map_find_value(settingsmap,key);
-	if is_undefined(prevvalue) or (prevvalue==0)
-	{
-		with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-		{
-			isEgg=true;
-		}
-		ds_map_set(settingsmap,key,1);
-		ds_map_secure_save(settingsmap,"settings.sav");
-	}
+		UnlockNoteEgg("Egg",2);
 		text="OTTO! NOOOO!\nJk, I don't care";
 	with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y+80,"Particles",oTextFloat))
 	{

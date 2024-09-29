@@ -93,9 +93,9 @@ with(oElGato)
 oElGato.catnip=4;
 oElGato.alarm[1]=60;
 }
-if (room=Room2) {
-		oGUIBAR.task1="+ Task done!";	
-		oGUIBAR.task1col="[#4CFF4C]";
+if (room=Room2)
+{
+	TaskDone(1);
 }
 
 if instance_exists(oClickHere){instance_destroy(oClickHere);}

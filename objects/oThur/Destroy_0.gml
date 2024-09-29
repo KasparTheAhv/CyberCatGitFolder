@@ -1,8 +1,7 @@
-	if (room==Room11)
-	{
-	oGUIBAR.task1="+ Task done!";	
-	oGUIBAR.task1col="[#4CFF4C]";
-	}
+if (room==Room11)
+{
+	TaskDone(1);	
+}
 	
 with (instance_create_layer(x,y,"BefEdge",oFireworkStart))
 {
@@ -13,7 +12,7 @@ with (instance_create_layer(x,y,"BefEdge",oFireworkStart))
 
 if (visible) && (global.GFX1==1)
 {
-part_particles_create(oRoomController.part_sys, self.x, self.y,oRoomController.part21,irandom_range(34,34));
+	part_particles_create(oRoomController.part_sys, self.x, self.y,oRoomController.part21,irandom_range(34,34));
 }
 
 var settingsmap = ds_map_secure_load("settings.sav")

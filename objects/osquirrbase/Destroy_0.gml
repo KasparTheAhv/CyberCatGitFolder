@@ -2,8 +2,7 @@
 // You can write your code in this editor
 if (room==Room7) or (room=Room3)
 {
-		oGUIBAR.task2="+ Task done!";	
-		oGUIBAR.task2col="[#4CFF4C]";	
+	TaskDone(2);
 }
 
 var xx=self.x;

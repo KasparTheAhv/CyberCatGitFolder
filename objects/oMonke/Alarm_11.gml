@@ -7,3 +7,4 @@ with (instance_create_layer(self.x,self.y,"Characters",oMonkeDeath))
 	}
 play_sound(snShot,false);
 instance_destroy(self);
+instance_create_layer(x,y,"BefEdge",oSlash);

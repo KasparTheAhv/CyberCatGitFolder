@@ -6,5 +6,7 @@ if (lockid==2) {image_blend=c_aqua;}
 if (lockid==3) {image_blend=c_lime;}
 if (lockid==4) {image_blend=c_blue;}
 self.depth=depth-10;
-
 gainstat=true;
+who=noone;
+if instance_exists(oDoor)		 {who=instance_place(x,y,oDoor);}
+if instance_exists(oDoorOutside) {who=instance_place(x,y,oDoorOutside);}

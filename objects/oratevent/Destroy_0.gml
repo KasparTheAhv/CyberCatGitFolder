@@ -1,7 +1,6 @@
 if (room==Room1)
 {
-oGUIBAR.task2="+ Task done!";	
-oGUIBAR.task2col="[#4CFF4C]";
+	TaskDone(2);
 }
 play_sound(snRatD,false);
 

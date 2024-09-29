@@ -8,11 +8,12 @@ ds_map_secure_save(settingsmap,"settings.sav");
 
 if instance_exists(oEvent)
 {
-instance_destroy(oEvent);	
+	instance_destroy(oEvent);	
 }
+
 with (instance_create_layer(x,y,"BefEdge",oFireworkStart))
 {
-		bossSPR=5;
+	bossSPR=5;
 	partCol1=$20608a
 	partCol2=c_white;
 }
@@ -23,37 +24,23 @@ oGUIBAR.task2="- Enter the house";
 
 with (instance_create_layer(x,y+40,"Characters",oKey))
 {
-keyid=1;	
-image_blend=c_red;
+	keyid=1;	
+	image_blend=c_red;
 }
 
 if (imshots>25)
 {
-
 	var etext="That was easier than\nit was supposed to be!";
-		follow = instance_nearest(x,y,oFollowPlayer);
-			with (instance_create_layer(follow.x,follow.y-40,"Particles",oTextFloat))
-				{
-				target=other.follow;
-				text = etext;
-				length = string_length(text); 
-				who=other.id;
-				}
-				if (room==Room22)
-				{
-		var whatroom=room_get_name(room);
-		var settingsmap=ds_map_secure_load("settings.sav");
-		var key=string(whatroom)+"Egg1";
-		var prevvalue = ds_map_find_value(settingsmap,key);
-	if is_undefined(prevvalue) or (prevvalue==0)
+	follow = instance_nearest(x,y,oFollowPlayer);
+	with (instance_create_layer(follow.x,follow.y-40,"Particles",oTextFloat))
 	{
-		with (instance_create_layer(x,y,"BefEdge",oEggNoti))
-		{
-			isEgg=true;
-		}
-		ds_map_set(settingsmap,key,1);
-		ds_map_secure_save(settingsmap,"settings.sav");
+		target=other.follow;
+		text = etext;
+		length = string_length(text); 
+		who=other.id;
 	}
-				}
-
+	if (room==Room22)
+	{
+		UnlockNoteEgg("Egg",1);
+	}
 }

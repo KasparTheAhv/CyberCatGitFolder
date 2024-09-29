@@ -15,6 +15,7 @@ cn=0;
 red_cn=0;
 hp=90;
 red_hp=90;
+updateSpeed=5;
 scr_setup_cool_healthbar(90,9,270*HpBarSca,80);
 scr_setup_cool_cnbar(150,15,200*CnBarSca,50);
 oGodZoom=false;
@@ -62,6 +63,8 @@ yTo = ystart;
 // Border
 defborderX=camera_get_view_border_x(view_camera[0]);
 defborderY=camera_get_view_border_y(view_camera[0]);
+startborderX=defborderX;
+startborderY=defborderY;
 // Zooming
 zoomLevel = 1;
 temp_cam_w = cam_default_w;
@@ -104,6 +107,7 @@ if (room==Room28){tasks=3;task1="- Explore farm";task2="";task3="";}
 if (room==Room29){tasks=3;task1="- Explore forest";task2="";task3="";}
 if (room==Room30){tasks=3;task1="- Pass the forest";task2="";task3="";}
 if (room==Room31){tasks=3;task1="- Explore";task2="";task3="";}
+if (room==Room32){tasks=3;task1="- Find masters chest";task2="";task3="";}
 alpha=0;
 //SCRIBBLE
 alphatext=0;

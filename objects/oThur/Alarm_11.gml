@@ -27,3 +27,4 @@ with (instance_create_layer(self.x,self.y,"Characters",oThurD))
 	}
 instance_destroy(self);
 }
+instance_create_layer(x,y,"BefEdge",oSlash);

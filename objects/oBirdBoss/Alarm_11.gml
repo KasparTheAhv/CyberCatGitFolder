@@ -24,8 +24,8 @@ with (instance_create_layer(self.x,self.y,"Characters",oBirdFall))
 	hsp= 2*other.myside;
 	if (sign(hsp) !=0) image_xscale = sign(hsp);
 	}
-oGUIBAR.task3="+ Task done!";	
-oGUIBAR.task3col="[#4CFF4C]";
+	TaskDone(3);
+
 
 with(oBirdBase)
 {
@@ -35,3 +35,4 @@ if (bossbase==true)	{instance_destroy(self);}
 
 instance_destroy(self);
 }
+instance_create_layer(x,y,"BefEdge",oSlash);

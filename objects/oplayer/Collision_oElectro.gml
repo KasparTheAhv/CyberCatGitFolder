@@ -1,8 +1,7 @@
 if (room=Room3)
 {
 oLvlEnd.t1=true;
-oGUIBAR.task1="+ Task done!"
-oGUIBAR.task1col="[#4CFF4C]";
+TaskDone(1);
 }
 
 with (other)
@@ -42,16 +41,14 @@ if (room==Room3) {if (oGUIBAR.hp==80){ with (oEvent) {if (event_id==8) {alarm[0]
 if (room=Room3)
 {
 oLvlEnd.t1=true;
-oGUIBAR.task1="+ Task done!"
-oGUIBAR.task1col="[#4CFF4C]";
+TaskDone(1);
 }
 	
 if (room==Room15)
 {
 	if (oGUIBAR.task3!="")
 	{
-		oGUIBAR.task3="+ Task done!";
-		oGUIBAR.task3col="[#4CFF4C]";
+		TaskDone(3);
 	}
 }
 instance_destroy(oPlayer);

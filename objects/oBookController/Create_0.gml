@@ -9,7 +9,7 @@ maxbook = ds_map_find_value(map,"maxbook");
 muutuja=global.GUI*70;
 var book_scale = global.gameWidth/2400 * 4;
 	
-for (var i=1; i<10;i++) // i<x x peab olema ruumide arv + 1 . Not to forget et esimene room0 mitte room1
+for (var i=1; i<11;i++) // i<x x peab olema ruumide arv + 1 . Not to forget et esimene room0 mitte room1
 	{
 		with(instance_create_layer(x,y,"Characters",oBooks))	
 		{

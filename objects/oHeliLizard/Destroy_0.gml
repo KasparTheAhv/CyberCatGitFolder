@@ -4,8 +4,7 @@ if (room==Room17)
 {
 	if (instance_number(oHeliLizard)<=1)
 	{
-		oGUIBAR.task2="+ Task done!";	
-		oGUIBAR.task2col="[#4CFF4C]";	
+		TaskDone(2);
 	}
 }
 

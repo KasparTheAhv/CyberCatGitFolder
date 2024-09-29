@@ -1,11 +1,14 @@
+if instance_exists(oGUIBAR)
+{
+	texterscale=oGUIBAR.zoomLevel*0.5;
+}
+textscale="[scale,"+string(texterscale*0.65)+"]";
 letters+=spd;
 text_current = string_copy(text,1,floor(letters));
-if (fade) {
-if (image_alpha>0) {image_alpha-=0.02;} else {instance_destroy();}
-}
-draw_set_font(fOrbitronNote);
-if (h == 0) h = string_height(text)*0.5;
-w = string_width(text_current)*0.5;
+h = string_height_scribble(text_current)*texterscale*0.65;
+w = string_width_scribble(text_current)*texterscale*0.72;
+
+if (fade) { if (image_alpha>0) {image_alpha-=0.02;} else {instance_destroy();}}
 
 // destroy when done
 if(letters >= length)

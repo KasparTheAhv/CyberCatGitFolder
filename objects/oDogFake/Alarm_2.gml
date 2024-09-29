@@ -12,30 +12,17 @@ if (point_distance(x,y,who.x,who.y)<24)
 	if (oRoomController.room16eggTriggered==false)
 	{
 		oRoomController.room16eggTriggered=true;
-			text="Tha hell? That's not cat food..";
-			follow = instance_nearest(x,y,oFollowPlayer);
-			with (instance_create_layer(follow.x,follow.y-40,"Particles",oTextFloat))
-				{
-				timer=240;
-				target=other.follow;
-				text = other.text;
-				length = string_length(text); 
-				who=other.id;
-				}
-
-	var whatroom=room_get_name(room);
-	var settingsmap=ds_map_secure_load("settings.sav");
-	var key=string(whatroom)+"Egg1";
-		var prevvalue = ds_map_find_value(settingsmap,key);
-	if is_undefined(prevvalue) or (prevvalue==0)
-	{
-		with (instance_create_layer(x,y,"BefEdge",oEggNoti))
+		text="Tha hell? That's not cat food..";
+		follow = instance_nearest(x,y,oFollowPlayer);
+		with (instance_create_layer(follow.x,follow.y-40,"Particles",oTextFloat))
 		{
-			isEgg=true;
+			timer=240;
+			target=other.follow;
+			text = other.text;
+			length = string_length(text); 
+			who=other.id;
 		}
-		ds_map_set(settingsmap,key,1);
-		ds_map_secure_save(settingsmap,"settings.sav");
-	}		
+		UnlockNoteEgg("Egg",1);	
 	}
 	eating=true;
 	hsp=0;

@@ -16,3 +16,5 @@ vsp=0;
 hsp=0;
 alarm[0]=120;
 startSwing=true;
+
+tilemap = layer_tilemap_get_id("Collision");

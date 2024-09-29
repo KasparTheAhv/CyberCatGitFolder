@@ -1,4 +1,20 @@
 /// @desc GUI TOUCH
+if instance_exists(oPlayerStriking)
+{
+	if (lineAlphaUp)
+	{
+		if (lineAlpha<0.65) {lineAlpha+=0.005;} else {lineAlphaUp=false;}
+	} else {
+		if (lineAlpha>0.5) {lineAlpha-=0.005;} else {lineAlphaUp=true;}
+	}
+	 layer_background_alpha(strikingback_id, lineAlpha);
+} else {
+	if (lineAlpha>0)
+	{
+	lineAlpha-=0.05;
+	layer_background_alpha(strikingback_id, lineAlpha);
+	}
+}
 // pause alanud
 if instance_exists(oPamenu)
 {
@@ -148,7 +164,15 @@ if instance_exists(oMagnify)
 		}
 	}	
 }
-
+// give object info
+if mouse_check_button_released(mb_middle)
+{
+	var whatIns=instance_position(mouse_x,mouse_y,all);
+	if (whatIns!=noone)
+	{
+		GetAllVariables(whatIns.id);
+	}
+}
 
 if instance_exists(oBook)
 	{
@@ -189,34 +213,9 @@ if instance_exists(oBooks)
 /// Step event of oRoomController
 // BULLET CONTROLS
 // oBullet
-with (oBullet)
+with (oBulletParent)
 {
 	if (tilemap_get_at_pixel(tilemap,x,y)!=0) {instance_destroy();}
-	if (place_meeting(x,y,oWall)) {instance_destroy();}
-}
-with (oBulletDart)
-{
-	if (tilemap_get_at_pixel(tilemap,x,y)==1) {instance_destroy();}		
-}
-with (oBulletMoney)
-{
-	if (tilemap_get_at_pixel(tilemap,x,y)!=0) {instance_destroy();}
-	if (place_meeting(x,y,oWall)) {instance_destroy();}	
-}
-with (oBulletMonke)
-{
-	if (tilemap_get_at_pixel(tilemap,x,y)!=0) {instance_destroy();}
-	if (place_meeting(x,y,oWall)) {instance_destroy();}	
-}
-with (oBulletSnow)
-{
-	if (place_meeting(x,y,oWall)) {instance_destroy();}
-	if (tilemap_get_at_pixel(tilemap,x,y)!=0) {instance_destroy();}	
-}
-with (oBulletSquir)
-{
-	if (place_meeting(x,y,oWall)) {instance_destroy();}
-	if (tilemap_get_at_pixel(tilemap,x,y)!=0) {instance_destroy();}	
 }
 
 

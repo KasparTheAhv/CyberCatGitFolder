@@ -37,7 +37,8 @@ function TokenCheckerNoNoti()
 	if (whatRoom==Room28)	{ var NeedNotes=4; var NeedEggs=3; }	
 	if (whatRoom==Room29)	{ var NeedNotes=3; var NeedEggs=2; }	
 	if (whatRoom==Room30)	{ var NeedNotes=3; var NeedEggs=2; }	
-	if (whatRoom==Room31)	{ var NeedNotes=3; var NeedEggs=2; }	
+	if (whatRoom==Room31)	{ var NeedNotes=3; var NeedEggs=2; }
+	if (whatRoom==Room32)	{ var NeedNotes=3; var NeedEggs=2; }
 	// setup empty notes and eggs
 	var settingsmap=ds_map_secure_load("settings.sav");
 	var eggtotal=0;

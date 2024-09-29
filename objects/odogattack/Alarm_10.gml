@@ -4,7 +4,7 @@ if (helper) {var who=oDogFake;} else {var who=oDog;}
 if (locker)
 {
 	if (electrod) {play_sound(snElectrocuted,false);}
-	if (place_meeting(x,y,oWall)) or (tilemap_get_at_pixel(tilemap,x,y)==1)
+	if (tilemap_get_at_pixel(tilemap,x,y)==1)
 	{
 		if (visible) && (global.GFX1==1)
 		{

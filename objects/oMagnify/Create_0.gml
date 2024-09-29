@@ -46,7 +46,7 @@ touchtime=0;
 
 if (oGUIBAR.zoomLevel==0.5) {zoomInd=6;}
 else if (oGUIBAR.zoomLevel==0.75) {zoomInd=5;}
-else if (oGUIBAR.zoomLevel==1) {zoomInd=4;}
+else if (oGUIBAR.zoomLevel>=1) {zoomInd=4;}
 
 
 

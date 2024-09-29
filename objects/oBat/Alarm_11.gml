@@ -6,3 +6,4 @@
 	hsp= irandom_range(-3,3);
 	}
 	instance_destroy();
+	instance_create_layer(x,y,"BefEdge",oSlash);

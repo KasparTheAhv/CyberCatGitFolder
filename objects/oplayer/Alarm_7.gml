@@ -106,6 +106,8 @@ with (whotoattack)
 	if (object_index==oSoySauce) {yes=true; } 
 	if (object_index==oWolfKid) {yes=true; } 
 	if (object_index==oTPDUMMY) {yes=true; } 
+	if (object_index==oHeliLizard) {yes=true; }
+	if (object_index==oAngerbird) {yes=true; } 
     }
 // Check if it's a valid target to teleport attack to
 	if !(yes) {exit;} else {

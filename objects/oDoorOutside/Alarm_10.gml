@@ -1,11 +1,14 @@
-if (jammed) {exit;}
+///@desc open door if its unlocked
+if (jammed) {exit;} // jammed ei luba kunagi avada
+if (image_index==9) {exit;} 
 
 
-if instance_exists(who)
+play_sound(snLock,false);
+if (oFollowPlayer.x>self.x)
 {
-if (distance_to_point(who.x,who.y)>100)	
-	{
-	alarm[1]=1;
-	alarm[2]=1;
-	}
+	image_xscale=-1;
+	alarm[0]=1;
+} else {
+	image_xscale=1;
+	alarm[0]=1;
 }

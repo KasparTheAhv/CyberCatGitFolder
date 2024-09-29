@@ -37,14 +37,4 @@ alpha2-=0.02;
 
 x += floor(hsp);
 
-// Vertical collision (ground)
-if (vsp>0) bbox_side=bbox_bottom; else bbox_side=bbox_top;
-if (tilemap_get_at_pixel(tilemap,bbox_left,bbox_side+vsp)!=0) or (tilemap_get_at_pixel(tilemap,bbox_right,bbox_side+vsp)!=0)
-{
-	
-	if (vsp>0){ y = y - ( y mod 32 ) + 31 - (bbox_bottom - y);landed=true;jumping=false;canjump=10;}
-	else {y = y - ( y mod 32 ) - (bbox_top - y );}
-	vsp=0;self.hspimmune=false;
-}
-// Change player Y according to VSP
-y += floor(vsp);
+

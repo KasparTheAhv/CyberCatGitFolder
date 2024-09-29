@@ -7,3 +7,4 @@ with (instance_create_layer(self.x,self.y-3,"Characters",oRatFall))
 	if (sign(hsp) !=0) image_xscale = sign(hsp)*0.75;
 	}	
 instance_destroy(self);
+instance_create_layer(x,y,"BefEdge",oSlash);

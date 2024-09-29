@@ -10,12 +10,11 @@ with (oRatBase) {alarm[1]=irandom_range(100,140);}
 
 if (room==Room8) 
 {
-if (instance_number(oRat)==1)
-{
-		oGUIBAR.task3="+ Task done!";	
-		oGUIBAR.task3col="[#4CFF4C]";
-exit;	
-}
+	if (instance_number(oRat)==1)
+	{
+		TaskDone(3);	
+		exit;	
+	}
 }	
 
 

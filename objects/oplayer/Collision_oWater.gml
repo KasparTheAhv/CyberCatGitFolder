@@ -93,7 +93,3 @@ if (type==2)
 	play_sound(snSplashVette1,false);
 	instance_destroy(self);
 }
-	
-
-
-

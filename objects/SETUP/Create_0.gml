@@ -10,6 +10,7 @@ global.noBase=false;
 global.lightningMode=0;
 global.booktutsequence=0;
 global.leapsthissession=0;
+global.strikeZoom=false;
 // testing GIT remove this line later
 if (os_type==os_android) {global.isAndroid=true;} else {global.isAndroid=false;}
 
@@ -30,7 +31,7 @@ global.idealH=floor(ideal_height);
 
 
 // set viewports to match desired cam size in game rooms
-for (var i = 0; i < 31; i++)
+for (var i = 0; i < 32; i++)
 {
 var whatroom="Room"+string(i);
 var roomid=asset_get_index(whatroom);

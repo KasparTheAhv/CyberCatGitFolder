@@ -9,7 +9,7 @@ if (who==noone) {whoIs=noone; exit;}
 // Checking object index
 switch (who.object_index) {
 	
-	 	// Electro case
+//////////// Electro case
 		case oElectro:   
 			if (who.soundon)
 			{
@@ -26,13 +26,12 @@ switch (who.object_index) {
 			if (room==Room3) {
 				if (oGUIBAR.hp==80) { with (oEvent) {if (event_id==8) {alarm[0]=1;}}}
 				oLvlEnd.t1=true;
-				oGUIBAR.task1="+ Task done!"
-				oGUIBAR.task1col="[#4CFF4C]";
+				TaskDone(1);		
 			}
 			instance_destroy(oPlayerAttack);
 		break;
 		
-	// Water case
+//////////// Water case
         case oWater:   
 			if !place_meeting(x,y,oBubbleShield)
 			{
@@ -59,7 +58,7 @@ switch (who.object_index) {
 			}
 		break;
 		
-	// Bird case
+//////////// Bird case
         case oBird:   
 			with (instance_create_layer(who.x,who.y-3,"Characters",oBirdFall))
 			{
@@ -71,7 +70,7 @@ switch (who.object_index) {
 			instance_destroy(who);
 		break;
 		
-	// Bat case
+//////////// Bat case
         case oBat: 
 			with (instance_create_layer(who.x,who.y-3,"Characters",oBatD))
 				{
@@ -84,7 +83,7 @@ switch (who.object_index) {
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 		break;
 		
-	// Butterfly case
+//////////// Butterfly case
         case oButterfly:   
 			if (who.colorChange==2) 
 			{
@@ -101,7 +100,7 @@ switch (who.object_index) {
 			instance_create_layer(x+plax,y+10,"BefEdge",oSlash);
 		break;
 		
-	// Bird pathless case
+//////////// Bird pathless case
         case oBirdPathless:
 			var myside = image_xscale;
 			with (instance_create_layer(who.x,who.y-3,"Characters",oBirdFall))
@@ -114,7 +113,7 @@ switch (who.object_index) {
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);	
 		break;
 		
-	// Dog case
+//////////// Dog case
         case oDog:
 			if !(doglock)
 			{
@@ -138,7 +137,7 @@ switch (who.object_index) {
 			}		
 		break;
 		
-	// Frog case
+//////////// Frog case
         case oFrog:   
 			with (who)
 			{
@@ -153,7 +152,7 @@ switch (who.object_index) {
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 		break;
 		
-	// Rat case
+//////////// Rat case
         case oRat:   
 			var myside = image_xscale;
 				with (instance_create_layer(who.x,who.y-3,"Characters",oRatFall))
@@ -167,7 +166,7 @@ switch (who.object_index) {
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 		break;
 		
-	// Squir case
+//////////// Squir case
         case oSquir:   
 			var who = instance_place(x,y,oSquir)	
 			var myside = image_xscale;
@@ -182,7 +181,7 @@ switch (who.object_index) {
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 		break;
 		
-	// Snake case
+//////////// Snake case
         case oSnake:   
 			var myside = sign(image_xscale);
 			var temaside=sign(who.image_xscale);
@@ -204,7 +203,7 @@ switch (who.object_index) {
 			}
 		break;
 		
-	// Nippy case
+//////////// Nippy case
         case oNippy:   
 			instance_destroy(who); play_sound(snCatnipCount,false);
 			if instance_exists(oGUIBAR)
@@ -230,7 +229,7 @@ switch (who.object_index) {
 			}
 		break;
 		
-	// Helilizard case
+//////////// Helilizard case
         case oHeliLizard:   
 			if (self.y<who.y)
 			{ // damage player
@@ -253,7 +252,7 @@ switch (who.object_index) {
 			}
 		break;
 		
-	// Monkey case
+//////////// Monkey case
         case oMonke:   
 			with(who)
 				{
@@ -287,7 +286,7 @@ switch (who.object_index) {
 				}
 		break;
 		
-	// Vineshield case
+//////////// Vineshield case
         case oVineShield:   
 			var dire=sign(image_xscale)*3*-1;
 			
@@ -301,7 +300,7 @@ switch (who.object_index) {
 			instance_destroy(self);
 		break;
 		
-	// Seal case
+//////////// Seal case
         case oSeal:   
 			with (who){var direct=point_direction(x,y,other.x,other.y);	}
 			with (instance_create_layer(x,y-1,"Characters",oPlayerFall))
@@ -313,7 +312,7 @@ switch (who.object_index) {
 			instance_destroy(oPlayerAttack);
 		break;
 		
-	// Wolfkid case
+//////////// Wolfkid case
         case oWolfKid:   
 			with (who)
 			{
@@ -339,7 +338,7 @@ switch (who.object_index) {
 			instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 		break;
 		
-	// ratevent
+//////////// ratevent
 		case oRatEvent:
 			var myside = image_xscale;
 			with (instance_create_layer(who.x,who.y-3,"Characters",oRatFall))

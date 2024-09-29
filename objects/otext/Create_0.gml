@@ -16,7 +16,7 @@ target=noone;
 who=noone;
 alarm[1]=140;
 skiprdy=false;
-texterscale=oGUIBAR.zoomLevel*0.5;
+
 whasound=irandom_range(0,500); // peale 500 on specific
 alarm[0]=1;
 rW=room_width;
@@ -24,10 +24,8 @@ rH=room_height;
 
 //SCRIBBLE
 color="[#FFFFFF]";
+texterscale=oGUIBAR.zoomLevel*0.5;
 textscale="[scale,"+string(texterscale*0.65)+"]";
-
-// Set proper font for note
-draw_set_font(fOrbitronNote);
 
 // Call this from oRoomController
 with(oRoomController)

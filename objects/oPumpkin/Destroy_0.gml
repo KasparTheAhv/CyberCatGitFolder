@@ -1,7 +1,6 @@
 /// @desc
-oGUIBAR.task1="+ Task done!";oGUIBAR.task1col="[#4CFF4C]";
-oGUIBAR.task2="- Leave forest";
-
+TaskDone(1);
+TaskNew(2,"Leave forest");
 instance_create_layer(3472,664,"Electro",oMoustacheGuy);
 
 with (oEvent) {activated=true;}
