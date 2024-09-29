@@ -12,8 +12,8 @@
   "duration":0.600816,
   "name":"snWings",
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

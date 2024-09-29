@@ -65,8 +65,7 @@ y += floor(vsp);
 
 
 // image angle
-side=(sign(image_xscale));
-
+var side=(sign(image_xscale));
 if (side==1)
 {
 	imangle=0-(floor(vsp)*3.5);

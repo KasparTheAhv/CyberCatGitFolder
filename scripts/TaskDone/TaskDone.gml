@@ -1,5 +1,5 @@
 ///@desc whatTaskNr
-function TaskDone()
+function TaskDone(whatTaskNr)
 {
 	var Nr = argument[0];
 

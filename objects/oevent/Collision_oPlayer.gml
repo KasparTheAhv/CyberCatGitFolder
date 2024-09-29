@@ -3498,5 +3498,11 @@ if (event_id==54) && !(blocker)
 			alarm[0]=1;
 	}
 }
-
+// soul reaped out
+if (event_id==55) && !(blocker)
+{
+	TaskDone(3);
+	with(oLvlEnd) {t1=true;t2=true;t3=true;}
+	instance_destroy();
+}
 } // end bracket ,must be las

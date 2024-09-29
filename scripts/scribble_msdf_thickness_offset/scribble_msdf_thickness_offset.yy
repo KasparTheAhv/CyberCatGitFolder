@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scribble_msdf_thickness_offset",
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Virtual Joystick",
+    "path":"folders/Scripts/Virtual Joystick.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

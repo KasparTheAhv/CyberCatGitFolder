@@ -62,8 +62,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"CyberCat",
-    "path":"CyberCat.yyp",
+    "name":"Sprites",
+    "path":"folders/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

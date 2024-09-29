@@ -6,7 +6,7 @@
   "name":"scribble_rgb_to_bgr",
   "parent":{
     "name":"Miscellaneous",
-    "path":"folders/Objects/Scribble/Miscellaneous.yy",
+    "path":"folders/Scribble/Miscellaneous.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
