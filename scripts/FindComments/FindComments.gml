@@ -24,12 +24,12 @@ for (var i =0; i<global.maxComments; i++)
 
 with (oSearch)
 {
-curfinding=1;
-findings=array;
-maxfindings= array_length(array);
-show_debug_message(string(findings));
-show_debug_message(string(maxfindings));
-alarm[1]=2;
+	curfinding=1;
+	findings=array;
+	maxfindings= array_length(array);
+	//show_debug_message(string(findings));
+	//show_debug_message(string(maxfindings));
+	alarm[1]=2;
 }
 
 

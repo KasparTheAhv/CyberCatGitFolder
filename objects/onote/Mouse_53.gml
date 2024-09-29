@@ -2,6 +2,7 @@ if instance_exists(oPlayerGod) {exit;}
 if instance_exists(oPlayerAttack) {exit;}
 if instance_exists(oText) {exit;}
 if instance_exists(oTextFloat) {exit;}
+
 if (room==Room0) && (global.booktutsequence==1) {exit;}
 
 if (distance_to_object(oPlayer)<100) && (point_distance(x,y,mouse_x,mouse_y)<25)

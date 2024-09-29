@@ -479,7 +479,6 @@
     {"name":"scr_update_cnbar","order":9,"path":"scripts/scr_update_cnbar/scr_update_cnbar.yy",},
     {"name":"scr_update_healthbar","order":3,"path":"scripts/scr_update_healthbar/scr_update_healthbar.yy",},
     {"name":"ScreenShake","order":13,"path":"scripts/ScreenShake/ScreenShake.yy",},
-    {"name":"ScreenShotAndroid","order":27,"path":"scripts/ScreenShotAndroid/ScreenShotAndroid.yy",},
     {"name":"scribble_anim_cycle","order":1,"path":"scripts/scribble_anim_cycle/scribble_anim_cycle.yy",},
     {"name":"scribble_anim_jitter","order":2,"path":"scripts/scribble_anim_jitter/scribble_anim_jitter.yy",},
     {"name":"scribble_anim_pulse","order":3,"path":"scripts/scribble_anim_pulse/scribble_anim_pulse.yy",},

@@ -9,5 +9,3 @@ if (os_type==os_android)
 	draw_sprite_ext(sprite_index,image_index,xx,yy,4,4,0,c_white,alpha2);
 	}
 }
-
-draw_text(100,100,y);

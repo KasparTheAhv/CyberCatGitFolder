@@ -56,11 +56,11 @@ function TokenCheckerNoNoti()
 	
 	}
 	// show values in console ( testing ) only 
-	show_debug_message("Current ROOM: "+string(roomname));
-	show_debug_message("notetotal: "+string(notetotal));
-	show_debug_message("eggtotal: "+string(eggtotal));
-	show_debug_message("noteneeded: "+string(NeedNotes));
-	show_debug_message("eggneeded: "+string(NeedEggs));
+	//show_debug_message("Current ROOM: "+string(roomname));
+	//show_debug_message("notetotal: "+string(notetotal));
+	//show_debug_message("eggtotal: "+string(eggtotal));
+	//show_debug_message("noteneeded: "+string(NeedNotes));
+	//show_debug_message("eggneeded: "+string(NeedEggs));
 	
 	// check if token should be given
 	var settingsmap=ds_map_secure_load("settings.sav");

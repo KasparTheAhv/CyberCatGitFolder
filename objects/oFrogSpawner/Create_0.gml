@@ -1,4 +1,4 @@
-maxfrogs=10;
+maxfrogs=7;
 frogstokill=40;
 rW=room_width;
 alarm[1]=10;
@@ -6,9 +6,4 @@ done=false;
 txt=frogstokill;
 gW=global.gameWidth;
 gH=global.gameHeight;
-xx=gW*0.6;
-yy=gH*0.05;
 scale=1;
-textscale=string(scale);
-textscale="[scale,"+string(textscale)+"]";
-textwhole=string(textscale)+"[fa_center][fa_middle]"+"Eliminate: ";

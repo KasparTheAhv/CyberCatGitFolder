@@ -321,7 +321,6 @@ switch (who.object_index) {
 					elud-=10;	
 					doglock=true;
 					instance_create_layer(x,y,"BefEdge",oNippy);
-					oRoomController.alarm[0]=1;
 					image_blend=c_red;
 					alarm[8]=-1;
 					alarm[8]=50;

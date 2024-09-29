@@ -1,6 +1,7 @@
 t1=false;
 t2=false;
 t3=false;
+blocker=false;
 hasexited=false;
 notice=true;
 startingdate=date_current_datetime();

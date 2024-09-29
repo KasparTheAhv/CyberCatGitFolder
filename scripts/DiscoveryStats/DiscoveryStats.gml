@@ -3,7 +3,7 @@
 /// @returns An array with multiple values.
 function DiscoveryStats(){
 	// Show debug mess
-	show_debug_message("Starting DiscoverStats with actualLvl: "+string(argument[0]));
+	//show_debug_message("Starting DiscoverStats with actualLvl: "+string(argument[0]));
 	// Settingsmap
 	var settingsmap= ds_map_secure_load("settings.sav");
 	// Get lvl nr
@@ -50,7 +50,7 @@ function DiscoveryStats(){
 	
 	
 	// show debug message
-	show_debug_message("MaxNotes: "+string(maxNotes)+" / MaxEggs: "+string(maxEggs));
+	//show_debug_message("MaxNotes: "+string(maxNotes)+" / MaxEggs: "+string(maxEggs));
 	
 	// make empty var for notes
 	var unlockedNotes=0;
@@ -59,9 +59,9 @@ function DiscoveryStats(){
 	for (var n=1;n<maxNotes+1;n++)
 	{
 		var key = "Room"+string(actLvl)+"Note"+string(n);
-		show_debug_message("Key is: "+string(key));
+	//	show_debug_message("Key is: "+string(key));
 		var noteValue = ds_map_find_value(settingsmap,key);
-		show_debug_message("value is: "+string(noteValue));
+	//	show_debug_message("value is: "+string(noteValue));
 		if is_undefined(noteValue){} else {unlockedNotes+=1;}
 	}
 	
@@ -72,14 +72,14 @@ function DiscoveryStats(){
 	for (var e=1;e<maxEggs+1;e++)
 	{
 		var key = "Room"+string(actLvl)+"Egg"+string(e);
-		show_debug_message("Key is: "+string(key));
+	//	show_debug_message("Key is: "+string(key));
 		var eggValue = ds_map_find_value(settingsmap,key);
-		show_debug_message("value is: "+string(eggValue));
+	//	show_debug_message("value is: "+string(eggValue));
 		if is_undefined(eggValue) {} else {unlockedEggs+=1;}
 	}
 	
 	// show debug message
-	show_debug_message("UnlockedNotes: "+string(unlockedNotes)+" / UnlockedEggs: "+string(unlockedEggs));
+	// show_debug_message("UnlockedNotes: "+string(unlockedNotes)+" / UnlockedEggs: "+string(unlockedEggs));
 	
 	// DiscoverNotes / eggs and discover overall
 	var discoverynotes=string(unlockedNotes)+"/"+string(maxNotes);

@@ -8,8 +8,6 @@ game_set_speed(global.GFX2, gamespeed_fps);
 room_speeder=game_get_speed(gamespeed_fps);
 global.leapsthissession=0;
 GFX1=global.GFX1;
-swiper=0;
-swipdir=true;
 timermod=1;
 canrevive=true;
 room1bookgiven=false;
@@ -92,6 +90,8 @@ if layer_exists("Backgrounds")
 	layer_background_xscale(cloudlay, 0.5);
 	layer_background_yscale(cloudlay, 0.5);
 }
+
+
 
 // Create thunder layer
 if !layer_exists("CheckerBoard")

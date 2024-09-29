@@ -13,5 +13,4 @@ nonippy=false;
 if instance_exists(oRoomController)
 { 
 oRoomController.alarm[5]=1;
-oRoomController.alarm[0]=1;
 }

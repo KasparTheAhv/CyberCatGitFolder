@@ -1,4 +1,4 @@
-txt="done";done=true;
+done=true;
 	
 	if !instance_exists(oPlayerGod)
 	{

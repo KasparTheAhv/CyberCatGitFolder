@@ -39,27 +39,27 @@ blocker=false;
 canatk=false;
 
 //// Collision array for future
-//colliArray=[
-//oBat,
-//oBulletDart,oBulletMoney,oBulletMonke,oBulletSnow,oBulletSquir,oEgg,
-//oDog,
-//oEggplant,
-//oElectro,
-//oFrogTon,
-//oGarlicBread,
-//oGas,
-//oHeliLizard,
-//oKey,
-//oMushroom,
-//oNippy,
-//oRat,
-//oRatEvent,
-//oSeal,
-//oSnake,
-//oVine,
-//oVineShield,
-//oWater
-//];
+colliArray=[
+oBat,
+oBulletDart,oBulletMoney,oBulletMonke,oBulletSnow,oBulletSquir,oEgg,
+oDog,
+oEggplant,
+oElectro,
+oFrogTon,
+oGarlicBread,
+oGas,
+oHeliLizard,
+oKey,
+oMushroom,
+oNippy,
+oRat,
+oRatEvent,
+oSeal,
+oSnake,
+oVine,
+oVineShield,
+oWater
+];
 
 //  SKIN CONTROL
 if variable_global_exists("catskinscale")

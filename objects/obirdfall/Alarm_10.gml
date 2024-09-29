@@ -12,5 +12,4 @@ image_yscale=0.75;
 if instance_exists(oRoomController)
 { 
 oRoomController.alarm[2]=1;
-oRoomController.alarm[0]=1;
 }

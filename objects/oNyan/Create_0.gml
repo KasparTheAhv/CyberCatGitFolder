@@ -6,10 +6,15 @@ viewW=camera_get_view_width(view_camera[0]);
 draw_self();
 menuOn=false;
 exitlock=false;
-scaleH=round(viewH/117);
+scaleH=viewH/117;
 scaleW=scaleH; //round(viewW/142);
 rescaleH=round(viewH/64)+1;
 rescaleW=round(viewW/64)+1;
+
+// black aared dist from mid
+fromMid=70*scaleW;
+
+
 boardscale=round(viewH/180);
 keyboard=0;
 brad=34*boardscale*0.5;

@@ -17,7 +17,7 @@ for (var i = 0; i < 100; i++)
 	var roomname=asset_get_index(name);
 	if room_exists(roomname)
 	{
-		show_debug_message("roomexists");
-	TokenCheckerNoNoti(roomname);
-	} else {show_debug_message("room no exist");}
+		//show_debug_message("roomexists");
+		TokenCheckerNoNoti(roomname);
+	} else {show_debug_message("room no exist:"+string(name));}
 }

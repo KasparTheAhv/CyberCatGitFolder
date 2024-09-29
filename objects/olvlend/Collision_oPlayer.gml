@@ -167,6 +167,7 @@ if place_meeting(x,y,oPlayer)
 		// Go if allowed ( ALLOWANCE ALSO CREATED THROUGH CERTAIN OTHER OBJECTS )
 		if (t1) && (t2) && (t3)
 		{
+			blocker=true;
 		// room specific endings for ads unlocked
 	var settingsmap=ds_map_secure_load("settings.sav");
 	var curmaxlvl = ds_map_find_value(settingsmap,"maxlvl");
@@ -200,20 +201,20 @@ if place_meeting(x,y,oPlayer)
 			ds_map_set(settingsmap,"maxlvl",20);
 			ds_map_secure_save(settingsmap,"settings.sav");}
 			}	
-if (room==Room23)
-		{
-			if (curmaxlvl<24) {
-			ds_map_set(settingsmap,"maxlvl",24);
-			ds_map_secure_save(settingsmap,"settings.sav");}
-		}		
-if (room==Room27)
-		{
-			if (curmaxlvl<28) {
-			ds_map_set(settingsmap,"maxlvl",28);
-			ds_map_secure_save(settingsmap,"settings.sav");};
-		}	
-if (room==Room31)
-		{
+	if (room==Room23)
+			{
+				if (curmaxlvl<24) {
+				ds_map_set(settingsmap,"maxlvl",24);
+				ds_map_secure_save(settingsmap,"settings.sav");}
+			}		
+	if (room==Room27)
+			{
+				if (curmaxlvl<28) {
+				ds_map_set(settingsmap,"maxlvl",28);
+				ds_map_secure_save(settingsmap,"settings.sav");};
+			}	
+	if (room==Room31)
+			{
 			if (curmaxlvl<32) {
 			ds_map_set(settingsmap,"maxlvl",32);
 			ds_map_secure_save(settingsmap,"settings.sav");};

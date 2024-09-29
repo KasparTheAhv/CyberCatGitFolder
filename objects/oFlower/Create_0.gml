@@ -1,5 +1,5 @@
 ///// Create Event /////
-
+sprite_index=sInvis2;
 // picks a random subimage
 sprite_get_number(sFlowers)
 flower_index=irandom_range(0,sprite_get_number(sFlowers)-1); 
@@ -18,9 +18,3 @@ color=make_color_rgb(glow,glow,glow);
 
 // Alters wave effect (so flowers wouldn't sway in sync)
 change=irandom_range(0,2000);
-
-
-
-
-
-

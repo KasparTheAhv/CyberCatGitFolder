@@ -65,12 +65,10 @@ if (menu_control)
 {
 	var mouse_x_gui=device_mouse_x(0);
 	var mouse_y_gui=device_mouse_y(0);
-	if (mouse_y_gui<menu_y) && (mouse_y_gui>menu_top) && (mouse_x_gui > menu_x_target-180)
+	var mox = device_mouse_x_to_gui(0);
+	if (mouse_y_gui<menu_y) && (mouse_y_gui>menu_top) && (mouse_x_gui > menu_x-(gui_margin*2))
 	{
-		
-		
-		
-		if (mouse_check_button_pressed(mb_left)) 
+		if (mouse_check_button_pressed(mb_left)) && (mox<global.gameWidth*0.9)
 		{
 			var whuut= (menu_y - mouse_y_gui) div (menu_itemheight * 1.75);
 			menu_cursor =whuut;	
@@ -81,7 +79,6 @@ if (menu_control)
 
 		menu_control = false;
 		audio_play_sound(snShoot,5,false);
-			
 		}
 	}
 }

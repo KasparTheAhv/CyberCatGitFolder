@@ -537,7 +537,6 @@
     {"id":{"name":"scr_update_cnbar","path":"scripts/scr_update_cnbar/scr_update_cnbar.yy",},},
     {"id":{"name":"scr_update_healthbar","path":"scripts/scr_update_healthbar/scr_update_healthbar.yy",},},
     {"id":{"name":"ScreenShake","path":"scripts/ScreenShake/ScreenShake.yy",},},
-    {"id":{"name":"ScreenShotAndroid","path":"scripts/ScreenShotAndroid/ScreenShotAndroid.yy",},},
     {"id":{"name":"scribble_anim_blink","path":"scripts/scribble_anim_blink/scribble_anim_blink.yy",},},
     {"id":{"name":"scribble_anim_cycle","path":"scripts/scribble_anim_cycle/scribble_anim_cycle.yy",},},
     {"id":{"name":"scribble_anim_jitter","path":"scripts/scribble_anim_jitter/scribble_anim_jitter.yy",},},

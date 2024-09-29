@@ -13,7 +13,6 @@ if(async_load[?"type"] == "GooglePlayServices_Leaderboard_LoadPlayerCenteredScor
 	show_debug_message("Leader A sync got into brackets");
 	
     var array = json_parse(async_load[?"data"]);
-	show_debug_message(array);
 	
 	for(var a = 0 ; a < array_length(array) ; a ++)
     {
@@ -208,7 +207,7 @@ if (async_load[? "type"] == "GooglePlayServices_SavedGames_Open") {
 
 		// hangi infot serveri data failist
         var data = json_parse(async_load[? "data"]);
-		show_debug_message(data);
+		//	show_debug_message(data); - uncomment to see what data is received
 		// kui serveri data failis eksisteerib struct "coins" siis kirjuta see settings.sav ümber	
 		if variable_struct_exists(data,"coins") 	
 		{ds_map_set(map,"coins",data.coins);_coins=data.coins;}	

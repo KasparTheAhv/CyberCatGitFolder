@@ -3,8 +3,8 @@ var settingsmap=ds_map_secure_load("settings.sav");
 var fG = ds_map_find_value(settingsmap,"firstGraphics");
 
 //// First display setup
-//if is_undefined(fG)
-//{
+if is_undefined(fG)
+{
 	show_debug_message("firstGraphics is undefined, starting initial setup!");
 	var _freq = display_get_frequency();	
 	if (_freq == 60)
@@ -24,17 +24,17 @@ var fG = ds_map_find_value(settingsmap,"firstGraphics");
 		ds_map_set(settingsmap,"GFX4",2);
 	} 	
 	
-if (_freq >= 90) {
-global.GFX2=60;
-global.GFX4=3;
-show_debug_message("firstGraphics set to =/+90fps!");
-ds_map_set(settingsmap,"GFX2",60);
-ds_map_set(settingsmap,"GFX4",3);
-}
+	if (_freq >= 90) {
+	global.GFX2=60;
+	global.GFX4=3;
+	show_debug_message("firstGraphics set to =/+90fps!");
+	ds_map_set(settingsmap,"GFX2",60);
+	ds_map_set(settingsmap,"GFX4",3);
+	}
+	ds_map_set(settingsmap,"firstGraphics",1);
+	ds_map_secure_save(settingsmap,"settings.sav");
 
-		ds_map_set(settingsmap,"firstGraphics",1);
-		ds_map_secure_save(settingsmap,"settings.sav");
-//} else {show_debug_message("firstGraphics no need to setup!");}
+} else {show_debug_message("firstGraphics no need to setup!");}
 
 // GFX1 setting1name="Particle Effects:"; 
 // - This gets checked within code

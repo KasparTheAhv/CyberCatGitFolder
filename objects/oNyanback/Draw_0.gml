@@ -3,8 +3,8 @@ layer = layer_get_id("Comp");
 if (gamestarted)
 {
 draw_set_color(c_black);
-draw_rectangle(0,1000,xx-rexmod,yy-reymod,false);
-draw_rectangle(xx+rexmod,yy+reymod2,room_width,0,false);
+draw_rectangle(0,0,xx-fromMid,1000,false);
+draw_rectangle(xx+fromMid,0,room_width,1000,false);
 draw_set_color(c_white);
 scribble(string(textscale)+"[fOrbitronBigOut][fa_center][fa_middle]"+string(color)+string(count)).draw(xx,yy-reymod+60);	
 }
@@ -12,7 +12,6 @@ scribble(string(textscale)+"[fOrbitronBigOut][fa_center][fa_middle]"+string(colo
 
 if (menuOn)
 {
-
 draw_sprite_ext(sKeyboard,4,xx+(pisuy*0.5),yy+(pisuy*0.5),scaleW,scaleH,0,c_white,oNyan.menualpha);
 draw_sprite_ext(sComp,2,xx,yy,scaleW,scaleH,0,c_white,oNyan.menualpha);
 }

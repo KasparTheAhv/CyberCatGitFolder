@@ -21,5 +21,5 @@
   "sampleRate":32000,
   "soundFile":"BGMuWinter1.ogg",
   "type":0,
-  "volume":1.0,
+  "volume":0.1,
 }

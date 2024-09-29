@@ -37,16 +37,16 @@ if instance_exists(oPajmpKey)
 {
 	for (var i =0; i<3; i++)
 	{
-	if device_mouse_check_button_released(i,mb_any)
-	{
-	var _touch_x = device_mouse_x_to_gui(i);
-	var _touch_y = device_mouse_y_to_gui(i);
-	var who_touch = instance_position(_touch_x, _touch_y, oPajmpKey);
-	if (who_touch != noone)
-	{
-		with(who_touch) {who_touch.alarm[1]=1;}
-	}
-	}
+		if device_mouse_check_button_released(i,mb_any)
+		{
+		var _touch_x = device_mouse_x_to_gui(i);
+		var _touch_y = device_mouse_y_to_gui(i);
+		var who_touch = instance_position(_touch_x, _touch_y, oPajmpKey);
+		if (who_touch != noone)
+		{
+			with(who_touch) {who_touch.alarm[1]=1;}
+		}
+		}
 	}
 }
 
