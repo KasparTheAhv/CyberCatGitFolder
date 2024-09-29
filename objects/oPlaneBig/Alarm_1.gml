@@ -2,7 +2,6 @@
 /// @desc
 if (boarded)
 {
-
 	// FASTEST TIME CALC 
 	show_debug_message("Hasexited: "+string(oLvlEnd.hasexited));
 	show_debug_message("score uploaded already: "+string(scoreuploaded));

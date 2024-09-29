@@ -1,6 +1,6 @@
 if instance_exists(oFrogSpawner)
 {
-	if (oFrogSpawner.frogstokill>0) {oFrogSpawner.frogstokill-=1;with(oTimer){pieseconds-=60;}}
+	if (oFrogSpawner.frogstokill>0) {oFrogSpawner.frogstokill-=1;with(oTimer){seconds-=1;pieseconds-=60;}}
 }
 play_sound(snFrogD,false);
 if instance_exists(oRoomController)

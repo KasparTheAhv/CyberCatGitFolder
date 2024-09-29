@@ -12,7 +12,7 @@ if (room=Room21)
 	{
 		if (oTimer.seconds>0)
 		{
-		oTimer.seconds-=1;	
+			with(oTimer) {seconds-=1;pieseconds-=60;}
 		} 
 		if (oTimer.seconds==0) && (oSnakeMan.stage==0)
 		{

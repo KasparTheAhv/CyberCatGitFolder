@@ -1,4 +1,4 @@
-
+if (blocker) {exit;}
 	// FASTEST TIME CALC 
 	show_debug_message("Hasexited: "+string(hasexited));
 	show_debug_message("score uploaded already: "+string(scoreuploaded));
@@ -7,6 +7,7 @@
 		{
 		if (instance_exists(oPlayControllerA)) && (scoreuploaded==false)
 		{
+			blocker=true;
 			scoreuploaded=true;
 				var startingdate=self.startingdate;
 				var enddate=date_current_datetime(); // first time

@@ -10,8 +10,9 @@ if place_meeting(x,y,oPlayerFall)
 		}
 		//Go if allowed
 	
-		if (t1) && (t2) && (t3)
+		if (t1) && (t2) && (t3) && !(blocker)
 		{
+			blocker=true;
 		// FASTEST TIME CALC 
 		show_debug_message("Hasexited: "+string(hasexited));
 				show_debug_message("score uploaded already: "+string(scoreuploaded));
