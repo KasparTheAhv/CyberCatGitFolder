@@ -2,13 +2,13 @@ repeat(2)
 {
 	if (visible) && (global.GFX1==1)
 	{
-part_particles_create(oRoomController.part_sys, x, y,oRoomController.part23,irandom_range(34,34));
+		part_particles_create(oRoomController.part_sys, x, y,oRoomController.part23,irandom_range(34,34));
 	}
 }
 
 with(oSwordDoor)
 {
-activated=false;	
+	activated=false;	
 }
 
 with (instance_create_layer(x,y,"BefEdge",oFireworkStart))

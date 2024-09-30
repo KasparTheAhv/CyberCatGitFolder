@@ -13,12 +13,12 @@ UnlockNoteEgg("Egg",1);
 	blocker=true;
 	text="Seeya in hell!\noh.. and I love the carpet on god btw\nsuits you nicely!";
 with (instance_create_layer(self.x,self.y-50,"Particles",oTextFloat))
-	{
-	timer=150;
-	target=other;
-	text = other.text;
-	length = string_length(text);
-	}
+{
+timer=150;
+target=other;
+text = other.text;
+length = string_length(text);
+}
 
 instance_create_layer(self.x,self.y,"Characters",oElGatoD);
 instance_destroy(self);

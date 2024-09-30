@@ -13,4 +13,5 @@ image_index=1;
 image_alpha=1;
 image_xscale=0.75;
 image_yscale=0.75;
+ogXscale=image_xscale;
 }

@@ -55,6 +55,7 @@
     {"name":"inst_38258036","path":"rooms/Room16/Room16.yy",},
     {"name":"inst_7E06AE0","path":"rooms/Room16/Room16.yy",},
     {"name":"inst_2D343D9B","path":"rooms/Room16/Room16.yy",},
+    {"name":"inst_46C172B4","path":"rooms/Room16/Room16.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -275,6 +276,7 @@
         {"$GMRInstance":"v1","%Name":"inst_27F185B3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_27F185B3","objectId":{"name":"oSnake","path":"objects/oSnake/oSnake.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1593.0,"y":1626.0,},
         {"$GMRInstance":"v1","%Name":"inst_116CED7B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_116CED7B","objectId":{"name":"oSnake","path":"objects/oSnake/oSnake.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2784.0,"y":1568.0,},
         {"$GMRInstance":"v1","%Name":"inst_704234E1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_704234E1","objectId":{"name":"oSnake","path":"objects/oSnake/oSnake.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2496.0,"y":1568.0,},
+        {"$GMRInstance":"v1","%Name":"inst_46C172B4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_46C172B4","objectId":{"name":"oSnake","path":"objects/oSnake/oSnake.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1696.0,"y":1696.0,},
       ],"layers":[],"name":"Characters","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"TreatFront","depth":1750,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_11C3489C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_11C3489C","objectId":{"name":"oTreatBox","path":"objects/oTreatBox/oTreatBox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3875.0,"y":1445.0,},

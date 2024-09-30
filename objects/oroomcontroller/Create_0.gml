@@ -339,6 +339,7 @@ part_type_orientation(part5,0,0,PaInc,0,true);
 part_type_gravity(part5,0.1,90);
 part_type_life(part5,Plife*2,Plife*3);
 part_type_blend(part5,Pblend);
+
 ////  GAS (dog explode)
 part6 = part_type_create();
 Pscale=4;Palpha=0.9;Pspeed=2;PsizeInc=-0.02; PspeedInc=-0.03;Pblend=true;

@@ -6,7 +6,7 @@ if (picked)
 		image_xscale=ogXscale*sign(mytarget.image_xscale);
 		if (mytarget.object_index==oPlayer)	
 		{
-			if (mytarget.sprite_index==sPlayerAFK)
+			if (mytarget.sprite_index==global.sPlayerAFK)
 			{
 				xmoder=3;
 				moder=9;
@@ -15,7 +15,7 @@ if (picked)
 	var side=sign(mytarget.image_xscale);
 	self.x=mytarget.x+(xmod*side)-(xmoder*side);
 	self.y=mytarget.y-(ymod)+moder;
-		if (mytarget.sprite_index==sPlayerR)
+		if (mytarget.sprite_index==global.sPlayerR)
 		{
 			if (angright)
 			{

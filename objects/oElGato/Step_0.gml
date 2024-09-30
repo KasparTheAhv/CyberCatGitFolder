@@ -59,16 +59,17 @@ y += 3;
 
 if (cur_state==gatosta.fly) 
 {
-if (swodir<360) {swodir+=20;} else {swodir=20;}
-swoxscale = 0.5 + 0.5 * abs(dcos(swodir));
-swoyscale = 0.5 + 0.5 * abs(dsin(swodir));	
-swox =self.x+ lengthdir_x(31,image_angle+90);
-swoy =self.y+ lengthdir_y(31,image_angle+90);
-if instance_exists(whatrat)
-{
-move_towards_point(whatrat.x,whatrat.y,5);
-var dir=point_direction(x,y,whatrat.x,whatrat.y-800);
-image_angle=dir-90;
-} else {sprite_index=sElGato;speed=0;image_angle=0;cur_state=gatosta.stand;alarm[0]=60;}
+	if (swodir<360) {swodir+=20;} else {swodir=20;}
+	swoxscale = 0.5 + 0.5 * abs(dcos(swodir));
+	swoyscale = 0.5 + 0.5 * abs(dsin(swodir));	
+	swox =self.x+ lengthdir_x(31,image_angle+90);
+	swoy =self.y+ lengthdir_y(31,image_angle+90);
+	
+	if instance_exists(whatrat)
+	{
+	move_towards_point(whatrat.x,whatrat.y,5);
+	var dir=point_direction(x,y,whatrat.x,whatrat.y-800);
+	image_angle=dir-90;
+	} else {sprite_index=sElGato;speed=0;image_angle=0;cur_state=gatosta.stand;alarm[0]=60;}
 }
 
