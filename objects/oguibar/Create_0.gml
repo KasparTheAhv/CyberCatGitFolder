@@ -131,37 +131,26 @@ task2scri=string(textalpha)+string(textscale)+"[fa_center][fa_left]"+string(task
 task3scri=string(textalpha)+string(textscale)+"[fa_center][fa_left]"+string(task3col)+"\n\n\n"+string(task3);
 
 
+longest=max(str1,str2,str3);
 
-
-if (str1>str2) 
+if (longest==str1)
 {
-	if (str1>str3)
-	{
 	rectx2=xx3+str1+50+50*global.GUI;
 	rectoScaleX=(rectx2-rectx1)/64;
 	rectoScaleY=(recty2-recty1)/64;
-	exit;
-	}
 }
 
-if (str2>str1) 
+if (longest==str2)
 {
-	if (str2>str3)
-	{
 	rectx2=xx3+str2+50+50*global.GUI;
 	rectoScaleX=(rectx2-rectx1)/64;
 	rectoScaleY=(recty2-recty1)/64;
-	exit;
-	}
 }
 
-if (str3>str2) 
+if (longest==str3)
 {
-	if (str3>str1)
-	{
 	rectx2=xx3+str3+50+50*global.GUI;
 	rectoScaleX=(rectx2-rectx1)/64;
 	rectoScaleY=(recty2-recty1)/64;
-	exit;
-	}
 }
+alarm[1]=1;

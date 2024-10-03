@@ -1,4 +1,14 @@
 // In the Create Event of obj_lightning
+// delete in indoor rooms
+if (room==Room0)	{instance_destroy();} 
+if (room==Room9)	{instance_destroy();} 
+if (room==Room12)	{instance_destroy();} 
+if (room==Room23)	{instance_destroy();} 
+if (room==Room24)	{instance_destroy();} 
+if (room==Room25)	{instance_destroy();} 
+if (room==Room32)	{instance_destroy();} 
+
+
 started=false;
 
 lightning = [];

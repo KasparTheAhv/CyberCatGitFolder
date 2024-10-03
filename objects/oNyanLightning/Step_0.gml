@@ -12,5 +12,5 @@ if (self.x>room_width+500) {instance_destroy();}
 
 	if part_system_exists(part_sys)
 	{
-	part_emitter_region(part_sys,0,x,x,y,y,ps_shape_rectangle,ps_distr_linear);
+		part_emitter_region(part_sys,0,x,x,y,y,ps_shape_rectangle,ps_distr_linear);
 	}

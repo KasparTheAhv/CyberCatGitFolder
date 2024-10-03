@@ -1,6 +1,4 @@
 /// @desc
-
-
 if !(isFerry)
 {
 	if (goUp) 

@@ -10,3 +10,4 @@ tilemap=layer_tilemap_get_id("Collision");
 tiles = layer_tilemap_get_id("RatCollision");
 cooldown=false;
 triggerdist=500;
+if instance_exists(oPlayerGod) {image_blend=c_aqua; } else {image_blend=c_white;}

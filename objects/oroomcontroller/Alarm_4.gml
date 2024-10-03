@@ -8,6 +8,8 @@ if (instance_exists(oPlayerGod))
 	with (oBird)  {image_blend=c_aqua;speedmod=2;}
 	with (oFrog)  {image_blend=c_aqua;}
 	with (oSnake)  {image_blend=c_aqua;}
+	with (oBat) {image_blend=c_aqua;}
+	with (oHeliLizard) {image_blend=c_aqua;}	
 }
 else
 {
@@ -18,6 +20,8 @@ else
 	with (oBird)   {image_blend=c_white;speedmod=1;}
 	with (oFrog)   {image_blend=c_white;}
 	with (oSnake)  {image_blend=c_white;}
+	with (oBat) {image_blend=$ff65fb;}
+	with (oHeliLizard) {image_blend=c_white;}	
 }
 alarm[4]=5;
 

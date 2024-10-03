@@ -3,7 +3,7 @@ oFollowPlayer.allowedcam=false;
 oGUIBAR.alcam=false; 
 with(oJumpKey) {joonista=true;}
 instance_destroy(oShield);
-
+with(oEgg) {instance_destroy();}
 if instance_exists(oMusicController)
 {
 oMusicController.alarm[2]=1;	

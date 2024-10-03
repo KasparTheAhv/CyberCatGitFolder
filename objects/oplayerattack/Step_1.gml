@@ -75,7 +75,7 @@ switch (who.object_index) {
 			with (instance_create_layer(who.x,who.y-3,"Characters",oBatD))
 				{
 				vsp= 0;
-				hsp= 3*side;
+				hsp= 3*sign(other.image_xscale);
 				if (sign(hsp) !=0) image_xscale = sign(hsp)*0.75;
 				}
 			instance_destroy(who);

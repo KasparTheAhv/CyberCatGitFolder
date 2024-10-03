@@ -343,13 +343,7 @@ with (oEgg)
 	
 	if place_meeting(x,y,oBullet) {
 		
-		if (visible) 
-		{
-			if (other.GFX1==1)
-			{
-				part_particles_create(oRoomController.part_sys, eggxx, eggyy,oRoomController.part15,irandom_range(12,15));
-			}
-		}
+
 		instance_destroy();if instance_exists(oGUIBAR){oGUIBAR.cn+=2.75;}
 		}
 		
@@ -372,13 +366,6 @@ with (oEgg)
 				}
 			instance_destroy();
 			} else {		
-				if (visible)
-				{
-					if (other.GFX1==1)
-					{
-					part_particles_create(other.part_sys, eggxx, eggyy,other.part1,irandom_range(12,15));
-					}
-				}
 			instance_create_layer(eggxx,eggyy,"Characters",oGas);
 			instance_destroy();
 			}
