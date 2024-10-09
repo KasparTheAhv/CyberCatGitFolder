@@ -1,6 +1,6 @@
 if (os_type==os_windows) {instance_destroy();}
 if (os_type==os_operagx) {instance_destroy();}
-
+// tesit
 socket = network_create_socket(network_socket_udp);
 packet = buffer_create(48, buffer_fixed, 1);
 buffer_write(packet, buffer_u8, 0xe3) // no leap, NTP version 4, client
