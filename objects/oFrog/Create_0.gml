@@ -20,3 +20,4 @@ tonqDete=65*image_xscale*2;
 atkDete=210*image_xscale*2;
 self.depth=depth-5;
 mytonq=noone;
+tonqueImade=noone;

@@ -1,6 +1,6 @@
 /// @desc End level
 if !(activated) {exit;}
-
+if (blocker) {exit;}
 if place_meeting(x,y,oPlayer)
 {
 	if instance_exists(oText) {exit;}
@@ -165,7 +165,7 @@ if place_meeting(x,y,oPlayer)
 		
 		
 		// Go if allowed ( ALLOWANCE ALSO CREATED THROUGH CERTAIN OTHER OBJECTS )
-		if (t1) && (t2) && (t3) && !(blocker)
+		if (t1) && (t2) && (t3) 
 		{
 			blocker=true;
 		// room specific endings for ads unlocked

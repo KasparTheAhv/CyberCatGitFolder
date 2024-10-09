@@ -9,7 +9,7 @@ part_particles_create(oRoomController.part_sys, x, y,oRoomController.part6,irand
 
 if instance_exists(oGUIBAR) {oGUIBAR.cn+=2;}
 image_blend=c_red;
-alarm[5]=6;
+alarm[5]=4;
 play_sound(snShot,false);
 
 with(other)

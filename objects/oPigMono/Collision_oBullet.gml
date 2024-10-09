@@ -12,7 +12,7 @@ instance_destroy();
 if instance_exists(oGUIBAR)&&(instance_exists(oPlayerGod)){oGUIBAR.cn+=0.5;}
 self.elud-=1;
 image_blend=c_red;
-alarm[8]=6;
+alarm[8]=4;
 
 if (visible) && (global.GFX1==1)
 {

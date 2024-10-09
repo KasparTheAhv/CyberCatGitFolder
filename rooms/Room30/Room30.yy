@@ -63,11 +63,12 @@
         {"$GMRInstance":"v1","%Name":"inst_76B2FB7C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76B2FB7C","objectId":{"name":"oWater","path":"objects/oWater/oWater.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":21.0,"scaleY":9.0,"x":2944.0,"y":800.0,},
       ],"layers":[],"name":"Walls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRTileLayer":"","%Name":"RatCollision","depth":250,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"RatCollision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":32,"SerialiseWidth":125,"TileCompressedData":[
-          -1750,-2147483648,1,3,-124,-2147483648,1,3,-17,-2147483648,-9,0,-98,-2147483648,1,3,-124,-2147483648,
-          1,3,-124,-2147483648,1,3,-45,-2147483648,1,3,-78,-2147483648,1,3,-45,-2147483648,1,3,-78,-2147483648,
-          -4,3,-42,-2147483648,1,3,-81,-2147483648,-4,3,-39,-2147483648,1,3,-25,-2147483648,1,3,-7,-2147483648,
-          1,3,-50,-2147483648,-26,3,-14,-2147483648,1,3,-93,-2147483648,-11,3,-5,-2147483648,-9,3,-6,-2147483648,
-          1,3,-82,-2147483648,-3,0,-7,-2147483648,-3,0,-20,-2147483648,-2,0,-8,3,-953,-2147483648,
+          -1625,-2147483648,-3,3,-122,-2147483648,-2,3,-123,-2147483648,-2,3,-16,-2147483648,-9,0,-17,-2147483648,
+          -3,3,-78,-2147483648,-2,3,-43,-2147483648,-2,3,-78,-2147483648,-2,3,-43,-2147483648,-2,3,-78,-2147483648,
+          -2,3,-43,-2147483648,-2,3,-78,-2147483648,-2,3,-43,-2147483648,-2,3,-78,-2147483648,-4,3,-41,-2147483648,
+          -2,3,-79,-2147483648,-6,3,-38,-2147483648,-2,3,-25,-2147483648,1,3,-7,-2147483648,1,3,-48,-2147483648,
+          -28,3,-13,-2147483648,-2,3,-84,-2147483648,-34,3,-5,-2147483648,-2,3,-82,-2147483648,-3,0,-7,-2147483648,
+          1,0,-11,3,-6,-2147483648,-15,3,-115,-2147483648,-10,3,-828,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"TileCollision","path":"tilesets/TileCollision/TileCollision.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"CollisionSmall","depth":350,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionSmall","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":125,"SerialiseWidth":500,"TileCompressedData":[-62500,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"TileCollisionSmall","path":"tilesets/TileCollisionSmall/TileCollisionSmall.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Platform","depth":450,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Platform","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":125,"SerialiseWidth":250,"TileCompressedData":[

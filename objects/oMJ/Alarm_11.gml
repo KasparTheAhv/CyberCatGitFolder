@@ -1,4 +1,4 @@
-/// @desc
+/// @desc CypPort Death
 if !(immune)
 {
 	immune=true;
@@ -6,6 +6,4 @@ if !(immune)
 	alarm[8]=4;	
 	self.elud-=20;	
 	if (elud<=0) {instance_destroy();}
-	var plax= side*12;
-	instance_create_layer(self.x+plax,self.y+10,"BefEdge",oSlash);
 }

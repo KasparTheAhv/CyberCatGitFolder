@@ -5,7 +5,7 @@ instance_destroy();
 if instance_exists(oGUIBAR){oGUIBAR.cn+=1;}
 self.elud-=2;
 image_blend=c_red;
-alarm[8]=6;
+alarm[8]=4;
 play_sound(snShot,false);
 if (elud<=0) 
 {

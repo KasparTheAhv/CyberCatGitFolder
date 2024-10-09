@@ -4,7 +4,7 @@ with (other)
 	self.elud-=1;
 	humanhater=true;
 	image_blend=c_red;
-	alarm[8]=6;
+	alarm[8]=4;
 	play_sound(snShot,false);
 	if (elud<=0) 
 	{

@@ -1,7 +1,6 @@
 /// @desc atk
 if instance_exists(oPlayer) && (vsp<1)
 {
-	
 	play_sound(snFrog,false);
 	var temahsp=oPlayer.hsp*40;
 	var temavsp=oPlayer.vsp*10;

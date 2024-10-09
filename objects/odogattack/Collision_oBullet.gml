@@ -7,6 +7,7 @@ instance_destroy();
 if instance_exists(oGUIBAR){oGUIBAR.cn+=2;}
 self.elud-=1;
 image_blend=c_red;
+alarm[8]=4;
 if (elud<=0) 
 {
 if (room==Room5)

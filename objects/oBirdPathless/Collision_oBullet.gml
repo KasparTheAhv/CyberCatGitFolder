@@ -6,7 +6,7 @@ instance_destroy();
 }
 if instance_exists(oGUIBAR)&&(instance_exists(oPlayerGod)){oGUIBAR.cn+=1.75;}
 image_blend=c_red;
-alarm[0]=8;
+alarm[0]=4;
 self.elud-=1;
 if (elud<=0) 
 {

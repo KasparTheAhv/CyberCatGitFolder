@@ -4,7 +4,7 @@ if !(shielded)
 	{
 	hurt=true;
 	self.image_blend=c_red;
-	alarm[8]=10;	
+	alarm[8]=4;	
 	oGUIBAR.hp+=10;
 	oGUIBAR.cn+=25;
 	elud-=5;

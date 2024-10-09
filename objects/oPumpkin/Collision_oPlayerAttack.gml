@@ -9,7 +9,7 @@ if (elud<=0) {instance_destroy();}
 
 
 immune=true;
-alarm[8]=8; // blend back
+alarm[8]=4; // blend back
 alarm[10]=300; // immune off
 alarm[1]=180; //gain shield
 alarm[2]=60; // attack 

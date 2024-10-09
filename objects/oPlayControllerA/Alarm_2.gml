@@ -144,7 +144,7 @@ variable_struct_set(data,_whatskinkey,_skinvalue);
 
 
 
-for (var i = 0; i < 31; i++) // room loop 
+for (var i = 0; i < 62; i++) // room loop 
 {
 	var whatroom="Room"+string(i);
 	// notes and secrets loop

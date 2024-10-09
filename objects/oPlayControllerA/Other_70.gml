@@ -323,7 +323,7 @@ if (async_load[? "type"] == "GooglePlayServices_SavedGames_Open") {
 			
 			}	
 			
-		for (var i = 0; i < 31; i++) // room loop 
+		for (var i = 0; i < 62; i++) // room loop 
 			{
 				var whatroom="Room"+string(i);
 				var _whatkey="Room"+string(i)+"totaltime";

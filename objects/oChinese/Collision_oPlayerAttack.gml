@@ -6,7 +6,7 @@ if (self.immune==false)
 	part_particles_create(oRoomController.part_sys, self.x, self.y,oRoomController.part17,irandom_range(50,60));
 	part_particles_create(oRoomController.part_sys, self.x, self.y,oRoomController.part18,irandom_range(40,50));	
 	image_blend=c_red;
-	alarm[8]=10;
+	alarm[8]=4;
 	alarm[10]=60;
 	self.immune=true;
 	elud-=25;

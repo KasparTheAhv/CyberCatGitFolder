@@ -7,12 +7,17 @@ if (cur_state==drakestates.leave)
 	if (self.x>room_width+100) {garlicdeath=false; 
 		
 
-instance_destroy(oChainEnd);
-instance_destroy(oChainRing);
-instance_destroy(oChainEaringStart);
-instance_destroy();}
-self.x+=2;	
-exit;	
+	instance_destroy(oChainEnd);
+	instance_destroy(oChainRing);
+	instance_destroy(oChainEaringStart);
+	instance_destroy();}
+	self.x+=2;	
+	if (tilemap_get_at_pixel(tilemap,x,y+vsp)!=0)
+	{
+	vsp=0;	 landed=true;
+	}
+	y+=floor(vsp);
+	exit;	
 }
 
 

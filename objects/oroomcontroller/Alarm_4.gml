@@ -23,7 +23,7 @@ else
 	with (oBat) {image_blend=$ff65fb;}
 	with (oHeliLizard) {image_blend=c_white;}	
 }
-alarm[4]=5;
+alarm[4]=4;
 
 
 

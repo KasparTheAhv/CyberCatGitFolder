@@ -82,6 +82,21 @@ if (global.debugButtonsAdded==false) // ADD BUTTONS ONLY ONCE
 					}
 			}
 			dbg_button("INTERPOLATION", my_method9);
+						//////////////////////////////////////////////////////////////
+			my_method9 = function()
+			{
+				if gpu_get_texfilter()
+					{
+					    gpu_set_texfilter(false);
+						show_debug_message("INTERPOLATION OFF");
+					}
+					else
+					{
+					    gpu_set_texfilter(true);
+						show_debug_message("INTERPOLATION ON");
+					}
+			}
+			dbg_button("INTERPOLATION", my_method9);
 			//////////////////////////////////////////////////////////////
 			my_method10 = function()
 			{

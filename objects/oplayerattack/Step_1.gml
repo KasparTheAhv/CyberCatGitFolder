@@ -126,7 +126,7 @@ switch (who.object_index) {
 				{
 					image_blend=c_red;
 					alarm[8]=-1;
-					alarm[8]=60;
+					alarm[8]=10;
 				}
 				play_sound(snDogHit,false);
 				if (image_xscale<0) {var mut=-14;} else {mut=14;}
@@ -263,7 +263,7 @@ switch (who.object_index) {
 						instance_create_layer(x,y,"BefEdge",oNippy);
 						image_blend=c_red;
 						alarm[8]=-1;
-						alarm[8]=60;
+						alarm[8]=10;
 						if (elud<=0)
 						{
 							with (instance_create_layer(self.x,self.y,"Characters",oMonkeDeath))
@@ -323,7 +323,7 @@ switch (who.object_index) {
 					instance_create_layer(x,y,"BefEdge",oNippy);
 					image_blend=c_red;
 					alarm[8]=-1;
-					alarm[8]=50;
+					alarm[8]=10;
 					play_sound(snDogHit,false);
 					if (image_xscale<0) {var mut=-14;} else {mut=14;}
 					if (visible) && (global.GFX1==1)

@@ -4,7 +4,7 @@ if !(immune)
 {
 	immune=true;
 	image_blend=c_red;
-	alarm[1]=5;
+	alarm[1]=4;
 	if instance_exists(oGUIBAR){oGUIBAR.cn-=25;}
 	
 	with(other)

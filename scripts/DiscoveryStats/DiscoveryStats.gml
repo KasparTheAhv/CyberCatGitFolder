@@ -62,7 +62,7 @@ function DiscoveryStats(){
 	//	show_debug_message("Key is: "+string(key));
 		var noteValue = ds_map_find_value(settingsmap,key);
 	//	show_debug_message("value is: "+string(noteValue));
-		if is_undefined(noteValue){} else {unlockedNotes+=1;}
+		if is_undefined(noteValue){} else {unlockedNotes+=noteValue;}
 	}
 	
 	// make empty var for eggs
@@ -75,7 +75,7 @@ function DiscoveryStats(){
 	//	show_debug_message("Key is: "+string(key));
 		var eggValue = ds_map_find_value(settingsmap,key);
 	//	show_debug_message("value is: "+string(eggValue));
-		if is_undefined(eggValue) {} else {unlockedEggs+=1;}
+		if is_undefined(eggValue) {} else {unlockedEggs+=eggValue;}
 	}
 	
 	// show debug message

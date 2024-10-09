@@ -8,7 +8,8 @@ if (who==noone) {whoIs=noone; exit;}
 
 // Checking object index
 switch (who.object_index) {
-	
+
+
 //////////// Electro case
 case oBat:
 if !(immune)
@@ -719,5 +720,8 @@ if (type==2)
 	instance_destroy(self);
 }
 break;
+
+
+
 // end
 }

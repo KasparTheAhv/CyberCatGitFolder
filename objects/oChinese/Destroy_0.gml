@@ -1,7 +1,7 @@
 /// @desc
 with (instance_create_layer(x,y,"BefEdge",oFireworkStart))
 {
-		bossSPR=11;
+	bossSPR=11;
 	partCol1=c_white;
 	partCol2=c_black;
 }
@@ -45,6 +45,8 @@ with(oHeliLizard) {
 part_particles_create(oRoomController.part_sys, self.x, self.y,oRoomController.part17,irandom_range(50,60));
 part_particles_create(oRoomController.part_sys, self.x, self.y,oRoomController.part18,irandom_range(40,50));	
 	}
+	
+with(oMagicalStick) {bossdead=true;}	
 	instance_destroy();}
 	
 	

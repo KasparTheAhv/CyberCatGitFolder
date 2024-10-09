@@ -6,6 +6,7 @@ if instance_exists(oPlayer) && !(exitlock)
 	oPlayer.immune=false;
 	oGUIBAR.follow=oFollowPlayer;
 	camera_set_view_target(view_camera[0],oFollowPlayer);
+	instance_destroy(oBulletGame);
 	instance_activate_object(oPenquin);
 	instance_activate_object(oDog);
 	instance_activate_object(oNote);

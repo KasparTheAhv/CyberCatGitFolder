@@ -12,7 +12,6 @@ if (point_distance(x,y,oFollowPlayer.x,oFollowPlayer.y)<100)
 	play_sound(snShot,false);
 	instance_destroy(self);
 	with (oSnake) {showntext=true;}
-	oSnake.showntext=true;
 	text="U saved me, why? MONKE?";
 	with (instance_create_layer(oFollowPlayer.x,oFollowPlayer.y-80,"Particles",oTextFloat))
 	{
