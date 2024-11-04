@@ -3,7 +3,7 @@ if (noenergy) {exit;}
 
 if (image_index==0)
 {
-	if (point_distance(x,y,mouse_x,mouse_y)<32) && (point_distance(x,y,oFollowPlayer.x,oFollowPlayer.y)<150)
+	if (CatIsNearClick())
 	{
 	// egg
 	UnlockNoteEgg("Egg",3);

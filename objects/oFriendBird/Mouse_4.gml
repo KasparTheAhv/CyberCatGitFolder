@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if !CatIsNearClick(){exit;}
+
 if (ending) {
 if (delay<=0) {
 		delay=6;alarm[1]=1;

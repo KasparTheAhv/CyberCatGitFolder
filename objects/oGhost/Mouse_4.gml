@@ -1,24 +1,10 @@
 /// @desc
-	if instance_exists(oPlayer)
-	{
-		var tar=oPlayer;
-	}	
-	
-	if instance_exists(oPlayerAttack)
-	{
-		var tar=oPlayerAttack;
-	}
-	
-	if instance_exists(oPlayerFall)
-	{
-		var tar=oPlayerFall;
-	}
+
 if (y>430) {exit;}
 
-if (state==0) && (point_distance(x,y,tar.x,tar.y<70))
+if (state==0) && (CatIsNearClick())
 {
 	state=1;
-	
 	hspeed=0;
 	vspeed=0;	
 	if (tar.x>self.x) {image_xscale=1;} else {image_xscale=-1;}
@@ -35,8 +21,4 @@ if (state==0) && (point_distance(x,y,tar.x,tar.y<70))
 	length = string_length(text);
 	timer=240;
 	}
-	
-	
-	
-	
 }

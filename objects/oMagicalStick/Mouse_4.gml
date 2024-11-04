@@ -1,7 +1,7 @@
 /// @desc
 
 if !(charged) { exit;}
-if (point_distance(x,y,oFollowPlayer.x,oFollowPlayer.y)<100)
+if (CatIsNearClick())
 {
 	charged=false;
 	curitem+=1;

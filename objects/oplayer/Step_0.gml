@@ -5,7 +5,6 @@ var PCMove=false;
 // pcconversion for movement
 if (os_type!=os_android)
 {
-	//if !(global.reading)
 	if instance_exists(oVStick) && (vstick_get_active(1)) && (oVStick.joonista)
 	{
 		// Left and right
@@ -13,10 +12,11 @@ if (os_type!=os_android)
 		if (keyboard_check(ord("D"))) {var PCMove=true;var moveright=true;} else {var moveright=false;}
 		
 		if !(moveleft) && !(moveright) {PCxaxis=0;}
+		
 		if (moveleft) && (moveright) {PCxaxis=0;} else 
 		{
-		if (moveleft) {if (PCxaxis>-1) {PCxaxis=-1;}}
-		if (moveright) {if (PCxaxis<1) {PCxaxis=1;}}
+			if (moveleft) {if (PCxaxis>-1) {PCxaxis=-1;}}
+			if (moveright) {if (PCxaxis<1) {PCxaxis=1;}}
 		}
 		
 		// up and down
@@ -52,7 +52,7 @@ if (afksec>300)
 		// Achievement: Just Loafing
 		if (global.isAndroid)
 		{
-		GooglePlayServices_Achievements_Unlock("CgkIgbe1i_EYEAIQJw");
+			GooglePlayServices_Achievements_Unlock("CgkIgbe1i_EYEAIQJw");
 		}
 	}
 } else {afk=false;}
@@ -66,9 +66,9 @@ lastSide=image_xscale;
 // Apply gravity
 if (allowgra)
 {
-vsp+=grv;
-vsp=clamp(vsp,-19,8);
-vspP=vsp;
+	vsp+=grv;
+	vsp=clamp(vsp,-19,8);
+	vspP=vsp;
 }
 
 // Animate player object based on movement
@@ -78,20 +78,15 @@ if instance_exists(oVStick)
 	spd=clamp(spd,-1,1);
 	if (usable) && !(hspimmune) {hsp = round(spd*walksp*slow);}
 	
-			// new place -> to old place if issues show up	
-			if (!jumping) {if (x!=lastx) {
-			image_speed=walksp*0.1+0.7;
-			sprite_index=global.sPlayerR;}else{if(afk){image_speed=1;sprite_index=global.sPlayerAFK}else {sprite_index=global.sPlayer;}}}
+	if (!jumping) {if (x!=lastx) {
+	image_speed=walksp*0.1+0.7;
+	sprite_index=global.sPlayerR;}else{if(afk){image_speed=1;sprite_index=global.sPlayerAFK}else {sprite_index=global.sPlayer;}}}
 	
-	//
 	if vstick_check(1) or (PCMove)
 	{
 		afksec=0;
 		if (walksp<3.4) {walksp+=0.035;} else {walksp=3.4;}
 		if (hsp!=0) {if (hsp>0) {image_xscale=0.75;} else {image_xscale=-0.75;}}
-		// old place
-		// 
-		//
 		lastx=self.x;
 	} else {afksec+=1; walksp=1.5;if !(jumping) {if !(afk)  {sprite_index=global.sPlayer;}else{image_speed=1;sprite_index=global.sPlayerAFK;}}}
 }
@@ -107,6 +102,7 @@ if (tilemap_get_at_pixel(tilemap,bbox_side+hsp,y-10)!=0) or (tilemap_get_at_pixe
 	else {x = x - ( x mod 32 ) - (bbox_left - x );}
 	hsp=0;walksp=1.5;self.hspimmune=false;
 }
+
 // Vertical collision (ground)
 if (vsp>0) bbox_side=y+10; else bbox_side=y-10;
 if (tilemap_get_at_pixel(tilemap,bbox_left,bbox_side+vsp)!=0) or (tilemap_get_at_pixel(tilemap,bbox_right,bbox_side+vsp)!=0)
@@ -117,6 +113,7 @@ if (tilemap_get_at_pixel(tilemap,bbox_left,bbox_side+vsp)!=0) or (tilemap_get_at
 	vsp=0;self.hspimmune=false;
 	if (allowlandsn) {allowlandsn=false;play_sound(snLanding,false); }
 }
+
 // Small Horistontal collision (ground)
 if (hsp>0) bbox_side=bbox_right; else bbox_side=bbox_left;
 if (tilemap_get_at_pixel(tilemap3,bbox_side+hsp,y-10)!=0) or (tilemap_get_at_pixel(tilemap3,bbox_side+hsp,y+10)!=0)
@@ -128,33 +125,33 @@ if (tilemap_get_at_pixel(tilemap3,bbox_side+hsp,y-10)!=0) or (tilemap_get_at_pix
 
 // Small Vertical collision (ground)
 if (vsp>=1)
+{
+    bbox_side=y+10;
+	if (tilemap_get_at_pixel(tilemap3,x,bbox_side+vsp)!=0) or (tilemap_get_at_pixel(tilemap3,x,bbox_side+vsp)!=0)
     {
-        bbox_side=y+10;
-		if (tilemap_get_at_pixel(tilemap3,x,bbox_side+vsp)!=0) or (tilemap_get_at_pixel(tilemap3,x,bbox_side+vsp)!=0)
-        {
-			yyy=tilemap_get_cell_y_at_pixel(tilemap3,x,bbox_side+vsp)*8-13;
-            if (vsp>0){y=yyy+2;landed=true;jumping=false;canjump=10;image_speed=1;}
-            vsp=0;hspimmune=false;
-			if (allowlandsn) {allowlandsn=false;play_sound(snLanding,false); }
-        } 
-		else
-		{
-		if (tilemap_get_at_pixel(tilemap3,x,bbox_side+vspP)!=0) or (tilemap_get_at_pixel(tilemap3,x,bbox_side+vspP)!=0)
-        {
-			yyy=tilemap_get_cell_y_at_pixel(tilemap3,x,bbox_side+vspP)*8-13;
-            if (vsp>0){y=yyy+2;landed=true;jumping=false;canjump=10;image_speed=1;}
-            vsp=0;hspimmune=false;
-			if (allowlandsn) {allowlandsn=false;play_sound(snLanding,false); }
-        }	
-		}
+		yyy=tilemap_get_cell_y_at_pixel(tilemap3,x,bbox_side+vsp)*8-13;
+        if (vsp>0){y=yyy+2;landed=true;jumping=false;canjump=10;image_speed=1;}
+        vsp=0;hspimmune=false;
+		if (allowlandsn) {allowlandsn=false;play_sound(snLanding,false); }
     } 
-	if (vsp<0)
+	else
 	{
-		if (tilemap_get_at_pixel(tilemap3,x,bbox_top+vsp)!=0) or (tilemap_get_at_pixel(tilemap3,x,bbox_top+vsp)!=0)
-        {
-            vsp=0;hspimmune=false;image_speed=1;
-        }
+	if (tilemap_get_at_pixel(tilemap3,x,bbox_side+vspP)!=0) or (tilemap_get_at_pixel(tilemap3,x,bbox_side+vspP)!=0)
+    {
+		yyy=tilemap_get_cell_y_at_pixel(tilemap3,x,bbox_side+vspP)*8-13;
+        if (vsp>0){y=yyy+2;landed=true;jumping=false;canjump=10;image_speed=1;}
+        vsp=0;hspimmune=false;
+		if (allowlandsn) {allowlandsn=false;play_sound(snLanding,false); }
+    }	
 	}
+} 
+if (vsp<0)
+{
+	if (tilemap_get_at_pixel(tilemap3,x,bbox_top+vsp)!=0) or (tilemap_get_at_pixel(tilemap3,x,bbox_top+vsp)!=0)
+    {
+        vsp=0;hspimmune=false;image_speed=1;
+    }
+}
 x += round(hsp);
 
 // Rainbow col
@@ -277,9 +274,7 @@ if (room==Room16)
 	if (immune){exit;}
 	var count=collision_point_list(x,y,oTumbleweed,false,true,_list,false);
 	if (count>=2)
-	{
-		
-		
+	{	
 		with (instance_create_layer(x,y-1,"Characters",oPlayerFall))
 		{
 		oGUIBAR.cn-=25;	

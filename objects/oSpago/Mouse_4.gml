@@ -1,4 +1,4 @@
-if (point_distance(x,y,oFollowPlayer.x,oFollowPlayer.y)<60)
+if CatIsNearClick()
 {
 	follow=self;
 	text="Hey buddy, ya want some smoked grass?\nit tastes delicious!";

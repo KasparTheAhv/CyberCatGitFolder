@@ -1,6 +1,6 @@
 /// @desc
 if instance_exists(oTextFloat) or instance_exists(oText) {exit;}
-
+if !CatIsNearClick() {exit;}
 if (stare)
 {
 	var texter="I wish I could be up there\nwith my childhood brother...";

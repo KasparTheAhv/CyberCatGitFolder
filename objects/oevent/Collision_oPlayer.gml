@@ -701,6 +701,7 @@ if (event_id==11) && !(blocker)
 			vstick_set_active(stick_id,false);
 			}
 			instance_destroy(self);
+			instance_destroy(oEasterLvl5End);
 	}
 	
 }

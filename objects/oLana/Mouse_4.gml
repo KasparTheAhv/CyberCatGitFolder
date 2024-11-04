@@ -1,5 +1,6 @@
 /// @desc
 if instance_exists(oTextFloat) or instance_exists(oText) {exit;}
+if !CatIsNearClick() {exit;}
 UnlockNoteEgg("Egg",4);
 text="I wish I was human.\nLana is such a milf!";
 follow = instance_nearest(x,y,oLana);

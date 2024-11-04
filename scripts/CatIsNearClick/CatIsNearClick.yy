@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"CatIsNearClick",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CatIsNearClick",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

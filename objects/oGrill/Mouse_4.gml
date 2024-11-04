@@ -1,4 +1,6 @@
 /// @desc
+if !CatIsNearClick(){exit;}
+
 if (stage==0) {
 stage=1;
 alarm[0]=1; // change index

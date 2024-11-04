@@ -1,5 +1,7 @@
 /// @desc
 
+if !CatIsNearClick() {exit}
+
 if instance_exists(oTextFloat) or instance_exists(oText) {exit;}
 	var settingsmap=ds_map_secure_load("settings.sav");
 	var deathCount = ds_map_find_value(settingsmap,"deathCount");

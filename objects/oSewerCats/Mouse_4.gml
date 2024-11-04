@@ -1,5 +1,5 @@
 /// @desc
-if (ready)
+if (ready) && CatIsNearClick()
 {
 	ready= false;
 	alarm[0]=40;

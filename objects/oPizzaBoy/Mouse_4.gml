@@ -1,4 +1,5 @@
 /// @desc
+if !CatIsNearClick(){exit;}
 if instance_exists(oText) or instance_exists(oTextFloat) {exit;}
 
 UnlockNoteEgg("Egg",3);

@@ -1,6 +1,6 @@
 /// @desc
-if !(instance_exists(oPlayer)) {exit;}
-if (point_distance(x,y,oPlayer.x,oPlayer.y)>70) {exit;}
+if !(CatIsNearClick()) {exit;}
+
 
 
 oOnion.picked+=1;

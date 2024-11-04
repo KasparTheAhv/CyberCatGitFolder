@@ -1,10 +1,12 @@
 /// @desc
+if !CatIsNearClick(){exit;}
+if instance_exists(oTextFloat) {exit;}
 image_index=0;
 image_speed=0;
 hspeed=0;
 alarm[0]=240;
 
-if instance_exists(oTextFloat) {exit;}
+
 
 if (firstspeech)
 {

@@ -1,10 +1,9 @@
 /// @desc
 if (escape) {exit;}
 
-if instance_exists(oPlayer)
-{
-if (point_distance(x,y,oPlayer.x,oPlayer.y)<70)	{
 
+if (CatIsNearClick())
+{
 	if !instance_exists(oTextFloat) && !instance_exists(oText)
 	{
 		var texter="NI!";
@@ -16,8 +15,4 @@ if (point_distance(x,y,oPlayer.x,oPlayer.y)<70)	{
 		length = string_length(text);
 		}		
 	}
-
-
-	}
 }
-

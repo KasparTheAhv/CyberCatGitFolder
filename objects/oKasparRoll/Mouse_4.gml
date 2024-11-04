@@ -1,5 +1,5 @@
 /// @desc
-
+if !CatIsNearClick() {exit;}
 if (switchdelay==0)
 {
 	play_sound(snTvOn,false);

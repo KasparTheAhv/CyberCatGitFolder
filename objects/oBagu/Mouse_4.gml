@@ -1,6 +1,6 @@
 /// @desc
 
-if (point_distance(x,y,oFollowPlayer.x,oFollowPlayer.y)<90) && (state==0)
+if (CatIsNearClick()) && (state==0)
 {
 	state=1;
 	image_index=1;

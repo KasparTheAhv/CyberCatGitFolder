@@ -1,6 +1,6 @@
 /// @desc
 if instance_exists(oText) or instance_exists(oTextFloat) {exit;}
-if instance_exists(oPlayer) && (distance_to_object(oPlayer)<70)
+if CatIsNearClick()
 {
 	UnlockNoteEgg("Egg",3);
 	var texter="Now you know why\nthey call me Rock Johnson.";
